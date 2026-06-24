@@ -1,0 +1,492 @@
+{
+	"$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.locations.schema.json",
+  "data": [
+    {
+      "name": "Artisan Can't Sell Products Quest",
+      "category": [ "Quest" ],
+      "region": "MerchantQuest"
+    },
+    {
+      "name": "Army Needs Supplies Quest",
+      "category": [ "Quest" ],
+      "region": "MerchantQuest"
+    },
+    {
+      "name": "Artisan Overpriced Goods Quest",
+      "category": [ "Quest" ],
+      "region": "MerchantQuest"
+    },
+    {
+      "name": "Betting Fraud Quest",
+      "category": [ "Quest" ],
+      "region": "MerchantQuest"
+    },
+    {
+      "name": "Captured by Bounty Hunters Quest",
+      "category": [ "Quest" ],
+      "region": "MerchantQuest"
+    },
+    {
+      "name": "Caravan Ambush Quest",
+      "category": [ "Quest" ],
+      "region": "MerchantQuest"
+    },
+    {
+      "name": "Escort Merchant Caravan Quest",
+      "category": [ "Quest" ],
+      "region": "MerchantQuest"
+    },
+    {
+      "name": "Merchant Army of Poachers Quest",
+      "category": [ "Quest" ],
+      "region": "MerchantQuest"
+    },
+    {
+      "name": "Merchant Needs Help with Outlaws Quest",
+      "category": [ "Quest" ],
+      "region": "MerchantQuest"
+    },
+    {
+      "name": "Extortion by Deserters Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Headman Needs Grain Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Headman Needs to Deliver a Herd Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Headman Village Needs Draught Animals Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Land Lord Company of Trouble Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Landlord Needs Access to Village Commons Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Land Lord Needs Manual Laborers Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Land Lord The Art of the Trade Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Landlord Training for Retainers Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Lesser Noble Revolt Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Village Needs Crafting Materials Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Village Needs Tools Quest",
+      "category": [ "Quest" ],
+      "region": "VillageQuest"
+    },
+    {
+      "name": "Lady's Knight Out Quest",
+      "category": [ "Quest" ],
+      "region": "LordQuest"
+    },
+    {
+      "name": "Lord Needs Garrison Troops Quest",
+      "category": [ "Quest" ],
+      "region": "LordQuest"
+    },
+    {
+      "name": "Lord Needs Horses Quest",
+      "category": [ "Quest" ],
+      "region": "LordQuest"
+    },
+    {
+      "name": "Lord Needs Tutor Quest",
+      "category": [ "Quest" ],
+      "region": "LordQuest"
+    },
+    {
+      "name": "Lord Wants Rival Captured Quest",
+      "category": [ "Quest" ],
+      "region": "LordQuest"
+    },
+    {
+      "name": "Raid an Enemy Territory Quest",
+      "category": [ "Quest" ],
+      "region": "LordQuest"
+    },
+    {
+      "name": "Scout Enemy Garrisons Quest",
+      "category": [ "Quest" ],
+      "region": "LordQuest"
+    },
+    {
+      "name": "The Conquest of Settlement Quest",
+      "category": [ "Quest" ],
+      "region": "LordQuest"
+    },
+    {
+      "name": "Gang Leader Needs Recruits Quest",
+      "category": [ "Quest" ],
+      "region": "GangQuest"
+    },
+    {
+      "name": "Gang Leader Needs Special Weapons Quest",
+      "category": [ "Quest" ],
+      "region": "GangQuest"
+    },
+    {
+      "name": "Gang Leader Needs to Offload Stolen Goods Quest",
+      "category": [ "Quest" ],
+      "region": "GangQuest"
+    },
+    {
+      "name": "Gang Leader Needs Weapons Quest",
+      "category": [ "Quest" ],
+      "region": "GangQuest"
+    },
+    {
+      "name": "Nearby Bandit Base Quest",
+      "category": [ "Quest" ],
+      "region": "GangQuest"
+    },
+    {
+      "name": "Revenue Farming Quest",
+      "category": [ "Quest" ],
+      "region": "GangQuest"
+    },
+    {
+      "name": "Rival Gang Moving In Quest",
+      "category": [ "Quest" ],
+      "region": "GangQuest"
+    },
+    {
+      "name": "Smugglers Quest",
+      "category": [ "Quest" ],
+      "region": "GangQuest"
+    },
+    {
+      "name": "Stealth Quest Rescued Headman",
+      "category": [ "Quest" ],
+      "region": "StealthQuest"
+    },
+    {
+      "name": "Tutorial Reached Village",
+      "category": [ "Quest" ],
+      "region": "TutorialQuest"
+    },
+    {
+      "name": "Tutorial Talk to Headman",
+      "category": [ "Quest" ],
+      "region": "TutorialQuest"
+    },
+    {
+      "name": "Tutorial Recruited Troops",
+      "category": [ "Quest" ],
+      "region": "TutorialQuest"
+    },
+    {
+      "name": "Tutorial Rescued Traveller",
+      "category": [ "Quest" ],
+      "region": "TutorialQuest"
+    },
+    {
+      "name": "Tutorial Found Hideout",
+      "category": [ "Quest" ],
+      "region": "TutorialQuest"
+    },
+    {
+      "name": "Tutorial Finished Quest",
+      "victory": true,
+      "category": [ "Quest" ],
+      "region": "TutorialQuest"
+    },
+    {
+      "name": "Tournament Win - Askar",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Hubyar",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Husn Fulq",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Iyakis",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Qasira",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Quyaz",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Razih",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Sanala",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Car Banseth",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Dunglanys",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Marunath",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Pen Cannoc",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Seonon",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Akkalat",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Baltakhand",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Chaikand",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Makeb",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Odokh",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Ortongard",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Balgard",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Omor",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Revyl",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Sibir",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Tyal",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Varcheg",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Varnovapol",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Charas",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Galend",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Jaculan",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Ocs Hall",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Ostican",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Pravend",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Rovalt",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Sargot",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Amprela",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Argoron",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Diathma",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Epicrotea",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Myzea",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Saneopa",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Danustica",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Lycaron",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Onira",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Phycaon",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Poros",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Syronea",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Vostrum",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Amitatys",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Jalmarys",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Lageta",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Ortysia",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Rhotae",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    },
+    {
+      "name": "Tournament Win - Zeonica",
+      "category": [ "Tournament" ],
+      "region": "TournamentWin"
+    }
+  ]
+}
+

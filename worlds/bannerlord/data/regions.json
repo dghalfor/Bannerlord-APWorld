@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
+  "StealthQuest": {
+    "connects_to": [ "TutorialQuest" ]
+  },
+  "TutorialQuest": {
+    "connects_to": []
+  },
+  "TournamentWin": {
+    "connects_to": []
+  },
+  "GangQuest": {
+    "connects_to": []
+  },
+  "LordQuest": {
+    "connects_to": []
+  },
+  "VillageQuest": {
+    "connects_to": []
+  },
+  "MerchantQuest": {
+    "connects_to": []
+  }
+}

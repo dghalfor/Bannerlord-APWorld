@@ -1,0 +1,54 @@
+{
+    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
+  "data": [
+    {
+      "name": "10 Butter",
+      "count": 3
+    },
+    {
+      "name": "100 Denars",
+      "count": 2
+    },
+    {
+      "name": "Progressive sturgia Troop Tier",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive empire Troop Tier",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive battania Troop Tier",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive vlandia Troop Tier",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive khuzait Troop Tier",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive aserai Troop Tier",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive nord Troop Tier",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Dragon Banner Piece",
+      "count": 50,
+      "progression": true
+    }
+
+  ]
+}

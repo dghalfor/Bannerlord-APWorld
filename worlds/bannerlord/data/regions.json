@@ -1,11 +1,5 @@
 {
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
-  "StealthQuest": {
-    "connects_to": [ "TutorialQuest" ]
-  },
-  "TutorialQuest": {
-    "connects_to": []
-  },
   "TournamentWin": {
     "connects_to": []
   },
@@ -20,5 +14,148 @@
   },
   "MerchantQuest": {
     "connects_to": []
+  },
+  "empireTier2": {
+    "connects_to": [ "empireTier3" ],
+    "requires": "|Progressive empire Troop Tier|"
+  },
+  "empireTier3": {
+    "connects_to": [ "empireTier4" ],
+    "requires": "|Progressive empire Troop Tier:2|"
+  },
+  "empireTier4": {
+    "connects_to": [ "empireTier5" ],
+    "requires": "|Progressive empire Troop Tier:3|"
+  },
+  "empireTier5": {
+    "connects_to": [ "empireTier6" ],
+    "requires": "|Progressive empire Troop Tier:4|"
+  },
+  "empireTier6": {
+    "connects_to": [],
+    "requires": "|Progressive empire Troop Tier:5|"
+  },
+
+  "sturgiaTier2": {
+    "connects_to": [ "sturgiaTier3" ],
+    "requires": "|Progressive sturgia Troop Tier|"
+  },
+  "sturgiaTier3": {
+    "connects_to": [ "sturgiaTier4" ],
+    "requires": "|Progressive sturgia Troop Tier:2|"
+  },
+  "sturgiaTier4": {
+    "connects_to": [ "sturgiaTier5" ],
+    "requires": "|Progressive sturgia Troop Tier:3|"
+  },
+  "sturgiaTier5": {
+    "connects_to": [ "sturgiaTier6" ],
+    "requires": "|Progressive sturgia Troop Tier:4|"
+  },
+  "sturgiaTier6": {
+    "connects_to": [],
+    "requires": "|Progressive sturgia Troop Tier:5|"
+  },
+
+  "battaniaTier2": {
+    "connects_to": [ "battaniaTier3" ],
+    "requires": "|Progressive battania Troop Tier|"
+  },
+  "battaniaTier3": {
+    "connects_to": [ "battaniaTier4" ],
+    "requires": "|Progressive battania Troop Tier:2|"
+  },
+  "battaniaTier4": {
+    "connects_to": [ "battaniaTier5" ],
+    "requires": "|Progressive battania Troop Tier:3|"
+  },
+  "battaniaTier5": {
+    "connects_to": [ "battaniaTier6" ],
+    "requires": "|Progressive battania Troop Tier:4|"
+  },
+  "battaniaTier6": {
+    "connects_to": [],
+    "requires": "|Progressive battania Troop Tier:5|"
+  },
+
+  "vlandiaTier2": {
+    "connects_to": [ "vlandiaTier3" ],
+    "requires": "|Progressive vlandia Troop Tier|"
+  },
+  "vlandiaTier3": {
+    "connects_to": [ "vlandiaTier4" ],
+    "requires": "|Progressive vlandia Troop Tier:2|"
+  },
+  "vlandiaTier4": {
+    "connects_to": [ "vlandiaTier5" ],
+    "requires": "|Progressive vlandia Troop Tier:3|"
+  },
+  "vlandiaTier5": {
+    "connects_to": [ "vlandiaTier6" ],
+    "requires": "|Progressive vlandia Troop Tier:4|"
+  },
+  "vlandiaTier6": {
+    "connects_to": [],
+    "requires": "|Progressive vlandia Troop Tier:5|"
+  },
+
+  "khuzaitTier2": {
+    "connects_to": [ "khuzaitTier3" ],
+    "requires": "|Progressive khuzait Troop Tier|"
+  },
+  "khuzaitTier3": {
+    "connects_to": [ "khuzaitTier4" ],
+    "requires": "|Progressive khuzait Troop Tier:2|"
+  },
+  "khuzaitTier4": {
+    "connects_to": [ "khuzaitTier5" ],
+    "requires": "|Progressive khuzait Troop Tier:3|"
+  },
+  "khuzaitTier5": {
+    "connects_to": [ "khuzaitTier6" ],
+    "requires": "|Progressive khuzait Troop Tier:4|"
+  },
+  "khuzaitTier6": {
+    "connects_to": [],
+    "requires": "|Progressive khuzait Troop Tier:5|"
+  },
+  "aseraiTier2": {
+    "connects_to": [ "aseraiTier3" ],
+    "requires": "|Progressive aserai Troop Tier|"
+  },
+  "aseraiTier3": {
+    "connects_to": [ "aseraiTier4" ],
+    "requires": "|Progressive aserai Troop Tier:2|"
+  },
+  "aseraiTier4": {
+    "connects_to": [ "aseraiTier5" ],
+    "requires": "|Progressive aserai Troop Tier:3|"
+  },
+  "aseraiTier5": {
+    "connects_to": [ "aseraiTier6" ],
+    "requires": "|Progressive aserai Troop Tier:4|"
+  },
+  "aseraiTier6": {
+    "connects_to": [],
+    "requires": "|Progressive aserai Troop Tier:5|"
+  },
+  "craftingTier1": {
+    "connects_to": [ "craftingTier2" ]
+  },
+  "craftingTier2": {
+    "connects_to": [ "craftingTier3" ]
+  },
+  "craftingTier3": {
+    "connects_to": [ "craftingTier4" ]
+  },
+  "craftingTier4": {
+    "connects_to": [ "craftingTier5" ]
+  },
+  "craftingTier5": {
+    "connects_to": [ "craftingTier6" ]
+  },
+  "craftingTier6": {
+  },
+  "menu": {
   }
 }

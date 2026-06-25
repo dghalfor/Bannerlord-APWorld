@@ -3,224 +3,188 @@
   "data": [
     {
       "name": "Artisan Can't Sell Products Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "MerchantQuest" ],
       "region": "MerchantQuest"
     },
     {
       "name": "Army Needs Supplies Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "MerchantQuest" ],
       "region": "MerchantQuest"
     },
     {
       "name": "Artisan Overpriced Goods Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "MerchantQuest" ],
       "region": "MerchantQuest"
     },
     {
       "name": "Betting Fraud Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "MerchantQuest" ],
       "region": "MerchantQuest"
     },
     {
       "name": "Captured by Bounty Hunters Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "MerchantQuest" ],
       "region": "MerchantQuest"
     },
     {
       "name": "Caravan Ambush Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "MerchantQuest" ],
       "region": "MerchantQuest"
     },
     {
       "name": "Escort Merchant Caravan Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "MerchantQuest" ],
       "region": "MerchantQuest"
     },
     {
       "name": "Merchant Army of Poachers Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "MerchantQuest" ],
       "region": "MerchantQuest"
     },
     {
       "name": "Merchant Needs Help with Outlaws Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "MerchantQuest" ],
       "region": "MerchantQuest"
     },
     {
       "name": "Extortion by Deserters Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Headman Needs Grain Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Headman Needs to Deliver a Herd Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Headman Village Needs Draught Animals Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Land Lord Company of Trouble Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Landlord Needs Access to Village Commons Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Land Lord Needs Manual Laborers Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Land Lord The Art of the Trade Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Landlord Training for Retainers Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Lesser Noble Revolt Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Village Needs Crafting Materials Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Village Needs Tools Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
     },
     {
       "name": "Lady's Knight Out Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "LordQuest" ],
       "region": "LordQuest"
     },
     {
       "name": "Lord Needs Garrison Troops Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "LordQuest" ],
       "region": "LordQuest"
     },
     {
       "name": "Lord Needs Horses Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "LordQuest" ],
       "region": "LordQuest"
     },
     {
       "name": "Lord Needs Tutor Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "LordQuest" ],
       "region": "LordQuest"
     },
     {
       "name": "Lord Wants Rival Captured Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "LordQuest" ],
       "region": "LordQuest"
     },
     {
       "name": "Raid an Enemy Territory Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "LordQuest" ],
       "region": "LordQuest"
     },
     {
       "name": "Scout Enemy Garrisons Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "LordQuest" ],
       "region": "LordQuest"
     },
     {
       "name": "The Conquest of Settlement Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "LordQuest" ],
       "region": "LordQuest"
     },
     {
       "name": "Gang Leader Needs Recruits Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "GangQuest" ],
       "region": "GangQuest"
     },
     {
       "name": "Gang Leader Needs Special Weapons Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "GangQuest" ],
       "region": "GangQuest"
     },
     {
       "name": "Gang Leader Needs to Offload Stolen Goods Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "GangQuest" ],
       "region": "GangQuest"
     },
     {
       "name": "Gang Leader Needs Weapons Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "GangQuest" ],
       "region": "GangQuest"
     },
     {
       "name": "Nearby Bandit Base Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "GangQuest" ],
       "region": "GangQuest"
     },
     {
       "name": "Revenue Farming Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "GangQuest" ],
       "region": "GangQuest"
     },
     {
       "name": "Rival Gang Moving In Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "GangQuest" ],
       "region": "GangQuest"
     },
     {
       "name": "Smugglers Quest",
-      "category": [ "Quest" ],
+      "category": [ "Quest", "GangQuest" ],
       "region": "GangQuest"
-    },
-    {
-      "name": "Stealth Quest Rescued Headman",
-      "category": [ "Quest" ],
-      "region": "StealthQuest"
-    },
-    {
-      "name": "Tutorial Reached Village",
-      "category": [ "Quest" ],
-      "region": "TutorialQuest"
-    },
-    {
-      "name": "Tutorial Talk to Headman",
-      "category": [ "Quest" ],
-      "region": "TutorialQuest"
-    },
-    {
-      "name": "Tutorial Recruited Troops",
-      "category": [ "Quest" ],
-      "region": "TutorialQuest"
-    },
-    {
-      "name": "Tutorial Rescued Traveller",
-      "category": [ "Quest" ],
-      "region": "TutorialQuest"
-    },
-    {
-      "name": "Tutorial Found Hideout",
-      "category": [ "Quest" ],
-      "region": "TutorialQuest"
-    },
-    {
-      "name": "Tutorial Finished Quest",
-      "victory": true,
-      "category": [ "Quest" ],
-      "region": "TutorialQuest"
     },
     {
       "name": "Tournament Win - Askar",
@@ -486,6 +450,2144 @@
       "name": "Tournament Win - Zeonica",
       "category": [ "Tournament" ],
       "region": "TournamentWin"
+    },
+    {
+      "name": "Upgraded to Aserai Tribesman",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier2"
+    },
+    {
+      "name": "Upgraded to Aserai Mameluke Soldier",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier2"
+    },
+    {
+      "name": "Upgraded to Beni Zilal Soldier",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Jawwal Camel Rider",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Aserai Tribal Horseman",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Aserai Skirmisher",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Aserai Footman",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Aserai Mameluke Regular",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Aserai Mameluke Axeman",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Beni Zilal Royal Guard",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Jawwal Bedouin",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Faris",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Archer",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Infantry",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Mameluke Cavalry",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Mameluke Guard",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Veteran Faris",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Master Archer",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Veteran Infantry",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Mameluke Heavy Cavalry",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Mameluke Palace Guard",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Vanguard Faris",
+      "category": [ "TroopUpgrade" ],
+      "region": "aseraiTier6"
+    },
+    {
+      "name": "Upgraded to Battanian Clan Warrior",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier2"
+    },
+    {
+      "name": "Upgraded to Battanian Wood Runner",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier2"
+    },
+    {
+      "name": "Upgraded to Kern",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier3"
+    },
+    {
+      "name": "Upgraded to Battanian Trained Warrior",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier3"
+    },
+    {
+      "name": "Upgraded to Battanian Raider",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier3"
+    },
+    {
+      "name": "Upgraded to Battanian Skirmisher",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier3"
+    },
+    {
+      "name": "Upgraded to Seasoned Wolf",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier3"
+    },
+    {
+      "name": "Upgraded to Battanian Highborn Warrior",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier3"
+    },
+    {
+      "name": "Upgraded to Redshank",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Chosen Wolf",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Hero",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Picked Warrior",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Scout",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Falxman",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Veteran Skirmisher",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Fian",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Trained Spearman",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Horseman",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Veteran Falxman",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Wildling",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Mounted Skirmisher",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Fian Champion",
+      "category": [ "TroopUpgrade" ],
+      "region": "battaniaTier6"
+    },
+    {
+      "name": "Upgraded to Khuzait Tribal Warrior",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier2"
+    },
+    {
+      "name": "Upgraded to Khuzait Footman",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier2"
+    },
+    {
+      "name": "Upgraded to Karakhuzait Rider",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Khuzait Qanqli",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Khuzait Raider",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Khuzait Horseman",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Khuzait Hunter",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Khuzait Spearman",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Karakhuzait Elder",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Torguud",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Horse Archer",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Lancer",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Archer",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Spear Infantry",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Kheshig",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Heavy Horse Archer",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Heavy Lancer",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Marksman",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Darkhan",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Khan's Guard",
+      "category": [ "TroopUpgrade" ],
+      "region": "khuzaitTier6"
+    },
+    {
+      "name": "Upgraded to Imperial Infantryman",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier2"
+    },
+    {
+      "name": "Upgraded to Imperial Archer",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier2"
+    },
+    {
+      "name": "Upgraded to Principes",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier3"
+    },
+    {
+      "name": "Upgraded to Expert Eleftheroi",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier3"
+    },
+    {
+      "name": "Upgraded to Imperial Equite",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier3"
+    },
+    {
+      "name": "Upgraded to Imperial Trained Infantryman",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier3"
+    },
+    {
+      "name": "Upgraded to Imperial Trained Archer",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier3"
+    },
+    {
+      "name": "Upgraded to Triarii",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Veteran Eleftheroi",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Heavy Horseman",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Veteran Infantryman",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Menavliaton",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Veteran Archer",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Crossbowman",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Cataphract",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Legionary",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Elite Menavliaton",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Palatine Guard",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Bucellarii",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Sergeant Crossbowman",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Elite Cataphract",
+      "category": [ "TroopUpgrade" ],
+      "region": "empireTier6"
+    },
+    {
+      "name": "Upgraded to Sturgian Warrior",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier2"
+    },
+    {
+      "name": "Upgraded to Sturgian Woodsman",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier2"
+    },
+    {
+      "name": "Upgraded to Skolder Warrior Brotva",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier3"
+    },
+    {
+      "name": "Upgraded to Varyag",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier3"
+    },
+    {
+      "name": "Upgraded to Sturgian Soldier",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier3"
+    },
+    {
+      "name": "Upgraded to Sturgian Brigand",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier3"
+    },
+    {
+      "name": "Upgraded to Sturgian Hunter",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier3"
+    },
+    {
+      "name": "Upgraded to Skolder Veteran Brotva",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Varyag Veteran",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Spearman",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Berserker",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Hardened Brigand",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Archer",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Druzhinnik",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Shock Troop",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Veteran Warrior",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Ulfhednar",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Horse Raider",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Veteran Bowman",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Druzhinnik Champion",
+      "category": [ "TroopUpgrade" ],
+      "region": "sturgiaTier6"
+    },
+    {
+      "name": "Upgraded to Vlandian Levy Crossbowman",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier2"
+    },
+    {
+      "name": "Upgraded to Vlandian Footman",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier2"
+    },
+    {
+      "name": "Upgraded to Sapling",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier3"
+    },
+    {
+      "name": "Upgraded to Boar Veteran",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier3"
+    },
+    {
+      "name": "Upgraded to Vlandian Gallant",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier3"
+    },
+    {
+      "name": "Upgraded to Vlandian Crossbowman",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier3"
+    },
+    {
+      "name": "Upgraded to Vlandian Spearman",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier3"
+    },
+    {
+      "name": "Upgraded to Vlandian Infantry",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier3"
+    },
+    {
+      "name": "Upgraded to Arboreal",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Boar Champion",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Knight",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier4"
+    },
+    {
+      "name": "Upgraded to Vlandian Hardened Crossbowman",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier4"
+    },
+    {
+      "name": "Upgraded to Vlandian Billman",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier4"
+    },
+    {
+      "name": "Upgraded to Vlandian Light Cavalry",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier4"
+    },
+    {
+      "name": "Upgraded to Vlandian Swordsman",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier4"
+    },
+    {
+      "name": "Upgraded to Vlandian Champion",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Sharpshooter",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Voulgier",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Pikeman",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Vanguard",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Sergeant",
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Banner Knight",
+      "victory": true,
+      "category": [ "TroopUpgrade" ],
+      "region": "vlandiaTier6"
+    },
+    {
+      "name": "Crafted OneHandedSword Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted TwoHandedSword Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted OneHandedAxe Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted TwoHandedAxe Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted Mace Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted TwoHandedMace Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted Dagger Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted Pike Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted TwoHandedPolearm Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted Javelin Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted ThrowingAxe Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted ThrowingKnife Tier 1",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier1"
+    },
+    {
+      "name": "Crafted OneHandedSword Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted TwoHandedSword Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted OneHandedAxe Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted TwoHandedAxe Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted Mace Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted TwoHandedMace Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted Dagger Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted Pike Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted TwoHandedPolearm Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted Javelin Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted ThrowingAxe Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted ThrowingKnife Tier 2",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier2"
+    },
+    {
+      "name": "Crafted OneHandedSword Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted TwoHandedSword Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted OneHandedAxe Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted TwoHandedAxe Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted Mace Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted TwoHandedMace Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted Dagger Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted Pike Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted TwoHandedPolearm Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted Javelin Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted ThrowingAxe Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted ThrowingKnife Tier 3",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier3"
+    },
+    {
+      "name": "Crafted OneHandedSword Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted TwoHandedSword Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted OneHandedAxe Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted TwoHandedAxe Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted Mace Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted TwoHandedMace Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted Dagger Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted Pike Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted TwoHandedPolearm Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted Javelin Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted ThrowingAxe Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted ThrowingKnife Tier 4",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier4"
+    },
+    {
+      "name": "Crafted OneHandedSword Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted TwoHandedSword Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted OneHandedAxe Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted TwoHandedAxe Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted Mace Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted TwoHandedMace Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted Dagger Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted Pike Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted TwoHandedPolearm Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted Javelin Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted ThrowingAxe Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted ThrowingKnife Tier 5",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier5"
+    },
+    {
+      "name": "Crafted OneHandedSword Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted TwoHandedSword Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted OneHandedAxe Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted TwoHandedAxe Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted Mace Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted TwoHandedMace Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted Dagger Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted Pike Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted TwoHandedPolearm Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted Javelin Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted ThrowingAxe Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Crafted ThrowingKnife Tier 6",
+      "category": [ "CraftingSanity" ],
+      "region": "craftingTier6"
+    },
+    {
+      "name": "Fed Party with 0 Food Types",
+      "category": [ "FoodSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Fed Party with 1 Food Types",
+      "category": [ "FoodSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Fed Party with 2 Food Types",
+      "category": [ "FoodSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Fed Party with 3 Food Types",
+      "category": [ "FoodSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Fed Party with 4 Food Types",
+      "category": [ "FoodSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Fed Party with 5 Food Types",
+      "category": [ "FoodSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Fed Party with 6 Food Types",
+      "category": [ "FoodSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Fed Party with 7 Food Types",
+      "category": [ "FoodSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Fed Party with 8 Food Types",
+      "category": [ "FoodSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "OneHanded Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "TwoHanded Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "TwoHanded Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Polearm Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Polearm Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Bow Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Bow Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Crossbow Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crossbow Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Throwing Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Throwing Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Riding Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Riding Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Athletics Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Athletics Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Crafting Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Crafting Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Scouting Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Scouting Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Tactics Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Tactics Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Roguery Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Roguery Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Charm Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Charm Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Leadership Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Leadership Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Trade Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Trade Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Steward Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Steward Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Medicine Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Medicine Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+
+    {
+      "name": "Engineering Skill Level 25",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 50",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 75",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 100",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 125",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 150",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 175",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 200",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 225",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 250",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 275",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
+    },
+    {
+      "name": "Engineering Skill Level 300",
+      "category": [ "SkillSanity" ],
+      "region": "menu"
     }
   ]
 }

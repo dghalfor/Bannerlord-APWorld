@@ -35,7 +35,40 @@ import logging
 # Use this function to change the valid filler items to be created to replace item links or starting items.
 # Default value is the `filler_item_name` from game.json
 def hook_get_filler_item_name(world: World, multiworld: MultiWorld, player: int) -> str | bool:
-    return False
+    # Weighted filler table: (item_name, weight)
+    # Higher weight = appears more frequently
+    filler_weights = [
+        ("Butter",                    10),  
+        ("Small Renown",              10),
+        ("Small Pouch of Denars",      8),
+        ("Renown",                     6),
+        ("Pouch of Denars",            6),
+        ("Horse",                      5),
+        ("Lord Relation",              5),
+        ("One Handed Scroll",          2),
+        ("Two Handed Scroll",          2),
+        ("Polearm Scroll",             2),
+        ("Bow Scroll",                 2),
+        ("Crossbow Scroll",            2),
+        ("Throwing Scroll",            2),
+        ("Riding Scroll",              2),
+        ("Athletics Scroll",           2),
+        ("Crafting Scroll",            2),
+        ("Tactics Scroll",             2),
+        ("Scouting Scroll",            2),
+        ("Roguery Scroll",             2),
+        ("Charm Scroll",               2),
+        ("Leadership Scroll",          2),
+        ("Trade Scroll",               2),
+        ("Steward Scroll",             2),
+        ("Medicine Scroll",            2),
+        ("Engineering Scroll",         2),
+        ("Bag of Denars",              3),
+        ("Large Renown",               3),
+    ]
+    
+    items, weights = zip(*filler_weights)
+    return multiworld.random.choices(items, weights=weights, k=1)[0]
 
 def before_generate_early(world: World, multiworld: MultiWorld, player: int) -> None:
     """
@@ -50,15 +83,86 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
-    # Use this hook to remove locations from the world
-    locationNamesToRemove: list[str] = [] # List of location names
+    locationNamesToRemove: list[str] = []
 
-    # Add your code here to calculate which locations to remove
+    # Skill sanity filtering
+    skill_option_map = {
+        "OneHanded":   world.options.onehanded_skill_max.value,
+        "TwoHanded":   world.options.twohanded_skill_max.value,
+        "Polearm":     world.options.polearm_skill_max.value,
+        "Bow":         world.options.bow_skill_max.value,
+        "Crossbow":    world.options.crossbow_skill_max.value,
+        "Throwing":    world.options.throwing_skill_max.value,
+        "Riding":      world.options.riding_skill_max.value,
+        "Athletics":   world.options.athletics_skill_max.value,
+        "Crafting":    world.options.crafting_skill_max.value,
+        "Scouting":    world.options.scouting_skill_max.value,
+        "Tactics":     world.options.tactics_skill_max.value,
+        "Roguery":     world.options.roguery_skill_max.value,
+        "Charm":       world.options.charm_skill_max.value,
+        "Leadership":  world.options.leadership_skill_max.value,
+        "Trade":       world.options.trade_skill_max.value,
+        "Steward":     world.options.steward_skill_max.value,
+        "Medicine":    world.options.medicine_skill_max.value,
+        "Engineering": world.options.engineering_skill_max.value,
+    }
+
+    for skill, max_level in skill_option_map.items():
+        effective_max = (max_level // 25) * 25
+        for threshold in range(25, 301, 25):
+            if threshold > effective_max:
+                locationNamesToRemove.append(f"{skill} Skill Level {threshold}")
+
+    # Crafting sanity tier filtering
+    crafting_max_tier = world.options.crafting_sanity_max_tier.value
 
     for region in multiworld.regions:
         if region.player == player:
             for location in list(region.locations):
-                if location.name in locationNamesToRemove:
+                if location.name.startswith("Crafted ") and " Tier " in location.name:
+                    tier = int(location.name.rsplit(" Tier ", 1)[1])
+                    if tier > crafting_max_tier:
+                        locationNamesToRemove.append(location.name)
+
+    # Tournament sanity filtering
+    if not world.options.tournament_sanity.value:
+        for region in multiworld.regions:
+            if region.player == player:
+                for location in list(region.locations):
+                    if location.name.startswith("Tournament Win"):
+                        locationNamesToRemove.append(location.name)
+
+     # Quest sanity filtering
+    if not world.options.quest_sanity.value:
+        for region in multiworld.regions:
+            if region.player == player:
+                for location in list(region.locations):
+                    if location.name.endswith(" Quest"):
+                        locationNamesToRemove.append(location.name)
+    else:
+        quest_group_map = {
+            "merchant_quest_sanity": "MerchantQuest",
+            "village_quest_sanity":  "VillageQuest",
+            "lord_quest_sanity":     "LordQuest",
+            "gang_quest_sanity":     "GangQuest",
+        }
+        disabled_regions = {
+            region_name
+            for option_key, region_name in quest_group_map.items()
+            if not getattr(world.options, option_key).value
+        }
+        if disabled_regions:
+            for region in multiworld.regions:
+                if region.player == player:
+                    for location in list(region.locations):
+                        if location.name.endswith(" Quest") and location.region.name in disabled_regions:
+                            locationNamesToRemove.append(location.name)
+    # Apply removals
+    remove_set = set(locationNamesToRemove)
+    for region in multiworld.regions:
+        if region.player == player:
+            for location in list(region.locations):
+                if location.name in remove_set:
                     region.locations.remove(location)
 
 # This hook allows you to access the item names & counts before the items are created. Use this to increase/decrease the amount of a specific item in the pool
@@ -167,6 +271,7 @@ def before_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld,
 
 # This is called after slot data is set and provides the slot data at the time, in case you want to check and modify it after Manual is done with it
 def after_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
+    slot_data["dragon_banner_pieces_required"] = world.options.dragon_banner_pieces_required.value
     return slot_data
 
 # This is called right at the end, in case you want to write stuff to the spoiler log

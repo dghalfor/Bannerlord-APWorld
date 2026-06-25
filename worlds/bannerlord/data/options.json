@@ -30,8 +30,8 @@
       ],
       "type": "Range",
       "range_start": 1,
-      "range_end": 20,
-      "default": 3,
+      "range_end": 50,
+      "default": 30,
       "values": {
         "easy": 10,
         "medium": 20,
@@ -39,6 +39,219 @@
         "very_hard": 50
       },
       "group": "Main Quest"
+    },
+    "onehanded_skill_max": {
+      "display_name": "One-Handed Skill Max Level",
+      "description": [ "Maximum One-Handed skill level that will have Archipelago locations. Locations are added in multiples of 25 up to this value." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 150,
+      "group": "Skill Sanity"
+    },
+    "twohanded_skill_max": {
+      "display_name": "Two-Handed Skill Max Level",
+      "description": [ "Maximum Two-Handed skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 150,
+      "group": "Skill Sanity"
+    },
+    "polearm_skill_max": {
+      "display_name": "Polearm Skill Max Level",
+      "description": [ "Maximum Polearm skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 150,
+      "group": "Skill Sanity"
+    },
+    "bow_skill_max": {
+      "display_name": "Bow Skill Max Level",
+      "description": [ "Maximum Bow skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 150,
+      "group": "Skill Sanity"
+    },
+    "crossbow_skill_max": {
+      "display_name": "Crossbow Skill Max Level",
+      "description": [ "Maximum Crossbow skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 150,
+      "group": "Skill Sanity"
+    },
+    "throwing_skill_max": {
+      "display_name": "Throwing Skill Max Level",
+      "description": [ "Maximum Throwing skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 150,
+      "group": "Skill Sanity"
+    },
+    "riding_skill_max": {
+      "display_name": "Riding Skill Max Level",
+      "description": [ "Maximum Riding skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "athletics_skill_max": {
+      "display_name": "Athletics Skill Max Level",
+      "description": [ "Maximum Athletics skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "crafting_skill_max": {
+      "display_name": "Crafting Skill Max Level",
+      "description": [ "Maximum Crafting (Smithing) skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "scouting_skill_max": {
+      "display_name": "Scouting Skill Max Level",
+      "description": [ "Maximum Scouting skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "tactics_skill_max": {
+      "display_name": "Tactics Skill Max Level",
+      "description": [ "Maximum Tactics skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "roguery_skill_max": {
+      "display_name": "Roguery Skill Max Level",
+      "description": [ "Maximum Roguery skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "charm_skill_max": {
+      "display_name": "Charm Skill Max Level",
+      "description": [ "Maximum Charm skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "leadership_skill_max": {
+      "display_name": "Leadership Skill Max Level",
+      "description": [ "Maximum Leadership skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "trade_skill_max": {
+      "display_name": "Trade Skill Max Level",
+      "description": [ "Maximum Trade skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "steward_skill_max": {
+      "display_name": "Steward Skill Max Level",
+      "description": [ "Maximum Steward skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "medicine_skill_max": {
+      "display_name": "Medicine Skill Max Level",
+      "description": [ "Maximum Medicine skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "engineering_skill_max": {
+      "display_name": "Engineering Skill Max Level",
+      "description": [ "Maximum Engineering skill level that will have Archipelago locations." ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "crafting_sanity_max_tier": {
+      "display_name": "Crafting Sanity Max Tier",
+      "description": [ "Maximum weapon tier that will have Archipelago locations. Locations are included for all tiers up to and including this value." ],
+      "type": "Range",
+      "range_start": 1,
+      "range_end": 6,
+      "default": 3,
+      "group": "Crafting Sanity"
+    },
+    "tournament_sanity": {
+      "display_name": "Tournament Sanity",
+      "description": [ "When enabled, winning tournaments in each town will be Archipelago locations." ],
+      "type": "Toggle",
+      "default": true,
+      "group": "Tournament Sanity"
+    },
+    "quest_sanity": {
+      "display_name": "Quest Sanity",
+      "description": [ "When enabled, completing quests will be Archipelago locations. Disabling this overrides all quest subcategory settings." ],
+      "type": "Toggle",
+      "default": true,
+      "group": "Quest Sanity"
+    },
+    "merchant_quest_sanity": {
+      "display_name": "Merchant Quest Sanity",
+      "description": [ "When enabled, completing merchant quests will be Archipelago locations." ],
+      "type": "Toggle",
+      "default": true,
+      "group": "Quest Sanity"
+    },
+    "village_quest_sanity": {
+      "display_name": "Village Quest Sanity",
+      "description": [ "When enabled, completing village quests will be Archipelago locations." ],
+      "type": "Toggle",
+      "default": true,
+      "group": "Quest Sanity"
+    },
+    "lord_quest_sanity": {
+      "display_name": "Lord Quest Sanity",
+      "description": [ "When enabled, completing lord quests will be Archipelago locations." ],
+      "type": "Toggle",
+      "default": true,
+      "group": "Quest Sanity"
+    },
+    "gang_quest_sanity": {
+      "display_name": "Gang Quest Sanity",
+      "description": [ "When enabled, completing gang quests will be Archipelago locations." ],
+      "type": "Toggle",
+      "default": true,
+      "group": "Quest Sanity"
     }
   }
 

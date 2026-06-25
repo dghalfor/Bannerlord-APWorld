@@ -2,14 +2,6 @@
     "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
   "data": [
     {
-      "name": "10 Butter",
-      "count": 3
-    },
-    {
-      "name": "100 Denars",
-      "count": 2
-    },
-    {
       "name": "Progressive sturgia Troop Tier",
       "count": 5,
       "progression": true
@@ -48,7 +40,105 @@
       "name": "Dragon Banner Piece",
       "count": 50,
       "progression": true
+    },
+    {
+      "name": "Small Pouch of Denars"
+    },
+    {
+      "name": "Pouch of Denars"
+    },
+    {
+      "name": "Bag of Denars"
+    },
+    {
+      "name": "Butter"
+    },
+    {
+      "name": "Horse"
+    },
+    {
+      "name": "Small Renown"
+    },
+    {
+      "name": "Renown"
+    },
+    {
+      "name": "Large Renown"
+    },
+    {
+      "name": "Lord Relation"
+    },
+    {
+      "name": "One Handed Scroll",
+      "count": 3
+    },
+    {
+      "name": "Two Handed Scroll",
+      "count": 3
+    },
+    {
+      "name": "Polearm Scroll",
+      "count": 3
+    },
+    {
+      "name": "Bow Scroll",
+      "count": 3
+    },
+    {
+      "name": "Crossbow Scroll",
+      "count": 3
+    },
+    {
+      "name": "Throwing Scroll",
+      "count": 3
+    },
+    {
+      "name": "Riding Scroll",
+      "count": 3
+    },
+    {
+      "name": "Athletics Scroll",
+      "count": 3
+    },
+    {
+      "name": "Crafting Scroll",
+      "count": 3
+    },
+    {
+      "name": "Tactics Scroll",
+      "count": 3
+    },
+    {
+      "name": "Scouting Scroll",
+      "count": 3
+    },
+    {
+      "name": "Roguery Scroll",
+      "count": 3
+    },
+    {
+      "name": "Charm Scroll",
+      "count": 3
+    },
+    {
+      "name": "Leadership Scroll",
+      "count": 3
+    },
+    {
+      "name": "Trade Scroll",
+      "count": 3
+    },
+    {
+      "name": "Steward Scroll",
+      "count": 3
+    },
+    {
+      "name": "Medicine Scroll",
+      "count": 3
+    },
+    {
+      "name": "Engineering Scroll",
+      "count": 3
     }
-
   ]
 }

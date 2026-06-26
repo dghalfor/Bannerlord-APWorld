@@ -1,13 +1,43 @@
 {
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.regions.schema.json",
-  "TournamentWin": {
-    "connects_to": []
+  "TournamentAserai": {
+    "connects_to": [],
+    "requires": "|Tournament Pass - Aserai|"
+  },
+  "TournamentBattania": {
+    "connects_to": [],
+    "requires": "|Tournament Pass - Battania|"
+  },
+  "TournamentKhuzait": {
+    "connects_to": [],
+    "requires": "|Tournament Pass - Khuzait|"
+  },
+  "TournamentSturgia": {
+    "connects_to": [],
+    "requires": "|Tournament Pass - Sturgia|"
+  },
+  "TournamentVlandia": {
+    "connects_to": [],
+    "requires": "|Tournament Pass - Vlandia|"
+  },
+  "TournamentNorthernEmpire": {
+    "connects_to": [],
+    "requires": "|Tournament Pass - Northern Empire|"
+  },
+  "TournamentSouthernEmpire": {
+    "connects_to": [],
+    "requires": "|Tournament Pass - Southern Empire|"
+  },
+  "TournamentWesternEmpire": {
+    "connects_to": [],
+    "requires": "|Tournament Pass - Western Empire|"
   },
   "GangQuest": {
     "connects_to": []
   },
   "LordQuest": {
-    "connects_to": []
+    "connects_to": [],
+    "requires": "|Progressive empire Troop Tier:2| or |Progressive sturgia Troop Tier:2| or |Progressive battania Troop Tier:2| or |Progressive vlandia Troop Tier:2| or |Progressive khuzait Troop Tier:2| or |Progressive aserai Troop Tier:2|"
   },
   "VillageQuest": {
     "connects_to": []

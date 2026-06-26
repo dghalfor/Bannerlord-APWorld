@@ -1,5 +1,5 @@
 {
-    "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
+  "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
   "data": [
     {
       "name": "Progressive sturgia Troop Tier",
@@ -139,6 +139,110 @@
     {
       "name": "Engineering Scroll",
       "count": 3
+    },
+    {
+      "name": "Tournament Pass - Aserai",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Tournament Pass - Battania",
+      "count": 1,
+      "progression": true 
+    },
+    {
+      "name": "Tournament Pass - Khuzait",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Tournament Pass - Sturgia",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Tournament Pass - Vlandia",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Tournament Pass - Northern Empire",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Tournament Pass - Southern Empire",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Tournament Pass - Western Empire",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - One Handed Sword",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - Two Handed Sword",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - One Handed Axe",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - Two Handed Axe",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - Mace",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - Two Handed Mace",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - Dagger",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - Pike",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - Two Handed Polearm",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - Javelin",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - Throwing Axe",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Recipe - Throwing Knife",
+      "count": 1,
+      "progression": true
+    },
+    {
+      "name": "Crafting Plan Bundle",
+      "count": 10
     }
   ]
-}
+} 

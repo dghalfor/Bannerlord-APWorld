@@ -18,7 +18,7 @@ import inspect
 import logging
 
 if TYPE_CHECKING:
-    from . import ManualWorld
+    from . import BannerlordWorld
 
 class LogicErrorSource(IntEnum):
     INFIX_TO_POSTFIX = 1 # includes more closing parentheses than opening (but not the opposite)
@@ -101,7 +101,7 @@ def evaluate_postfix(expr: str, location: str) -> bool:
 
     return stack.pop()
 
-def set_rules(world: "ManualWorld", multiworld: MultiWorld, player: int):
+def set_rules(world: "BannerlordWorld", multiworld: MultiWorld, player: int):
     # this is only called when the area (think, location or region) has a "requires" field that is a string
     def checkRequireStringForArea(state: CollectionState, area: dict):
         requires_list = area["requires"]
@@ -348,13 +348,13 @@ def set_rules(world: "ManualWorld", multiworld: MultiWorld, player: int):
 
     def convert_req_function_args(state: CollectionState, func, args: list[str], areaName: str):
         parameters = inspect.signature(func).parameters
-        knownParameters = [World, 'ManualWorld', MultiWorld, CollectionState]
+        knownParameters = [World, 'BannerlordWorld', MultiWorld, CollectionState]
         index = -1
         for parameter in parameters.values():
             target_type = parameter.annotation
             index += 1
             if target_type in knownParameters:
-                if target_type in [World, 'ManualWorld']:
+                if target_type in [World, 'BannerlordWorld']:
                     args.insert(index, world)
                 elif target_type == MultiWorld:
                     args.insert(index, multiworld)
@@ -408,7 +408,7 @@ def ItemValue(state: CollectionState, player: int, valueCount: str):
 
 
 # Two useful functions to make require work if an item is disabled instead of making it inaccessible
-def OptOne(world: "ManualWorld", item: str) -> str:
+def OptOne(world: "BannerlordWorld", item: str) -> str:
     """Check if the passed item (with or without ||) is enabled, then this returns |item:count|
     where count is clamped to the maximum number of said item in the itempool.\n
     Eg. requires: "{OptOne(|DisabledItem|)} and |other items|" become "|DisabledItem:0| and |other items|" if the item is disabled.
@@ -476,15 +476,15 @@ def CanReachLocation(state: CollectionState, player: int, location: str) -> bool
         return True
     return False
 
-def OptionCount(world: "ManualWorld", item: str, option_name: str) -> str:
+def OptionCount(world: "BannerlordWorld", item: str, option_name: str) -> str:
     """Set the required count of 'item' to be the value set in the player's yaml of the Numerical option 'option_name'."""
     return _optionCountLogic(world, item, option_name )
 
-def OptionCountPercent(world: "ManualWorld", item: str, option_name: str) -> str:
+def OptionCountPercent(world: "BannerlordWorld", item: str, option_name: str) -> str:
     """Set the required count of 'item' to be a percentage of it total count based on the player's yaml value for Numerical option 'option_name'."""
     return _optionCountLogic(world, item, option_name, is_percent=True)
 
-def _optionCountLogic(world: "ManualWorld", item: str, option_name: str, is_percent: bool = False) -> str:
+def _optionCountLogic(world: "BannerlordWorld", item: str, option_name: str, is_percent: bool = False) -> str:
     option_name = option_name.strip()
     option: NumericOption | None = getattr(world.options, option_name, None)
     if option is None:
@@ -505,9 +505,9 @@ def YamlDisabled(multiworld: MultiWorld, player: int, param: str) -> bool:
     """Is a yaml option disabled?"""
     return not is_option_enabled(multiworld, player, param)
 
-def YamlCompare(world: "ManualWorld", multiworld: MultiWorld, state: CollectionState, player: int, args: str, skipCache: bool = False) -> bool:
+def YamlCompare(world: "BannerlordWorld", multiworld: MultiWorld, state: CollectionState, player: int, args: str, skipCache: bool = False) -> bool:
     """Is a yaml option's value compared using {comparator} to the requested value
-    \nFormat it like {YamlCompare(OptionName==value)}
+    \nFormat it like {YamlCompare(OptionName==value)}   
     \nWhere == can be any of the following: ==, !=, >=, <=, <, >
     \nExample: {YamlCompare(Example_Range > 5)}"""
     comp_symbols = { #Maybe find a better name for this

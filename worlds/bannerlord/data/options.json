@@ -42,7 +42,11 @@
     },
     "onehanded_skill_max": {
       "display_name": "One-Handed Skill Max Level",
-      "description": [ "Maximum One-Handed skill level that will have Archipelago locations. Locations are added in multiples of 25 up to this value." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum One-Handed skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -51,7 +55,11 @@
     },
     "twohanded_skill_max": {
       "display_name": "Two-Handed Skill Max Level",
-      "description": [ "Maximum Two-Handed skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Two-Handed skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -60,7 +68,11 @@
     },
     "polearm_skill_max": {
       "display_name": "Polearm Skill Max Level",
-      "description": [ "Maximum Polearm skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Polearm skill level that will have Archipelago locations.",
+        " Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -69,7 +81,11 @@
     },
     "bow_skill_max": {
       "display_name": "Bow Skill Max Level",
-      "description": [ "Maximum Bow skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Bow skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -78,7 +94,11 @@
     },
     "crossbow_skill_max": {
       "display_name": "Crossbow Skill Max Level",
-      "description": [ "Maximum Crossbow skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Crossbow skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -87,7 +107,11 @@
     },
     "throwing_skill_max": {
       "display_name": "Throwing Skill Max Level",
-      "description": [ "Maximum Throwing skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Throwing skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -96,7 +120,11 @@
     },
     "riding_skill_max": {
       "display_name": "Riding Skill Max Level",
-      "description": [ "Maximum Riding skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Riding skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -105,7 +133,11 @@
     },
     "athletics_skill_max": {
       "display_name": "Athletics Skill Max Level",
-      "description": [ "Maximum Athletics skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Athletics skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -114,7 +146,7 @@
     },
     "crafting_skill_max": {
       "display_name": "Crafting Skill Max Level",
-      "description": [ "Maximum Crafting (Smithing) skill level that will have Archipelago locations." ],
+      "description": [ "Maximum Crafting (Smithing) skill level that will have Archipelago locations. Locations are added in multiples of 25 up to this value." ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -123,7 +155,11 @@
     },
     "scouting_skill_max": {
       "display_name": "Scouting Skill Max Level",
-      "description": [ "Maximum Scouting skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Scouting skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -132,7 +168,11 @@
     },
     "tactics_skill_max": {
       "display_name": "Tactics Skill Max Level",
-      "description": [ "Maximum Tactics skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Tactics skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -141,7 +181,11 @@
     },
     "roguery_skill_max": {
       "display_name": "Roguery Skill Max Level",
-      "description": [ "Maximum Roguery skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Roguery skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -150,7 +194,11 @@
     },
     "charm_skill_max": {
       "display_name": "Charm Skill Max Level",
-      "description": [ "Maximum Charm skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Charm skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -159,7 +207,11 @@
     },
     "leadership_skill_max": {
       "display_name": "Leadership Skill Max Level",
-      "description": [ "Maximum Leadership skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Leadership skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -168,7 +220,11 @@
     },
     "trade_skill_max": {
       "display_name": "Trade Skill Max Level",
-      "description": [ "Maximum Trade skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Trade skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -177,7 +233,11 @@
     },
     "steward_skill_max": {
       "display_name": "Steward Skill Max Level",
-      "description": [ "Maximum Steward skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Steward skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -186,7 +246,11 @@
     },
     "medicine_skill_max": {
       "display_name": "Medicine Skill Max Level",
-      "description": [ "Maximum Medicine skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Medicine skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,
@@ -195,7 +259,11 @@
     },
     "engineering_skill_max": {
       "display_name": "Engineering Skill Max Level",
-      "description": [ "Maximum Engineering skill level that will have Archipelago locations." ],
+      "description": [
+        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
+        "Maximum Engineering skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
       "type": "Range",
       "range_start": 25,
       "range_end": 300,

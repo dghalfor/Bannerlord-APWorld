@@ -69,76 +69,124 @@
       "name": "Lord Relation"
     },
     {
-      "name": "One Handed Scroll",
-      "count": 3
+      "name": "Vigor Attribute",
+      "count": 7,
+      "progression": true
     },
     {
-      "name": "Two Handed Scroll",
-      "count": 3
+      "name": "Control Attribute",
+      "count": 7,
+      "progression": true
     },
     {
-      "name": "Polearm Scroll",
-      "count": 3
+      "name": "Endurance Attribute",
+      "count": 7,
+      "progression": true
     },
     {
-      "name": "Bow Scroll",
-      "count": 3
+      "name": "Cunning Attribute",
+      "count": 7,
+      "progression": true
     },
     {
-      "name": "Crossbow Scroll",
-      "count": 3
+      "name": "Social Attribute",
+      "count": 7,
+      "progression": true
     },
     {
-      "name": "Throwing Scroll",
-      "count": 3
+      "name": "Intelligence Attribute",
+      "count": 7,
+      "progression": true
     },
     {
-      "name": "Riding Scroll",
-      "count": 3
+      "name": "OneHanded Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Athletics Scroll",
-      "count": 3
+      "name": "TwoHanded Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Crafting Scroll",
-      "count": 3
+      "name": "Polearm Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Tactics Scroll",
-      "count": 3
+      "name": "Bow Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Scouting Scroll",
-      "count": 3
+      "name": "Crossbow Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Roguery Scroll",
-      "count": 3
+      "name": "Throwing Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Charm Scroll",
-      "count": 3
+      "name": "Riding Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Leadership Scroll",
-      "count": 3
+      "name": "Athletics Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Trade Scroll",
-      "count": 3
+      "name": "Crafting Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Steward Scroll",
-      "count": 3
+      "name": "Scouting Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Medicine Scroll",
-      "count": 3
+      "name": "Tactics Focus",
+      "count": 5,
+      "progression": true
     },
     {
-      "name": "Engineering Scroll",
-      "count": 3
+      "name": "Roguery Focus",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Charm Focus",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Leadership Focus",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Trade Focus",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Steward Focus",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Medicine Focus",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Engineering Focus",
+      "count": 5,
+      "progression": true
     },
     {
       "name": "Tournament Pass - Aserai",
@@ -148,7 +196,7 @@
     {
       "name": "Tournament Pass - Battania",
       "count": 1,
-      "progression": true 
+      "progression": true
     },
     {
       "name": "Tournament Pass - Khuzait",

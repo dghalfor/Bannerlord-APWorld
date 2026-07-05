@@ -89,7 +89,8 @@
     {
       "name": "Landlord Training for Retainers Quest",
       "category": [ "Quest", "VillageQuest" ],
-      "region": "VillageQuest"
+      "region": "VillageQuest",
+      "requires": "|Progressive empire Troop Tier:1| or |Progressive sturgia Troop Tier:1| or |Progressive battania Troop Tier:1| or |Progressive vlandia Troop Tier:1| or |Progressive khuzait Troop Tier:1| or |Progressive aserai Troop Tier:1|"
     },
     {
       "name": "Lesser Noble Revolt Quest",
@@ -1565,1100 +1566,1857 @@
     },
     {
       "name": "OneHanded Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "OneHanded Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:2| OR |OneHanded Focus:1|"
     },
     {
       "name": "OneHanded Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:4| OR (|OneHanded Focus:1| AND |Vigor Attribute:1|) OR |OneHanded Focus:2|"
     },
     {
       "name": "OneHanded Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:5| OR (|OneHanded Focus:1| AND |Vigor Attribute:2|) OR |OneHanded Focus:2|"
     },
     {
       "name": "OneHanded Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:7| OR (|OneHanded Focus:1| AND |Vigor Attribute:4|) OR (|OneHanded Focus:2| AND |Vigor Attribute:1|) OR |OneHanded Focus:3|"
     },
     {
       "name": "OneHanded Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|OneHanded Focus:1| AND |Vigor Attribute:6|) OR (|OneHanded Focus:2| AND |Vigor Attribute:3|) OR |OneHanded Focus:3|"
     },
     {
       "name": "OneHanded Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|OneHanded Focus:2| AND |Vigor Attribute:5|) OR (|OneHanded Focus:3| AND |Vigor Attribute:2|) OR |OneHanded Focus:4|"
     },
     {
       "name": "OneHanded Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|OneHanded Focus:2| AND |Vigor Attribute:7|) OR (|OneHanded Focus:3| AND |Vigor Attribute:4|) OR (|OneHanded Focus:4| AND |Vigor Attribute:1|) OR |OneHanded Focus:5|"
     },
     {
       "name": "OneHanded Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|OneHanded Focus:3| AND |Vigor Attribute:6|) OR (|OneHanded Focus:4| AND |Vigor Attribute:3|) OR |OneHanded Focus:5|"
     },
     {
       "name": "OneHanded Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|OneHanded Focus:3| AND |Vigor Attribute:7|) OR (|OneHanded Focus:4| AND |Vigor Attribute:5|) OR (|OneHanded Focus:5| AND |Vigor Attribute:2|)"
     },
     {
       "name": "OneHanded Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|OneHanded Focus:4| AND |Vigor Attribute:6|) OR (|OneHanded Focus:5| AND |Vigor Attribute:4|)"
     },
     {
       "name": "OneHanded Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|OneHanded Focus:5| AND |Vigor Attribute:5|)"
     },
-
+    {
+      "name": "OneHanded Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|OneHanded Focus:5| AND |Vigor Attribute:7|)"
+    },
     {
       "name": "TwoHanded Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "TwoHanded Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:2| OR |TwoHanded Focus:1|"
     },
     {
       "name": "TwoHanded Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:4| OR (|TwoHanded Focus:1| AND |Vigor Attribute:1|) OR |TwoHanded Focus:2|"
     },
     {
       "name": "TwoHanded Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:5| OR (|TwoHanded Focus:1| AND |Vigor Attribute:2|) OR |TwoHanded Focus:2|"
     },
     {
       "name": "TwoHanded Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:7| OR (|TwoHanded Focus:1| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:2| AND |Vigor Attribute:1|) OR |TwoHanded Focus:3|"
     },
     {
       "name": "TwoHanded Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|TwoHanded Focus:1| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:2| AND |Vigor Attribute:3|) OR |TwoHanded Focus:3|"
     },
     {
       "name": "TwoHanded Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|TwoHanded Focus:2| AND |Vigor Attribute:5|) OR (|TwoHanded Focus:3| AND |Vigor Attribute:2|) OR |TwoHanded Focus:4|"
     },
     {
       "name": "TwoHanded Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|TwoHanded Focus:2| AND |Vigor Attribute:7|) OR (|TwoHanded Focus:3| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:1|) OR |TwoHanded Focus:5|"
     },
     {
       "name": "TwoHanded Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|TwoHanded Focus:3| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:3|) OR |TwoHanded Focus:5|"
     },
     {
       "name": "TwoHanded Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|TwoHanded Focus:3| AND |Vigor Attribute:7|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:5|) OR (|TwoHanded Focus:5| AND |Vigor Attribute:2|)"
     },
     {
       "name": "TwoHanded Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|TwoHanded Focus:4| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:5| AND |Vigor Attribute:4|)"
     },
     {
       "name": "TwoHanded Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|TwoHanded Focus:5| AND |Vigor Attribute:5|)"
     },
-
+    {
+      "name": "TwoHanded Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|TwoHanded Focus:5| AND |Vigor Attribute:7|)"
+    },
     {
       "name": "Polearm Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Polearm Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:2| OR |Polearm Focus:1|"
     },
     {
       "name": "Polearm Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:4| OR (|Polearm Focus:1| AND |Vigor Attribute:1|) OR |Polearm Focus:2|"
     },
     {
       "name": "Polearm Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:5| OR (|Polearm Focus:1| AND |Vigor Attribute:2|) OR |Polearm Focus:2|"
     },
     {
       "name": "Polearm Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Vigor Attribute:7| OR (|Polearm Focus:1| AND |Vigor Attribute:4|) OR (|Polearm Focus:2| AND |Vigor Attribute:1|) OR |Polearm Focus:3|"
     },
     {
       "name": "Polearm Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Polearm Focus:1| AND |Vigor Attribute:6|) OR (|Polearm Focus:2| AND |Vigor Attribute:3|) OR |Polearm Focus:3|"
     },
     {
       "name": "Polearm Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Polearm Focus:2| AND |Vigor Attribute:5|) OR (|Polearm Focus:3| AND |Vigor Attribute:2|) OR |Polearm Focus:4|"
     },
     {
       "name": "Polearm Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Polearm Focus:2| AND |Vigor Attribute:7|) OR (|Polearm Focus:3| AND |Vigor Attribute:4|) OR (|Polearm Focus:4| AND |Vigor Attribute:1|) OR |Polearm Focus:5|"
     },
     {
       "name": "Polearm Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Polearm Focus:3| AND |Vigor Attribute:6|) OR (|Polearm Focus:4| AND |Vigor Attribute:3|) OR |Polearm Focus:5|"
     },
     {
       "name": "Polearm Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Polearm Focus:3| AND |Vigor Attribute:7|) OR (|Polearm Focus:4| AND |Vigor Attribute:5|) OR (|Polearm Focus:5| AND |Vigor Attribute:2|)"
     },
     {
       "name": "Polearm Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Polearm Focus:4| AND |Vigor Attribute:6|) OR (|Polearm Focus:5| AND |Vigor Attribute:4|)"
     },
     {
       "name": "Polearm Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Polearm Focus:5| AND |Vigor Attribute:5|)"
     },
-
+    {
+      "name": "Polearm Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Polearm Focus:5| AND |Vigor Attribute:7|)"
+    },
     {
       "name": "Bow Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Bow Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:2| OR |Bow Focus:1|"
     },
     {
       "name": "Bow Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:4| OR (|Bow Focus:1| AND |Control Attribute:1|) OR |Bow Focus:2|"
     },
     {
       "name": "Bow Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:5| OR (|Bow Focus:1| AND |Control Attribute:2|) OR |Bow Focus:2|"
     },
     {
       "name": "Bow Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:7| OR (|Bow Focus:1| AND |Control Attribute:4|) OR (|Bow Focus:2| AND |Control Attribute:1|) OR |Bow Focus:3|"
     },
     {
       "name": "Bow Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Bow Focus:1| AND |Control Attribute:6|) OR (|Bow Focus:2| AND |Control Attribute:3|) OR |Bow Focus:3|"
     },
     {
       "name": "Bow Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Bow Focus:2| AND |Control Attribute:5|) OR (|Bow Focus:3| AND |Control Attribute:2|) OR |Bow Focus:4|"
     },
     {
       "name": "Bow Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Bow Focus:2| AND |Control Attribute:7|) OR (|Bow Focus:3| AND |Control Attribute:4|) OR (|Bow Focus:4| AND |Control Attribute:1|) OR |Bow Focus:5|"
     },
     {
       "name": "Bow Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Bow Focus:3| AND |Control Attribute:6|) OR (|Bow Focus:4| AND |Control Attribute:3|) OR |Bow Focus:5|"
     },
     {
       "name": "Bow Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Bow Focus:3| AND |Control Attribute:7|) OR (|Bow Focus:4| AND |Control Attribute:5|) OR (|Bow Focus:5| AND |Control Attribute:2|)"
     },
     {
       "name": "Bow Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Bow Focus:4| AND |Control Attribute:6|) OR (|Bow Focus:5| AND |Control Attribute:4|)"
     },
     {
       "name": "Bow Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Bow Focus:5| AND |Control Attribute:5|)"
     },
-
+    {
+      "name": "Bow Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Bow Focus:5| AND |Control Attribute:7|)"
+    },
     {
       "name": "Crossbow Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Crossbow Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:2| OR |Crossbow Focus:1|"
     },
     {
       "name": "Crossbow Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:4| OR (|Crossbow Focus:1| AND |Control Attribute:1|) OR |Crossbow Focus:2|"
     },
     {
       "name": "Crossbow Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:5| OR (|Crossbow Focus:1| AND |Control Attribute:2|) OR |Crossbow Focus:2|"
     },
     {
       "name": "Crossbow Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:7| OR (|Crossbow Focus:1| AND |Control Attribute:4|) OR (|Crossbow Focus:2| AND |Control Attribute:1|) OR |Crossbow Focus:3|"
     },
     {
       "name": "Crossbow Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crossbow Focus:1| AND |Control Attribute:6|) OR (|Crossbow Focus:2| AND |Control Attribute:3|) OR |Crossbow Focus:3|"
     },
     {
       "name": "Crossbow Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crossbow Focus:2| AND |Control Attribute:5|) OR (|Crossbow Focus:3| AND |Control Attribute:2|) OR |Crossbow Focus:4|"
     },
     {
       "name": "Crossbow Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crossbow Focus:2| AND |Control Attribute:7|) OR (|Crossbow Focus:3| AND |Control Attribute:4|) OR (|Crossbow Focus:4| AND |Control Attribute:1|) OR |Crossbow Focus:5|"
     },
     {
       "name": "Crossbow Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crossbow Focus:3| AND |Control Attribute:6|) OR (|Crossbow Focus:4| AND |Control Attribute:3|) OR |Crossbow Focus:5|"
     },
     {
       "name": "Crossbow Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crossbow Focus:3| AND |Control Attribute:7|) OR (|Crossbow Focus:4| AND |Control Attribute:5|) OR (|Crossbow Focus:5| AND |Control Attribute:2|)"
     },
     {
       "name": "Crossbow Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crossbow Focus:4| AND |Control Attribute:6|) OR (|Crossbow Focus:5| AND |Control Attribute:4|)"
     },
     {
       "name": "Crossbow Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crossbow Focus:5| AND |Control Attribute:5|)"
     },
-
+    {
+      "name": "Crossbow Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crossbow Focus:5| AND |Control Attribute:7|)"
+    },
     {
       "name": "Throwing Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Throwing Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:2| OR |Throwing Focus:1|"
     },
     {
       "name": "Throwing Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:4| OR (|Throwing Focus:1| AND |Control Attribute:1|) OR |Throwing Focus:2|"
     },
     {
       "name": "Throwing Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:5| OR (|Throwing Focus:1| AND |Control Attribute:2|) OR |Throwing Focus:2|"
     },
     {
       "name": "Throwing Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Control Attribute:7| OR (|Throwing Focus:1| AND |Control Attribute:4|) OR (|Throwing Focus:2| AND |Control Attribute:1|) OR |Throwing Focus:3|"
     },
     {
       "name": "Throwing Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Throwing Focus:1| AND |Control Attribute:6|) OR (|Throwing Focus:2| AND |Control Attribute:3|) OR |Throwing Focus:3|"
     },
     {
       "name": "Throwing Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Throwing Focus:2| AND |Control Attribute:5|) OR (|Throwing Focus:3| AND |Control Attribute:2|) OR |Throwing Focus:4|"
     },
     {
       "name": "Throwing Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Throwing Focus:2| AND |Control Attribute:7|) OR (|Throwing Focus:3| AND |Control Attribute:4|) OR (|Throwing Focus:4| AND |Control Attribute:1|) OR |Throwing Focus:5|"
     },
     {
       "name": "Throwing Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Throwing Focus:3| AND |Control Attribute:6|) OR (|Throwing Focus:4| AND |Control Attribute:3|) OR |Throwing Focus:5|"
     },
     {
       "name": "Throwing Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Throwing Focus:3| AND |Control Attribute:7|) OR (|Throwing Focus:4| AND |Control Attribute:5|) OR (|Throwing Focus:5| AND |Control Attribute:2|)"
     },
     {
       "name": "Throwing Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Throwing Focus:4| AND |Control Attribute:6|) OR (|Throwing Focus:5| AND |Control Attribute:4|)"
     },
     {
       "name": "Throwing Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Throwing Focus:5| AND |Control Attribute:5|)"
     },
-
+    {
+      "name": "Throwing Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Throwing Focus:5| AND |Control Attribute:7|)"
+    },
     {
       "name": "Riding Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Riding Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:2| OR |Riding Focus:1|"
     },
     {
       "name": "Riding Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:4| OR (|Riding Focus:1| AND |Endurance Attribute:1|) OR |Riding Focus:2|"
     },
     {
       "name": "Riding Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:5| OR (|Riding Focus:1| AND |Endurance Attribute:2|) OR |Riding Focus:2|"
     },
     {
       "name": "Riding Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:7| OR (|Riding Focus:1| AND |Endurance Attribute:4|) OR (|Riding Focus:2| AND |Endurance Attribute:1|) OR |Riding Focus:3|"
     },
     {
       "name": "Riding Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Riding Focus:1| AND |Endurance Attribute:6|) OR (|Riding Focus:2| AND |Endurance Attribute:3|) OR |Riding Focus:3|"
     },
     {
       "name": "Riding Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Riding Focus:2| AND |Endurance Attribute:5|) OR (|Riding Focus:3| AND |Endurance Attribute:2|) OR |Riding Focus:4|"
     },
     {
       "name": "Riding Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Riding Focus:2| AND |Endurance Attribute:7|) OR (|Riding Focus:3| AND |Endurance Attribute:4|) OR (|Riding Focus:4| AND |Endurance Attribute:1|) OR |Riding Focus:5|"
     },
     {
       "name": "Riding Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Riding Focus:3| AND |Endurance Attribute:6|) OR (|Riding Focus:4| AND |Endurance Attribute:3|) OR |Riding Focus:5|"
     },
     {
       "name": "Riding Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Riding Focus:3| AND |Endurance Attribute:7|) OR (|Riding Focus:4| AND |Endurance Attribute:5|) OR (|Riding Focus:5| AND |Endurance Attribute:2|)"
     },
     {
       "name": "Riding Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Riding Focus:4| AND |Endurance Attribute:6|) OR (|Riding Focus:5| AND |Endurance Attribute:4|)"
     },
     {
       "name": "Riding Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Riding Focus:5| AND |Endurance Attribute:5|)"
     },
-
+    {
+      "name": "Riding Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Riding Focus:5| AND |Endurance Attribute:7|)"
+    },
     {
       "name": "Athletics Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Athletics Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:2| OR |Athletics Focus:1|"
     },
     {
       "name": "Athletics Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:4| OR (|Athletics Focus:1| AND |Endurance Attribute:1|) OR |Athletics Focus:2|"
     },
     {
       "name": "Athletics Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:5| OR (|Athletics Focus:1| AND |Endurance Attribute:2|) OR |Athletics Focus:2|"
     },
     {
       "name": "Athletics Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:7| OR (|Athletics Focus:1| AND |Endurance Attribute:4|) OR (|Athletics Focus:2| AND |Endurance Attribute:1|) OR |Athletics Focus:3|"
     },
     {
       "name": "Athletics Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Athletics Focus:1| AND |Endurance Attribute:6|) OR (|Athletics Focus:2| AND |Endurance Attribute:3|) OR |Athletics Focus:3|"
     },
     {
       "name": "Athletics Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Athletics Focus:2| AND |Endurance Attribute:5|) OR (|Athletics Focus:3| AND |Endurance Attribute:2|) OR |Athletics Focus:4|"
     },
     {
       "name": "Athletics Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Athletics Focus:2| AND |Endurance Attribute:7|) OR (|Athletics Focus:3| AND |Endurance Attribute:4|) OR (|Athletics Focus:4| AND |Endurance Attribute:1|) OR |Athletics Focus:5|"
     },
     {
       "name": "Athletics Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Athletics Focus:3| AND |Endurance Attribute:6|) OR (|Athletics Focus:4| AND |Endurance Attribute:3|) OR |Athletics Focus:5|"
     },
     {
       "name": "Athletics Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Athletics Focus:3| AND |Endurance Attribute:7|) OR (|Athletics Focus:4| AND |Endurance Attribute:5|) OR (|Athletics Focus:5| AND |Endurance Attribute:2|)"
     },
     {
       "name": "Athletics Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Athletics Focus:4| AND |Endurance Attribute:6|) OR (|Athletics Focus:5| AND |Endurance Attribute:4|)"
     },
     {
       "name": "Athletics Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Athletics Focus:5| AND |Endurance Attribute:5|)"
     },
-
+    {
+      "name": "Athletics Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Athletics Focus:5| AND |Endurance Attribute:7|)"
+    },
     {
       "name": "Crafting Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Crafting Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:2| OR |Crafting Focus:1|"
     },
     {
       "name": "Crafting Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:4| OR (|Crafting Focus:1| AND |Endurance Attribute:1|) OR |Crafting Focus:2|"
     },
     {
       "name": "Crafting Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:5| OR (|Crafting Focus:1| AND |Endurance Attribute:2|) OR |Crafting Focus:2|"
     },
     {
       "name": "Crafting Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Endurance Attribute:7| OR (|Crafting Focus:1| AND |Endurance Attribute:4|) OR (|Crafting Focus:2| AND |Endurance Attribute:1|) OR |Crafting Focus:3|"
     },
     {
       "name": "Crafting Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crafting Focus:1| AND |Endurance Attribute:6|) OR (|Crafting Focus:2| AND |Endurance Attribute:3|) OR |Crafting Focus:3|"
     },
     {
       "name": "Crafting Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crafting Focus:2| AND |Endurance Attribute:5|) OR (|Crafting Focus:3| AND |Endurance Attribute:2|) OR |Crafting Focus:4|"
     },
     {
       "name": "Crafting Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crafting Focus:2| AND |Endurance Attribute:7|) OR (|Crafting Focus:3| AND |Endurance Attribute:4|) OR (|Crafting Focus:4| AND |Endurance Attribute:1|) OR |Crafting Focus:5|"
     },
     {
       "name": "Crafting Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crafting Focus:3| AND |Endurance Attribute:6|) OR (|Crafting Focus:4| AND |Endurance Attribute:3|) OR |Crafting Focus:5|"
     },
     {
       "name": "Crafting Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crafting Focus:3| AND |Endurance Attribute:7|) OR (|Crafting Focus:4| AND |Endurance Attribute:5|) OR (|Crafting Focus:5| AND |Endurance Attribute:2|)"
     },
     {
       "name": "Crafting Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crafting Focus:4| AND |Endurance Attribute:6|) OR (|Crafting Focus:5| AND |Endurance Attribute:4|)"
     },
     {
       "name": "Crafting Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crafting Focus:5| AND |Endurance Attribute:5|)"
     },
-
+    {
+      "name": "Crafting Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Crafting Focus:5| AND |Endurance Attribute:7|)"
+    },
     {
       "name": "Scouting Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Scouting Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:2| OR |Scouting Focus:1|"
     },
     {
       "name": "Scouting Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:4| OR (|Scouting Focus:1| AND |Cunning Attribute:1|) OR |Scouting Focus:2|"
     },
     {
       "name": "Scouting Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:5| OR (|Scouting Focus:1| AND |Cunning Attribute:2|) OR |Scouting Focus:2|"
     },
     {
       "name": "Scouting Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:7| OR (|Scouting Focus:1| AND |Cunning Attribute:4|) OR (|Scouting Focus:2| AND |Cunning Attribute:1|) OR |Scouting Focus:3|"
     },
     {
       "name": "Scouting Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Scouting Focus:1| AND |Cunning Attribute:6|) OR (|Scouting Focus:2| AND |Cunning Attribute:3|) OR |Scouting Focus:3|"
     },
     {
       "name": "Scouting Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Scouting Focus:2| AND |Cunning Attribute:5|) OR (|Scouting Focus:3| AND |Cunning Attribute:2|) OR |Scouting Focus:4|"
     },
     {
       "name": "Scouting Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Scouting Focus:2| AND |Cunning Attribute:7|) OR (|Scouting Focus:3| AND |Cunning Attribute:4|) OR (|Scouting Focus:4| AND |Cunning Attribute:1|) OR |Scouting Focus:5|"
     },
     {
       "name": "Scouting Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Scouting Focus:3| AND |Cunning Attribute:6|) OR (|Scouting Focus:4| AND |Cunning Attribute:3|) OR |Scouting Focus:5|"
     },
     {
       "name": "Scouting Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Scouting Focus:3| AND |Cunning Attribute:7|) OR (|Scouting Focus:4| AND |Cunning Attribute:5|) OR (|Scouting Focus:5| AND |Cunning Attribute:2|)"
     },
     {
       "name": "Scouting Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Scouting Focus:4| AND |Cunning Attribute:6|) OR (|Scouting Focus:5| AND |Cunning Attribute:4|)"
     },
     {
       "name": "Scouting Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Scouting Focus:5| AND |Cunning Attribute:5|)"
     },
-
+    {
+      "name": "Scouting Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Scouting Focus:5| AND |Cunning Attribute:7|)"
+    },
     {
       "name": "Tactics Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Tactics Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:2| OR |Tactics Focus:1|"
     },
     {
       "name": "Tactics Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:4| OR (|Tactics Focus:1| AND |Cunning Attribute:1|) OR |Tactics Focus:2|"
     },
     {
       "name": "Tactics Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:5| OR (|Tactics Focus:1| AND |Cunning Attribute:2|) OR |Tactics Focus:2|"
     },
     {
       "name": "Tactics Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:7| OR (|Tactics Focus:1| AND |Cunning Attribute:4|) OR (|Tactics Focus:2| AND |Cunning Attribute:1|) OR |Tactics Focus:3|"
     },
     {
       "name": "Tactics Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Tactics Focus:1| AND |Cunning Attribute:6|) OR (|Tactics Focus:2| AND |Cunning Attribute:3|) OR |Tactics Focus:3|"
     },
     {
       "name": "Tactics Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Tactics Focus:2| AND |Cunning Attribute:5|) OR (|Tactics Focus:3| AND |Cunning Attribute:2|) OR |Tactics Focus:4|"
     },
     {
       "name": "Tactics Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Tactics Focus:2| AND |Cunning Attribute:7|) OR (|Tactics Focus:3| AND |Cunning Attribute:4|) OR (|Tactics Focus:4| AND |Cunning Attribute:1|) OR |Tactics Focus:5|"
     },
     {
       "name": "Tactics Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Tactics Focus:3| AND |Cunning Attribute:6|) OR (|Tactics Focus:4| AND |Cunning Attribute:3|) OR |Tactics Focus:5|"
     },
     {
       "name": "Tactics Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Tactics Focus:3| AND |Cunning Attribute:7|) OR (|Tactics Focus:4| AND |Cunning Attribute:5|) OR (|Tactics Focus:5| AND |Cunning Attribute:2|)"
     },
     {
       "name": "Tactics Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Tactics Focus:4| AND |Cunning Attribute:6|) OR (|Tactics Focus:5| AND |Cunning Attribute:4|)"
     },
     {
       "name": "Tactics Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Tactics Focus:5| AND |Cunning Attribute:5|)"
     },
-
+    {
+      "name": "Tactics Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Tactics Focus:5| AND |Cunning Attribute:7|)"
+    },
     {
       "name": "Roguery Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Roguery Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:2| OR |Roguery Focus:1|"
     },
     {
       "name": "Roguery Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:4| OR (|Roguery Focus:1| AND |Cunning Attribute:1|) OR |Roguery Focus:2|"
     },
     {
       "name": "Roguery Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:5| OR (|Roguery Focus:1| AND |Cunning Attribute:2|) OR |Roguery Focus:2|"
     },
     {
       "name": "Roguery Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Cunning Attribute:7| OR (|Roguery Focus:1| AND |Cunning Attribute:4|) OR (|Roguery Focus:2| AND |Cunning Attribute:1|) OR |Roguery Focus:3|"
     },
     {
       "name": "Roguery Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Roguery Focus:1| AND |Cunning Attribute:6|) OR (|Roguery Focus:2| AND |Cunning Attribute:3|) OR |Roguery Focus:3|"
     },
     {
       "name": "Roguery Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Roguery Focus:2| AND |Cunning Attribute:5|) OR (|Roguery Focus:3| AND |Cunning Attribute:2|) OR |Roguery Focus:4|"
     },
     {
       "name": "Roguery Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Roguery Focus:2| AND |Cunning Attribute:7|) OR (|Roguery Focus:3| AND |Cunning Attribute:4|) OR (|Roguery Focus:4| AND |Cunning Attribute:1|) OR |Roguery Focus:5|"
     },
     {
       "name": "Roguery Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Roguery Focus:3| AND |Cunning Attribute:6|) OR (|Roguery Focus:4| AND |Cunning Attribute:3|) OR |Roguery Focus:5|"
     },
     {
       "name": "Roguery Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Roguery Focus:3| AND |Cunning Attribute:7|) OR (|Roguery Focus:4| AND |Cunning Attribute:5|) OR (|Roguery Focus:5| AND |Cunning Attribute:2|)"
     },
     {
       "name": "Roguery Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Roguery Focus:4| AND |Cunning Attribute:6|) OR (|Roguery Focus:5| AND |Cunning Attribute:4|)"
     },
     {
       "name": "Roguery Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Roguery Focus:5| AND |Cunning Attribute:5|)"
     },
-
+    {
+      "name": "Roguery Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Roguery Focus:5| AND |Cunning Attribute:7|)"
+    },
     {
       "name": "Charm Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Charm Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:2| OR |Charm Focus:1|"
     },
     {
       "name": "Charm Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:4| OR (|Charm Focus:1| AND |Social Attribute:1|) OR |Charm Focus:2|"
     },
     {
       "name": "Charm Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:5| OR (|Charm Focus:1| AND |Social Attribute:2|) OR |Charm Focus:2|"
     },
     {
       "name": "Charm Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:7| OR (|Charm Focus:1| AND |Social Attribute:4|) OR (|Charm Focus:2| AND |Social Attribute:1|) OR |Charm Focus:3|"
     },
     {
       "name": "Charm Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Charm Focus:1| AND |Social Attribute:6|) OR (|Charm Focus:2| AND |Social Attribute:3|) OR |Charm Focus:3|"
     },
     {
       "name": "Charm Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Charm Focus:2| AND |Social Attribute:5|) OR (|Charm Focus:3| AND |Social Attribute:2|) OR |Charm Focus:4|"
     },
     {
       "name": "Charm Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Charm Focus:2| AND |Social Attribute:7|) OR (|Charm Focus:3| AND |Social Attribute:4|) OR (|Charm Focus:4| AND |Social Attribute:1|) OR |Charm Focus:5|"
     },
     {
       "name": "Charm Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Charm Focus:3| AND |Social Attribute:6|) OR (|Charm Focus:4| AND |Social Attribute:3|) OR |Charm Focus:5|"
     },
     {
       "name": "Charm Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Charm Focus:3| AND |Social Attribute:7|) OR (|Charm Focus:4| AND |Social Attribute:5|) OR (|Charm Focus:5| AND |Social Attribute:2|)"
     },
     {
       "name": "Charm Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Charm Focus:4| AND |Social Attribute:6|) OR (|Charm Focus:5| AND |Social Attribute:4|)"
     },
     {
       "name": "Charm Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Charm Focus:5| AND |Social Attribute:5|)"
     },
-
+    {
+      "name": "Charm Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Charm Focus:5| AND |Social Attribute:7|)"
+    },
     {
       "name": "Leadership Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Leadership Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:2| OR |Leadership Focus:1|"
     },
     {
       "name": "Leadership Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:4| OR (|Leadership Focus:1| AND |Social Attribute:1|) OR |Leadership Focus:2|"
     },
     {
       "name": "Leadership Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:5| OR (|Leadership Focus:1| AND |Social Attribute:2|) OR |Leadership Focus:2|"
     },
     {
       "name": "Leadership Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:7| OR (|Leadership Focus:1| AND |Social Attribute:4|) OR (|Leadership Focus:2| AND |Social Attribute:1|) OR |Leadership Focus:3|"
     },
     {
       "name": "Leadership Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Leadership Focus:1| AND |Social Attribute:6|) OR (|Leadership Focus:2| AND |Social Attribute:3|) OR |Leadership Focus:3|"
     },
     {
       "name": "Leadership Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Leadership Focus:2| AND |Social Attribute:5|) OR (|Leadership Focus:3| AND |Social Attribute:2|) OR |Leadership Focus:4|"
     },
     {
       "name": "Leadership Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Leadership Focus:2| AND |Social Attribute:7|) OR (|Leadership Focus:3| AND |Social Attribute:4|) OR (|Leadership Focus:4| AND |Social Attribute:1|) OR |Leadership Focus:5|"
     },
     {
       "name": "Leadership Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Leadership Focus:3| AND |Social Attribute:6|) OR (|Leadership Focus:4| AND |Social Attribute:3|) OR |Leadership Focus:5|"
     },
     {
       "name": "Leadership Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Leadership Focus:3| AND |Social Attribute:7|) OR (|Leadership Focus:4| AND |Social Attribute:5|) OR (|Leadership Focus:5| AND |Social Attribute:2|)"
     },
     {
       "name": "Leadership Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Leadership Focus:4| AND |Social Attribute:6|) OR (|Leadership Focus:5| AND |Social Attribute:4|)"
     },
     {
       "name": "Leadership Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Leadership Focus:5| AND |Social Attribute:5|)"
     },
-
+    {
+      "name": "Leadership Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Leadership Focus:5| AND |Social Attribute:7|)"
+    },
     {
       "name": "Trade Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Trade Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:2| OR |Trade Focus:1|"
     },
     {
       "name": "Trade Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:4| OR (|Trade Focus:1| AND |Social Attribute:1|) OR |Trade Focus:2|"
     },
     {
       "name": "Trade Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:5| OR (|Trade Focus:1| AND |Social Attribute:2|) OR |Trade Focus:2|"
     },
     {
       "name": "Trade Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Social Attribute:7| OR (|Trade Focus:1| AND |Social Attribute:4|) OR (|Trade Focus:2| AND |Social Attribute:1|) OR |Trade Focus:3|"
     },
     {
       "name": "Trade Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Trade Focus:1| AND |Social Attribute:6|) OR (|Trade Focus:2| AND |Social Attribute:3|) OR |Trade Focus:3|"
     },
     {
       "name": "Trade Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Trade Focus:2| AND |Social Attribute:5|) OR (|Trade Focus:3| AND |Social Attribute:2|) OR |Trade Focus:4|"
     },
     {
       "name": "Trade Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Trade Focus:2| AND |Social Attribute:7|) OR (|Trade Focus:3| AND |Social Attribute:4|) OR (|Trade Focus:4| AND |Social Attribute:1|) OR |Trade Focus:5|"
     },
     {
       "name": "Trade Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Trade Focus:3| AND |Social Attribute:6|) OR (|Trade Focus:4| AND |Social Attribute:3|) OR |Trade Focus:5|"
     },
     {
       "name": "Trade Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Trade Focus:3| AND |Social Attribute:7|) OR (|Trade Focus:4| AND |Social Attribute:5|) OR (|Trade Focus:5| AND |Social Attribute:2|)"
     },
     {
       "name": "Trade Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Trade Focus:4| AND |Social Attribute:6|) OR (|Trade Focus:5| AND |Social Attribute:4|)"
     },
     {
       "name": "Trade Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Trade Focus:5| AND |Social Attribute:5|)"
     },
-
+    {
+      "name": "Trade Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Trade Focus:5| AND |Social Attribute:7|)"
+    },
     {
       "name": "Steward Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Steward Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:2| OR |Steward Focus:1|"
     },
     {
       "name": "Steward Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:4| OR (|Steward Focus:1| AND |Intelligence Attribute:1|) OR |Steward Focus:2|"
     },
     {
       "name": "Steward Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:5| OR (|Steward Focus:1| AND |Intelligence Attribute:2|) OR |Steward Focus:2|"
     },
     {
       "name": "Steward Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:7| OR (|Steward Focus:1| AND |Intelligence Attribute:4|) OR (|Steward Focus:2| AND |Intelligence Attribute:1|) OR |Steward Focus:3|"
     },
     {
       "name": "Steward Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Steward Focus:1| AND |Intelligence Attribute:6|) OR (|Steward Focus:2| AND |Intelligence Attribute:3|) OR |Steward Focus:3|"
     },
     {
       "name": "Steward Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Steward Focus:2| AND |Intelligence Attribute:5|) OR (|Steward Focus:3| AND |Intelligence Attribute:2|) OR |Steward Focus:4|"
     },
     {
       "name": "Steward Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Steward Focus:2| AND |Intelligence Attribute:7|) OR (|Steward Focus:3| AND |Intelligence Attribute:4|) OR (|Steward Focus:4| AND |Intelligence Attribute:1|) OR |Steward Focus:5|"
     },
     {
       "name": "Steward Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Steward Focus:3| AND |Intelligence Attribute:6|) OR (|Steward Focus:4| AND |Intelligence Attribute:3|) OR |Steward Focus:5|"
     },
     {
       "name": "Steward Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Steward Focus:3| AND |Intelligence Attribute:7|) OR (|Steward Focus:4| AND |Intelligence Attribute:5|) OR (|Steward Focus:5| AND |Intelligence Attribute:2|)"
     },
     {
       "name": "Steward Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Steward Focus:4| AND |Intelligence Attribute:6|) OR (|Steward Focus:5| AND |Intelligence Attribute:4|)"
     },
     {
       "name": "Steward Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Steward Focus:5| AND |Intelligence Attribute:5|)"
     },
-
+    {
+      "name": "Steward Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Steward Focus:5| AND |Intelligence Attribute:7|)"
+    },
     {
       "name": "Medicine Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Medicine Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:2| OR |Medicine Focus:1|"
     },
     {
       "name": "Medicine Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:4| OR (|Medicine Focus:1| AND |Intelligence Attribute:1|) OR |Medicine Focus:2|"
     },
     {
       "name": "Medicine Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:5| OR (|Medicine Focus:1| AND |Intelligence Attribute:2|) OR |Medicine Focus:2|"
     },
     {
       "name": "Medicine Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:7| OR (|Medicine Focus:1| AND |Intelligence Attribute:4|) OR (|Medicine Focus:2| AND |Intelligence Attribute:1|) OR |Medicine Focus:3|"
     },
     {
       "name": "Medicine Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Medicine Focus:1| AND |Intelligence Attribute:6|) OR (|Medicine Focus:2| AND |Intelligence Attribute:3|) OR |Medicine Focus:3|"
     },
     {
       "name": "Medicine Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Medicine Focus:2| AND |Intelligence Attribute:5|) OR (|Medicine Focus:3| AND |Intelligence Attribute:2|) OR |Medicine Focus:4|"
     },
     {
       "name": "Medicine Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Medicine Focus:2| AND |Intelligence Attribute:7|) OR (|Medicine Focus:3| AND |Intelligence Attribute:4|) OR (|Medicine Focus:4| AND |Intelligence Attribute:1|) OR |Medicine Focus:5|"
     },
     {
       "name": "Medicine Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Medicine Focus:3| AND |Intelligence Attribute:6|) OR (|Medicine Focus:4| AND |Intelligence Attribute:3|) OR |Medicine Focus:5|"
     },
     {
       "name": "Medicine Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Medicine Focus:3| AND |Intelligence Attribute:7|) OR (|Medicine Focus:4| AND |Intelligence Attribute:5|) OR (|Medicine Focus:5| AND |Intelligence Attribute:2|)"
     },
     {
       "name": "Medicine Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Medicine Focus:4| AND |Intelligence Attribute:6|) OR (|Medicine Focus:5| AND |Intelligence Attribute:4|)"
     },
     {
       "name": "Medicine Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Medicine Focus:5| AND |Intelligence Attribute:5|)"
     },
-
+    {
+      "name": "Medicine Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Medicine Focus:5| AND |Intelligence Attribute:7|)"
+    },
     {
       "name": "Engineering Skill Level 25",
-      "category": [ "SkillSanity" ],
+      "category": [
+        "SkillSanity"
+      ],
       "region": "menu"
     },
     {
       "name": "Engineering Skill Level 50",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:2| OR |Engineering Focus:1|"
     },
     {
       "name": "Engineering Skill Level 75",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:4| OR (|Engineering Focus:1| AND |Intelligence Attribute:1|) OR |Engineering Focus:2|"
     },
     {
       "name": "Engineering Skill Level 100",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:5| OR (|Engineering Focus:1| AND |Intelligence Attribute:2|) OR |Engineering Focus:2|"
     },
     {
       "name": "Engineering Skill Level 125",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "|Intelligence Attribute:7| OR (|Engineering Focus:1| AND |Intelligence Attribute:4|) OR (|Engineering Focus:2| AND |Intelligence Attribute:1|) OR |Engineering Focus:3|"
     },
     {
       "name": "Engineering Skill Level 150",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Engineering Focus:1| AND |Intelligence Attribute:6|) OR (|Engineering Focus:2| AND |Intelligence Attribute:3|) OR |Engineering Focus:3|"
     },
     {
       "name": "Engineering Skill Level 175",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Engineering Focus:2| AND |Intelligence Attribute:5|) OR (|Engineering Focus:3| AND |Intelligence Attribute:2|) OR |Engineering Focus:4|"
     },
     {
       "name": "Engineering Skill Level 200",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Engineering Focus:2| AND |Intelligence Attribute:7|) OR (|Engineering Focus:3| AND |Intelligence Attribute:4|) OR (|Engineering Focus:4| AND |Intelligence Attribute:1|) OR |Engineering Focus:5|"
     },
     {
       "name": "Engineering Skill Level 225",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Engineering Focus:3| AND |Intelligence Attribute:6|) OR (|Engineering Focus:4| AND |Intelligence Attribute:3|) OR |Engineering Focus:5|"
     },
     {
       "name": "Engineering Skill Level 250",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Engineering Focus:3| AND |Intelligence Attribute:7|) OR (|Engineering Focus:4| AND |Intelligence Attribute:5|) OR (|Engineering Focus:5| AND |Intelligence Attribute:2|)"
     },
     {
       "name": "Engineering Skill Level 275",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Engineering Focus:4| AND |Intelligence Attribute:6|) OR (|Engineering Focus:5| AND |Intelligence Attribute:4|)"
     },
     {
       "name": "Engineering Skill Level 300",
-      "category": [ "SkillSanity" ],
-      "region": "menu"
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Engineering Focus:5| AND |Intelligence Attribute:5|)"
+    },
+    {
+      "name": "Engineering Skill Level 325",
+      "category": [
+        "SkillSanity"
+      ],
+      "region": "menu",
+      "requires": "(|Engineering Focus:5| AND |Intelligence Attribute:7|)"
     },
     {
       "name": "Create the Dragon Banner",

@@ -173,18 +173,23 @@
     "connects_to": [ "craftingTier2" ]
   },
   "craftingTier2": {
-    "connects_to": [ "craftingTier3" ]
+    "connects_to": [ "craftingTier3" ],
+    "requires": "(|Crafting Focus:1| AND |Endurance Attribute:6|) OR (|Crafting Focus:2| AND |Endurance Attribute:3|) OR |Crafting Focus:3|"
   },
   "craftingTier3": {
-    "connects_to": [ "craftingTier4" ]
+    "connects_to": [ "craftingTier4" ],
+    "requires": "(|Crafting Focus:2| AND |Endurance Attribute:5|) OR (|Crafting Focus:3| AND |Endurance Attribute:2|) OR |Crafting Focus:4|"
   },
   "craftingTier4": {
-    "connects_to": [ "craftingTier5" ]
+    "connects_to": [ "craftingTier5" ],
+    "requires": "(|Crafting Focus:2| AND |Endurance Attribute:7|) OR (|Crafting Focus:3| AND |Endurance Attribute:4|) OR (|Crafting Focus:4| AND |Endurance Attribute:1|) OR |Crafting Focus:5|"
   },
   "craftingTier5": {
-    "connects_to": [ "craftingTier6" ]
+    "connects_to": [ "craftingTier6" ],
+    "requires": "(|Crafting Focus:3| AND |Endurance Attribute:7|) OR (|Crafting Focus:4| AND |Endurance Attribute:5|) OR (|Crafting Focus:5| AND |Endurance Attribute:2|)"
   },
   "craftingTier6": {
+    "requires": "(|Crafting Focus:5| AND |Endurance Attribute:5|)"
   },
   "menu": {
   }

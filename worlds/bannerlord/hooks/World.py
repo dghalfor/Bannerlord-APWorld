@@ -11,12 +11,14 @@ from ..Locations import ManualLocation
 #          data/game.json, data/items.json, data/locations.json, data/regions.json
 #
 from ..Data import game_table, item_table, location_table, region_table
+from ..DataValidation import DataValidation
 
 # These helper methods allow you to determine if an option has been set, or what its value is, for any player in the multiworld
 from ..Helpers import is_option_enabled, get_option_value, format_state_prog_items_key, ProgItemsCat, remove_specific_item
 
 # calling logging.info("message") anywhere below in this file will output the message to both console and log file
 import logging
+import re
 
 ########################################################################################
 ## Order of method calls when the world generates:
@@ -87,11 +89,15 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "Steward":     world.options.steward_skill_max.value,
         "Medicine":    world.options.medicine_skill_max.value,
         "Engineering": world.options.engineering_skill_max.value,
+        "Mariner":     world.options.mariner_skill_max.value,
+        "Boatswain":   world.options.boatswain_skill_max.value,
+        "Shipmaster":  world.options.shipmaster_skill_max.value,
+
     }
 
     for skill, max_level in skill_option_map.items():
         effective_max = (max_level // 25) * 25
-        for threshold in range(25, 301, 25):
+        for threshold in range(25, 326, 25):
             if threshold > effective_max:
                 locationNamesToRemove.append(f"{skill} Skill Level {threshold}")
 
@@ -137,8 +143,50 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             for region in multiworld.regions:
                 if region.player == player:
                     for location in list(region.locations):
-                        if location.name.endswith(" Quest") and location.region.name in disabled_regions:
+                        if location.name.endswith(" Quest") and region.name in disabled_regions:
                             locationNamesToRemove.append(location.name)
+    MINOR_FACTION_CULTURES = {"darshi", "vakken"}
+
+    troop_tier_pattern = re.compile(
+        r"^(?P<culture>[A-Za-z]+?)(?P<branch>MinorFaction)?Tier(?P<tier>\d+)$"
+    )
+
+    for region in multiworld.regions:
+        if region.player != player:
+            continue
+        for location in list(region.locations):
+            match = troop_tier_pattern.match(region.name)
+            if not match:
+                continue
+
+            culture = match.group("culture")
+            is_minor_branch = match.group("branch") == "MinorFaction"
+
+            if culture == "bandit":
+                if not world.options.bandit_troop_sanity.value:
+                    locationNamesToRemove.append(location.name)
+            elif culture == "mercenary":
+                if not world.options.mercenary_troop_sanity.value:
+                    locationNamesToRemove.append(location.name)
+            elif is_minor_branch:
+                # e.g. nordMinorFactionTier2 - minor-faction branch off a main culture
+                if not world.options.minor_faction_troop_sanity.value:
+                    locationNamesToRemove.append(location.name)
+            elif culture in MINOR_FACTION_CULTURES:
+                # e.g. darshiTier2 - the culture's own tree, which only exists
+                # because minor_faction_troop_sanity is on
+                if not world.options.minor_faction_troop_sanity.value:
+                    locationNamesToRemove.append(location.name)
+
+# War Sails category filtering — removes every location tagged "WarSails"
+    if not world.options.war_sails.value:
+        for region in multiworld.regions:
+            if region.player != player:
+                continue
+            for location in list(region.locations):
+                location_data = DataValidation.location_name_to_location.get(location.name)
+                if location_data and "WarSails" in location_data.get("category", []):
+                    locationNamesToRemove.append(location.name)
     # Apply removals
     remove_set = set(locationNamesToRemove)
     for region in multiworld.regions:

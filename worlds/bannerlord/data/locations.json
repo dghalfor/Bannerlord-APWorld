@@ -18,8 +18,9 @@
     },
     {
       "name": "Betting Fraud Quest",
-      "category": [ "Quest", "MerchantQuest" ],
-      "region": "MerchantQuest"
+      "category": [ "Quest", "GangQuest" ],
+      "region": "GangQuest",
+      "requires":  "|@TournamentPass:5|"
     },
     {
       "name": "Captured by Bounty Hunters Quest",
@@ -94,8 +95,8 @@
     },
     {
       "name": "Lesser Noble Revolt Quest",
-      "category": [ "Quest", "VillageQuest" ],
-      "region": "VillageQuest"
+      "category": [ "Quest", "LordQuest" ],
+      "region": "LordQuest"
     },
     {
       "name": "Village Needs Crafting Materials Quest",
@@ -110,7 +111,8 @@
     {
       "name": "Lady's Knight Out Quest",
       "category": [ "Quest", "LordQuest" ],
-      "region": "LordQuest"
+      "region": "LordQuest",
+      "requires": "|@TournamentPass:3|"
     },
     {
       "name": "Lord Needs Garrison Troops Quest",
@@ -453,639 +455,1424 @@
       "region": "TournamentWesternEmpire"
     },
     {
-      "name": "Upgraded to Aserai Tribesman",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier2"
-    },
-    {
-      "name": "Upgraded to Aserai Mameluke Soldier",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier2"
-    },
-    {
-      "name": "Upgraded to Beni Zilal Soldier",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier3"
-    },
-    {
-      "name": "Upgraded to Jawwal Camel Rider",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier3"
-    },
-    {
-      "name": "Upgraded to Aserai Tribal Horseman",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier3"
-    },
-    {
-      "name": "Upgraded to Aserai Skirmisher",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier3"
-    },
-    {
-      "name": "Upgraded to Aserai Footman",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier3"
-    },
-    {
-      "name": "Upgraded to Aserai Mameluke Regular",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier3"
-    },
-    {
-      "name": "Upgraded to Aserai Mameluke Axeman",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier3"
-    },
-    {
-      "name": "Upgraded to Beni Zilal Royal Guard",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier5"
-    },
-    {
-      "name": "Upgraded to Jawwal Bedouin",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier5"
-    },
-    {
-      "name": "Upgraded to Aserai Faris",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier4"
-    },
-    {
-      "name": "Upgraded to Aserai Archer",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier4"
-    },
-    {
-      "name": "Upgraded to Aserai Infantry",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier4"
-    },
-    {
-      "name": "Upgraded to Aserai Mameluke Cavalry",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier4"
-    },
-    {
-      "name": "Upgraded to Aserai Mameluke Guard",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier4"
-    },
-    {
-      "name": "Upgraded to Aserai Veteran Faris",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier5"
-    },
-    {
-      "name": "Upgraded to Aserai Master Archer",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier5"
-    },
-    {
-      "name": "Upgraded to Aserai Veteran Infantry",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier5"
-    },
-    {
-      "name": "Upgraded to Aserai Mameluke Heavy Cavalry",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier5"
-    },
-    {
-      "name": "Upgraded to Aserai Mameluke Palace Guard",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier5"
-    },
-    {
-      "name": "Upgraded to Aserai Vanguard Faris",
-      "category": [ "TroopUpgrade" ],
-      "region": "aseraiTier6"
-    },
-    {
-      "name": "Upgraded to Battanian Clan Warrior",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier2"
-    },
-    {
-      "name": "Upgraded to Battanian Wood Runner",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier2"
-    },
-    {
-      "name": "Upgraded to Kern",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier3"
-    },
-    {
-      "name": "Upgraded to Battanian Trained Warrior",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier3"
-    },
-    {
-      "name": "Upgraded to Battanian Raider",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier3"
-    },
-    {
-      "name": "Upgraded to Battanian Skirmisher",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier3"
-    },
-    {
-      "name": "Upgraded to Seasoned Wolf",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier3"
-    },
-    {
-      "name": "Upgraded to Battanian Highborn Warrior",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier3"
-    },
-    {
-      "name": "Upgraded to Redshank",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier5"
-    },
-    {
-      "name": "Upgraded to Chosen Wolf",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier5"
-    },
-    {
-      "name": "Upgraded to Battanian Hero",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier4"
-    },
-    {
-      "name": "Upgraded to Battanian Picked Warrior",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier4"
-    },
-    {
-      "name": "Upgraded to Battanian Scout",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier4"
-    },
-    {
-      "name": "Upgraded to Battanian Falxman",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier4"
-    },
-    {
-      "name": "Upgraded to Battanian Veteran Skirmisher",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier4"
-    },
-    {
-      "name": "Upgraded to Battanian Fian",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier5"
-    },
-    {
-      "name": "Upgraded to Battanian Trained Spearman",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier5"
-    },
-    {
-      "name": "Upgraded to Battanian Horseman",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier5"
-    },
-    {
-      "name": "Upgraded to Battanian Veteran Falxman",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier5"
-    },
-    {
-      "name": "Upgraded to Battanian Wildling",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier5"
-    },
-    {
-      "name": "Upgraded to Battanian Mounted Skirmisher",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier5"
-    },
-    {
-      "name": "Upgraded to Battanian Fian Champion",
-      "category": [ "TroopUpgrade" ],
-      "region": "battaniaTier6"
-    },
-    {
-      "name": "Upgraded to Khuzait Tribal Warrior",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier2"
-    },
-    {
-      "name": "Upgraded to Khuzait Footman",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier2"
-    },
-    {
-      "name": "Upgraded to Karakhuzait Rider",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier3"
-    },
-    {
-      "name": "Upgraded to Khuzait Qanqli",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier3"
-    },
-    {
-      "name": "Upgraded to Khuzait Raider",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier3"
-    },
-    {
-      "name": "Upgraded to Khuzait Horseman",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier3"
-    },
-    {
-      "name": "Upgraded to Khuzait Hunter",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier3"
-    },
-    {
-      "name": "Upgraded to Khuzait Spearman",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier3"
-    },
-    {
-      "name": "Upgraded to Karakhuzait Elder",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier5"
-    },
-    {
-      "name": "Upgraded to Khuzait Torguud",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier4"
-    },
-    {
-      "name": "Upgraded to Khuzait Horse Archer",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier4"
-    },
-    {
-      "name": "Upgraded to Khuzait Lancer",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier4"
-    },
-    {
-      "name": "Upgraded to Khuzait Archer",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier4"
-    },
-    {
-      "name": "Upgraded to Khuzait Spear Infantry",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier4"
-    },
-    {
-      "name": "Upgraded to Khuzait Kheshig",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier5"
-    },
-    {
-      "name": "Upgraded to Khuzait Heavy Horse Archer",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier5"
-    },
-    {
-      "name": "Upgraded to Khuzait Heavy Lancer",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier5"
-    },
-    {
-      "name": "Upgraded to Khuzait Marksman",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier5"
-    },
-    {
-      "name": "Upgraded to Khuzait Darkhan",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier5"
-    },
-    {
-      "name": "Upgraded to Khuzait Khan's Guard",
-      "category": [ "TroopUpgrade" ],
-      "region": "khuzaitTier6"
-    },
-    {
-      "name": "Upgraded to Imperial Infantryman",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier2"
-    },
-    {
-      "name": "Upgraded to Imperial Archer",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier2"
-    },
-    {
-      "name": "Upgraded to Principes",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier3"
-    },
-    {
-      "name": "Upgraded to Expert Eleftheroi",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier3"
-    },
-    {
-      "name": "Upgraded to Imperial Equite",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier3"
-    },
-    {
-      "name": "Upgraded to Imperial Trained Infantryman",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier3"
-    },
-    {
-      "name": "Upgraded to Imperial Trained Archer",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier3"
-    },
-    {
-      "name": "Upgraded to Triarii",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier5"
-    },
-    {
-      "name": "Upgraded to Veteran Eleftheroi",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier5"
-    },
-    {
-      "name": "Upgraded to Imperial Heavy Horseman",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier4"
-    },
-    {
-      "name": "Upgraded to Imperial Veteran Infantryman",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier4"
-    },
-    {
-      "name": "Upgraded to Imperial Menavliaton",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier4"
-    },
-    {
-      "name": "Upgraded to Imperial Veteran Archer",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier4"
-    },
-    {
-      "name": "Upgraded to Imperial Crossbowman",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier4"
-    },
-    {
-      "name": "Upgraded to Imperial Cataphract",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier5"
-    },
-    {
-      "name": "Upgraded to Imperial Legionary",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier5"
-    },
-    {
-      "name": "Upgraded to Imperial Elite Menavliaton",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier5"
-    },
-    {
-      "name": "Upgraded to Imperial Palatine Guard",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier5"
-    },
-    {
-      "name": "Upgraded to Imperial Bucellarii",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier5"
-    },
-    {
-      "name": "Upgraded to Imperial Sergeant Crossbowman",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier5"
-    },
-    {
-      "name": "Upgraded to Imperial Elite Cataphract",
-      "category": [ "TroopUpgrade" ],
-      "region": "empireTier6"
-    },
-    {
-      "name": "Upgraded to Sturgian Warrior",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier2"
-    },
-    {
-      "name": "Upgraded to Sturgian Woodsman",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier2"
-    },
-    {
-      "name": "Upgraded to Skolder Warrior Brotva",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier3"
-    },
-    {
-      "name": "Upgraded to Varyag",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier3"
-    },
-    {
-      "name": "Upgraded to Sturgian Soldier",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier3"
-    },
-    {
-      "name": "Upgraded to Sturgian Brigand",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier3"
-    },
-    {
-      "name": "Upgraded to Sturgian Hunter",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier3"
-    },
-    {
-      "name": "Upgraded to Skolder Veteran Brotva",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier5"
-    },
-    {
-      "name": "Upgraded to Varyag Veteran",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier4"
-    },
-    {
-      "name": "Upgraded to Sturgian Spearman",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier4"
-    },
-    {
-      "name": "Upgraded to Sturgian Berserker",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier4"
-    },
-    {
-      "name": "Upgraded to Sturgian Hardened Brigand",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier4"
-    },
-    {
-      "name": "Upgraded to Sturgian Archer",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier4"
-    },
-    {
-      "name": "Upgraded to Sturgian Druzhinnik",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier5"
-    },
-    {
-      "name": "Upgraded to Sturgian Shock Troop",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier5"
-    },
-    {
-      "name": "Upgraded to Sturgian Veteran Warrior",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier5"
-    },
-    {
-      "name": "Upgraded to Sturgian Ulfhednar",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier5"
-    },
-    {
-      "name": "Upgraded to Sturgian Horse Raider",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier5"
-    },
-    {
-      "name": "Upgraded to Sturgian Veteran Bowman",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier5"
-    },
-    {
-      "name": "Upgraded to Sturgian Druzhinnik Champion",
-      "category": [ "TroopUpgrade" ],
-      "region": "sturgiaTier6"
+      "name": "Upgraded to Vlandian Footman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaTier2"
     },
     {
       "name": "Upgraded to Vlandian Levy Crossbowman",
-      "category": [ "TroopUpgrade" ],
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier2"
     },
     {
-      "name": "Upgraded to Vlandian Footman",
-      "category": [ "TroopUpgrade" ],
+      "name": "Upgraded to Vlandian Squire",
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier2"
-    },
-    {
-      "name": "Upgraded to Sapling",
-      "category": [ "TroopUpgrade" ],
-      "region": "vlandiaTier3"
-    },
-    {
-      "name": "Upgraded to Boar Veteran",
-      "category": [ "TroopUpgrade" ],
-      "region": "vlandiaTier3"
-    },
-    {
-      "name": "Upgraded to Vlandian Gallant",
-      "category": [ "TroopUpgrade" ],
-      "region": "vlandiaTier3"
     },
     {
       "name": "Upgraded to Vlandian Crossbowman",
-      "category": [ "TroopUpgrade" ],
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaTier3"
+    },
+    {
+      "name": "Upgraded to Vlandian Light Cavalry",
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier3"
     },
     {
       "name": "Upgraded to Vlandian Spearman",
-      "category": [ "TroopUpgrade" ],
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier3"
     },
     {
-      "name": "Upgraded to Vlandian Infantry",
-      "category": [ "TroopUpgrade" ],
+      "name": "Upgraded to Vlandian Gallant",
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier3"
     },
     {
-      "name": "Upgraded to Arboreal",
-      "category": [ "TroopUpgrade" ],
-      "region": "vlandiaTier5"
+      "name": "Upgraded to Vlandian Billman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaTier4"
     },
     {
-      "name": "Upgraded to Boar Champion",
-      "category": [ "TroopUpgrade" ],
-      "region": "vlandiaTier5"
-    },
-    {
-      "name": "Upgraded to Vlandian Knight",
-      "category": [ "TroopUpgrade" ],
+      "name": "Upgraded to Vlandian Cavalry",
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier4"
     },
     {
       "name": "Upgraded to Vlandian Hardened Crossbowman",
-      "category": [ "TroopUpgrade" ],
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier4"
     },
     {
-      "name": "Upgraded to Vlandian Billman",
-      "category": [ "TroopUpgrade" ],
-      "region": "vlandiaTier4"
-    },
-    {
-      "name": "Upgraded to Vlandian Light Cavalry",
-      "category": [ "TroopUpgrade" ],
+      "name": "Upgraded to Vlandian Seasoned Seafarer",
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier4"
     },
     {
       "name": "Upgraded to Vlandian Swordsman",
-      "category": [ "TroopUpgrade" ],
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier4"
     },
     {
-      "name": "Upgraded to Vlandian Champion",
-      "category": [ "TroopUpgrade" ],
-      "region": "vlandiaTier5"
+      "name": "Upgraded to Vlandian Knight",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaTier4"
     },
     {
-      "name": "Upgraded to Vlandian Sharpshooter",
-      "category": [ "TroopUpgrade" ],
-      "region": "vlandiaTier5"
-    },
-    {
-      "name": "Upgraded to Vlandian Voulgier",
-      "category": [ "TroopUpgrade" ],
+      "name": "Upgraded to Vlandian Nauta",
+      "category": [ "TroopUpgrade", "WarSails" ], 
       "region": "vlandiaTier5"
     },
     {
       "name": "Upgraded to Vlandian Pikeman",
-      "category": [ "TroopUpgrade" ],
-      "region": "vlandiaTier5"
-    },
-    {
-      "name": "Upgraded to Vlandian Vanguard",
-      "category": [ "TroopUpgrade" ],
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier5"
     },
     {
       "name": "Upgraded to Vlandian Sergeant",
-      "category": [ "TroopUpgrade" ],
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Sharpshooter",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Vanguard",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Voulgier",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaTier5"
+    },
+    {
+      "name": "Upgraded to Vlandian Champion",
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier5"
     },
     {
       "name": "Upgraded to Vlandian Banner Knight",
-      "category": [ "TroopUpgrade" ],
+      "category": [
+        "TroopUpgrade"
+      ],
       "region": "vlandiaTier6"
+    },
+    {
+      "name": "Upgraded to Boar Veteran",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Sapling",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Boar Champion",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Arboreal",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vlandiaMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Mamluke Soldier",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier2"
+    },
+    {
+      "name": "Upgraded to Aserai Tribesman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier2"
+    },
+    {
+      "name": "Upgraded to Aserai Youth",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier2"
+    },
+    {
+      "name": "Upgraded to Aserai Footman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Aserai Light Archer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Aserai Mamluke Axeman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Aserai Mamluke Regular",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Aserai Tribal Horseman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier3"
+    },
+    {
+      "name": "Upgraded to Aserai Archer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Infantry",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Mamluke Cavalry",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Mamluke Guard",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Veteran Sailor",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Faris",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier4"
+    },
+    {
+      "name": "Upgraded to Aserai Bahriyyah",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Mamluke Heavy Cavalry",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Mamluke Palace Guard",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Master Archer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Veteran Infantry",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Veteran Faris",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier5"
+    },
+    {
+      "name": "Upgraded to Aserai Vanguard Faris",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiTier6"
+    },
+    {
+      "name": "Upgraded to Beni Zilal Soldier",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Jawwal Camel Rider",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Beni Zilal Royal Guard",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Jawwal Bedouin",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "aseraiMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Warrior",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier2"
+    },
+    {
+      "name": "Upgraded to Sturgian Woodsman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier2"
+    },
+    {
+      "name": "Upgraded to Sturgian Otrok",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier2"
+    },
+    {
+      "name": "Upgraded to Sturgian Brigand",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier3"
+    },
+    {
+      "name": "Upgraded to Sturgian Crewman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier3"
+    },
+    {
+      "name": "Upgraded to Sturgian Hunter",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier3"
+    },
+    {
+      "name": "Upgraded to Sturgian Soldier",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier3"
+    },
+    {
+      "name": "Upgraded to Varyag",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier3"
+    },
+    {
+      "name": "Upgraded to Sturgian Archer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Hardened Brigand",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Line Breaker",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Spearman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Veteran Shipman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Varyag Veteran",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier4"
+    },
+    {
+      "name": "Upgraded to Sturgian Heavy Axeman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Heavy Spearman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Heroic Line Breaker",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Horse Raider",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Reaver",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Veteran Bowman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Druzhinnik",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier5"
+    },
+    {
+      "name": "Upgraded to Sturgian Druzhinnik Champion",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaTier6"
+    },
+    {
+      "name": "Upgraded to Lake Rat Veteran",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Lake Rat Wrecker ",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "sturgiaMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Clan Warrior",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier2"
+    },
+    {
+      "name": "Upgraded to Battanian Wood Runner",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier2"
+    },
+    {
+      "name": "Upgraded to Battanian Highborn Youth",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier2"
+    },
+    {
+      "name": "Upgraded to Battanian Raider",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier3"
+    },
+    {
+      "name": "Upgraded to Battanian Skirmisher",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier3"
+    },
+    {
+      "name": "Upgraded to Battanian Trained Warrior",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier3"
+    },
+    {
+      "name": "Upgraded to Battanian Highborn Warrior",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier3"
+    },
+    {
+      "name": "Upgraded to Battanian Falxman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Picked Warrior",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian River Raider",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Scout",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Veteran Skirmisher",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Hero",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier4"
+    },
+    {
+      "name": "Upgraded to Battanian Horseman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Mounted Skirmisher",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Oathsworn",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Skipari",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Veteran Falxman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Wildling",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Fian",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier5"
+    },
+    {
+      "name": "Upgraded to Battanian Fian Champion",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaTier6"
+    },
+    {
+      "name": "Upgraded to Kern",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Seasoned Wolf",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Redshank",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Chosen Wolf",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "battaniaMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Archer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier2"
+    },
+    {
+      "name": "Upgraded to Imperial Infantryman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier2"
+    },
+    {
+      "name": "Upgraded to Imperial Vigla Recruit",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier2"
+    },
+    {
+      "name": "Upgraded to Imperial Shipmate",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier3"
+    },
+    {
+      "name": "Upgraded to Imperial Trained Archer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier3"
+    },
+    {
+      "name": "Upgraded to Imperial Trained Infantryman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier3"
+    },
+    {
+      "name": "Upgraded to Imperial Equite",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier3"
+    },
+    {
+      "name": "Upgraded to Imperial Coast Guard",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Crossbowman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Menavliaton",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Veteran Archer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Veteran Infantryman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Heavy Horseman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier4"
+    },
+    {
+      "name": "Upgraded to Imperial Bucellarii",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Elite Menavliaton",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Legionary",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Naute",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Palatine Guard",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Sergeant Crossbowman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Cataphract",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier5"
+    },
+    {
+      "name": "Upgraded to Imperial Elite Cataphract",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireTier6"
+    },
+    {
+      "name": "Upgraded to Expert Guardian",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Principes",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Hidden Soldati",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Expert Eleftheroi",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Flame",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Veteran Guardian",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Triarii",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Puppeteer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Veteran Eleftheroi",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Blaze",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "empireMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Footman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier2"
+    },
+    {
+      "name": "Upgraded to Khuzait Tribal Warrior",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier2"
+    },
+    {
+      "name": "Upgraded to Khuzait Noble's Son",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier2"
+    },
+    {
+      "name": "Upgraded to Khuzait Horseman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Khuzait Hunter",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Khuzait Raider",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Khuzait Spearman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Khuzait Qanqli",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier3"
+    },
+    {
+      "name": "Upgraded to Khuzait Archer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Horse Archer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Lancer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Spear Infantry",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Torguud",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier4"
+    },
+    {
+      "name": "Upgraded to Khuzait Darkhan",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Heavy Horse Archer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Heavy Lancer",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Marksman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Kheshig",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier5"
+    },
+    {
+      "name": "Upgraded to Khuzait Khan's Guard",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitTier6"
+    },
+    {
+      "name": "Upgraded to Karakhergit Rider",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Karakhergit Elder",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "khuzaitMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Nord Huntsman",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier2"
+    },
+    {
+      "name": "Upgraded to Nord Warrior",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier2"
+    },
+    {
+      "name": "Upgraded to Nord Scion",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier2"
+    },
+    {
+      "name": "Upgraded to Nord Axe Warrior",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier3"
+    },
+    {
+      "name": "Upgraded to Nord Freeman Archer",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier3"
+    },
+    {
+      "name": "Upgraded to Nord Spear Warrior",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier3"
+    },
+    {
+      "name": "Upgraded to Nord War-Proven",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier3"
+    },
+    {
+      "name": "Upgraded to Nord Marauder",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier4"
+    },
+    {
+      "name": "Upgraded to Nord Marksman",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier4"
+    },
+    {
+      "name": "Upgraded to Nord Shield Biters",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier4"
+    },
+    {
+      "name": "Upgraded to Nord Warfang",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier4"
+    },
+    {
+      "name": "Upgraded to Nord Hearthguard",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier4"
+    },
+    {
+      "name": "Upgraded to Nord Berserkir",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier5"
+    },
+    {
+      "name": "Upgraded to Nord Skjaldbrestir",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier5"
+    },
+    {
+      "name": "Upgraded to Nord Sky-Gods Chosen",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier5"
+    },
+    {
+      "name": "Upgraded to Nord Ulfhedinn",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier5"
+    },
+    {
+      "name": "Upgraded to Nord Shield-Companion",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier5"
+    },
+    {
+      "name": "Upgraded to Nord Huscarl",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordTier6"
+    },
+    {
+      "name": "Upgraded to Skolder Warrior Broda",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Skolder Veteran Broda",
+      "category": [ "TroopUpgrade", "WarSails" ],
+      "region": "nordMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Ghilman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "darshiMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Ghulam",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "darshiMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Expert Forester",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vakkenMinorFactionTier3"
+    },
+    {
+      "name": "Upgraded to Veteran Forester",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "vakkenMinorFactionTier4"
+    },
+    {
+      "name": "Upgraded to Brigand",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier3"
+    },
+    {
+      "name": "Upgraded to Corsair Warrior",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier3"
+    },
+    {
+      "name": "Upgraded to Freebooter",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier3"
+    },
+    {
+      "name": "Upgraded to Marauder",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier3"
+    },
+    {
+      "name": "Upgraded to Nomad Bandit",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier3"
+    },
+    {
+      "name": "Upgraded to Sea Hound Ruffian",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier3"
+    },
+    {
+      "name": "Upgraded to Sea Raider Warrior",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier3"
+    },
+    {
+      "name": "Upgraded to Corsair Chief",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier4"
+    },
+    {
+      "name": "Upgraded to Forest Bandit",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier4"
+    },
+    {
+      "name": "Upgraded to Harami",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier4"
+    },
+    {
+      "name": "Upgraded to Highwayman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier4"
+    },
+    {
+      "name": "Upgraded to Raider",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier4"
+    },
+    {
+      "name": "Upgraded to Sea Raider Chief",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "banditTier4"
+    },
+    {
+      "name": "Upgraded to Hired Spear",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier3"
+    },
+    {
+      "name": "Upgraded to Mercenary",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier3"
+    },
+    {
+      "name": "Upgraded to Mercenary Guard",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier3"
+    },
+    {
+      "name": "Upgraded to Mercenary Scout",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier3"
+    },
+    {
+      "name": "Upgraded to Sellsword",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier3"
+    },
+    {
+      "name": "Upgraded to Sisterhood Follower",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier3"
+    },
+    {
+      "name": "Upgraded to Hired Crossbow",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier4"
+    },
+    {
+      "name": "Upgraded to Hired Pike",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier4"
+    },
+    {
+      "name": "Upgraded to Mercenary Crossbowman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier4"
+    },
+    {
+      "name": "Upgraded to Mercenary Horseman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier4"
+    },
+    {
+      "name": "Upgraded to Mercenary Maceman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier4"
+    },
+    {
+      "name": "Upgraded to Mercenary Swordsman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier4"
+    },
+    {
+      "name": "Upgraded to Outrider",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier4"
+    },
+    {
+      "name": "Upgraded to Sword Sister",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier4"
+    },
+    {
+      "name": "Upgraded to Elite Hired Crossbow",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier5"
+    },
+    {
+      "name": "Upgraded to Elite Mercenary Maceman",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier5"
+    },
+    {
+      "name": "Upgraded to Gallant Sword Sister",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier5"
+    },
+    {
+      "name": "Upgraded to Hired Blade",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier5"
+    },
+    {
+      "name": "Upgraded to Hired Elite Pike",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier5"
+    },
+    {
+      "name": "Upgraded to Mercenary Cavalry",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier5"
+    },
+    {
+      "name": "Upgraded to Veteran Outrider",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier5"
+    },
+    {
+      "name": "Upgraded to Veteran Sword Sister",
+      "category": [
+        "TroopUpgrade"
+      ],
+      "region": "mercenaryTier5"
     },
     {
       "name": "Crafted OneHandedSword Tier 1",
@@ -3417,6 +4204,357 @@
       ],
       "region": "menu",
       "requires": "(|Engineering Focus:5| AND |Intelligence Attribute:7|)"
+    },
+    {
+      "name": "Mariner Skill Level 25",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@MarinerAttributes:5| or |Mariner Focus:1|"
+    },
+    {
+      "name": "Mariner Skill Level 50",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@MarinerAttributes:9| or (|Mariner Focus:1| and |@MarinerAttributes:3|) or |Mariner Focus:2|"
+    },
+    {
+      "name": "Mariner Skill Level 75",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@MarinerAttributes:13| or (|Mariner Focus:1| and |@MarinerAttributes:7|) or (|Mariner Focus:2| and |@MarinerAttributes:1|) or |Mariner Focus:3|"
+    },
+    {
+      "name": "Mariner Skill Level 100",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@MarinerAttributes:16| or (|Mariner Focus:1| and |@MarinerAttributes:10|) or (|Mariner Focus:2| and |@MarinerAttributes:5|) or |Mariner Focus:3|"
+    },
+    {
+      "name": "Mariner Skill Level 125",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@MarinerAttributes:20| or (|Mariner Focus:1| and |@MarinerAttributes:14|) or (|Mariner Focus:2| and |@MarinerAttributes:8|) or (|Mariner Focus:3| and |@MarinerAttributes:3|) or |Mariner Focus:4|"
+    },
+    {
+      "name": "Mariner Skill Level 150",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Mariner Focus:1| and |@MarinerAttributes:18|) or (|Mariner Focus:2| and |@MarinerAttributes:12|) or (|Mariner Focus:3| and |@MarinerAttributes:6|) or |Mariner Focus:4|"
+    },
+    {
+      "name": "Mariner Skill Level 175",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Mariner Focus:2| and |@MarinerAttributes:15|) or (|Mariner Focus:3| and |@MarinerAttributes:10|) or (|Mariner Focus:4| and |@MarinerAttributes:4|) or |Mariner Focus:5|"
+    },
+    {
+      "name": "Mariner Skill Level 200",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Mariner Focus:2| and |@MarinerAttributes:19|) or (|Mariner Focus:3| and |@MarinerAttributes:13|) or (|Mariner Focus:4| and |@MarinerAttributes:8|) or (|Mariner Focus:5| and |@MarinerAttributes:2|)"
+    },
+    {
+      "name": "Mariner Skill Level 225",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Mariner Focus:3| and |@MarinerAttributes:17|) or (|Mariner Focus:4| and |@MarinerAttributes:11|) or (|Mariner Focus:5| and |@MarinerAttributes:5|)"
+    },
+    {
+      "name": "Mariner Skill Level 250",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Mariner Focus:3| and |@MarinerAttributes:20|) or (|Mariner Focus:4| and |@MarinerAttributes:15|) or (|Mariner Focus:5| and |@MarinerAttributes:9|)"
+    },
+    {
+      "name": "Mariner Skill Level 275",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Mariner Focus:4| and |@MarinerAttributes:18|) or (|Mariner Focus:5| and |@MarinerAttributes:13|)"
+    },
+    {
+      "name": "Mariner Skill Level 300",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Mariner Focus:5| and |@MarinerAttributes:16|)"
+    },
+    {
+      "name": "Mariner Skill Level 325",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Mariner Focus:5| and |@MarinerAttributes:20|)"
+    },
+    {
+      "name": "Boatswain Skill Level 25",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@BoatswainAttributes:5| or |Boatswain Focus:1|"
+    },
+    {
+      "name": "Boatswain Skill Level 50",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@BoatswainAttributes:9| or (|Boatswain Focus:1| and |@BoatswainAttributes:3|) or |Boatswain Focus:2|"
+    },
+    {
+      "name": "Boatswain Skill Level 75",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@BoatswainAttributes:13| or (|Boatswain Focus:1| and |@BoatswainAttributes:7|) or (|Boatswain Focus:2| and |@BoatswainAttributes:1|) or |Boatswain Focus:3|"
+    },
+    {
+      "name": "Boatswain Skill Level 100",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@BoatswainAttributes:16| or (|Boatswain Focus:1| and |@BoatswainAttributes:10|) or (|Boatswain Focus:2| and |@BoatswainAttributes:5|) or |Boatswain Focus:3|"
+    },
+    {
+      "name": "Boatswain Skill Level 125",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@BoatswainAttributes:20| or (|Boatswain Focus:1| and |@BoatswainAttributes:14|) or (|Boatswain Focus:2| and |@BoatswainAttributes:8|) or (|Boatswain Focus:3| and |@BoatswainAttributes:3|) or |Boatswain Focus:4|"
+    },
+    {
+      "name": "Boatswain Skill Level 150",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Boatswain Focus:1| and |@BoatswainAttributes:18|) or (|Boatswain Focus:2| and |@BoatswainAttributes:12|) or (|Boatswain Focus:3| and |@BoatswainAttributes:6|) or |Boatswain Focus:4|"
+    },
+    {
+      "name": "Boatswain Skill Level 175",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Boatswain Focus:2| and |@BoatswainAttributes:15|) or (|Boatswain Focus:3| and |@BoatswainAttributes:10|) or (|Boatswain Focus:4| and |@BoatswainAttributes:4|) or |Boatswain Focus:5|"
+    },
+    {
+      "name": "Boatswain Skill Level 200",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Boatswain Focus:2| and |@BoatswainAttributes:19|) or (|Boatswain Focus:3| and |@BoatswainAttributes:13|) or (|Boatswain Focus:4| and |@BoatswainAttributes:8|) or (|Boatswain Focus:5| and |@BoatswainAttributes:2|)"
+    },
+    {
+      "name": "Boatswain Skill Level 225",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Boatswain Focus:3| and |@BoatswainAttributes:17|) or (|Boatswain Focus:4| and |@BoatswainAttributes:11|) or (|Boatswain Focus:5| and |@BoatswainAttributes:5|)"
+    },
+    {
+      "name": "Boatswain Skill Level 250",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Boatswain Focus:3| and |@BoatswainAttributes:20|) or (|Boatswain Focus:4| and |@BoatswainAttributes:15|) or (|Boatswain Focus:5| and |@BoatswainAttributes:9|)"
+    },
+    {
+      "name": "Boatswain Skill Level 275",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Boatswain Focus:4| and |@BoatswainAttributes:18|) or (|Boatswain Focus:5| and |@BoatswainAttributes:13|)"
+    },
+    {
+      "name": "Boatswain Skill Level 300",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Boatswain Focus:5| and |@BoatswainAttributes:16|)"
+    },
+    {
+      "name": "Boatswain Skill Level 325",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Boatswain Focus:5| and |@BoatswainAttributes:20|)"
+    },
+    {
+      "name": "Shipmaster Skill Level 25",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@ShipmasterAttributes:5| or |Shipmaster Focus:1|"
+    },
+    {
+      "name": "Shipmaster Skill Level 50",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@ShipmasterAttributes:9| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:3|) or |Shipmaster Focus:2|"
+    },
+    {
+      "name": "Shipmaster Skill Level 75",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@ShipmasterAttributes:13| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:7|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:1|) or |Shipmaster Focus:3|"
+    },
+    {
+      "name": "Shipmaster Skill Level 100",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@ShipmasterAttributes:16| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:10|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:5|) or |Shipmaster Focus:3|"
+    },
+    {
+      "name": "Shipmaster Skill Level 125",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "|@ShipmasterAttributes:20| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:14|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:8|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:3|) or |Shipmaster Focus:4|"
+    },
+    {
+      "name": "Shipmaster Skill Level 150",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Shipmaster Focus:1| and |@ShipmasterAttributes:18|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:12|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:6|) or |Shipmaster Focus:4|"
+    },
+    {
+      "name": "Shipmaster Skill Level 175",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Shipmaster Focus:2| and |@ShipmasterAttributes:15|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:10|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:4|) or |Shipmaster Focus:5|"
+    },
+    {
+      "name": "Shipmaster Skill Level 200",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Shipmaster Focus:2| and |@ShipmasterAttributes:19|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:13|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:8|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:2|)"
+    },
+    {
+      "name": "Shipmaster Skill Level 225",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Shipmaster Focus:3| and |@ShipmasterAttributes:17|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:11|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:5|)"
+    },
+    {
+      "name": "Shipmaster Skill Level 250",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Shipmaster Focus:3| and |@ShipmasterAttributes:20|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:15|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:9|)"
+    },
+    {
+      "name": "Shipmaster Skill Level 275",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Shipmaster Focus:4| and |@ShipmasterAttributes:18|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:13|)"
+    },
+    {
+      "name": "Shipmaster Skill Level 300",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Shipmaster Focus:5| and |@ShipmasterAttributes:16|)"
+    },
+    {
+      "name": "Shipmaster Skill Level 325",
+      "category": [
+        "SkillSanity",
+        "WarSails"
+      ],
+      "region": "menu",
+      "requires": "(|Shipmaster Focus:5| and |@ShipmasterAttributes:20|)"
     },
     {
       "name": "Create the Dragon Banner",

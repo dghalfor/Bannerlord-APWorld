@@ -2,27 +2,7 @@
   "$schema": "https://github.com/ManualForArchipelago/Manual/raw/main/schemas/Manual.items.schema.json",
   "data": [
     {
-      "name": "Progressive sturgia Troop Tier",
-      "count": 5,
-      "progression": true
-    },
-    {
-      "name": "Progressive empire Troop Tier",
-      "count": 5,
-      "progression": true
-    },
-    {
-      "name": "Progressive battania Troop Tier",
-      "count": 5,
-      "progression": true
-    },
-    {
       "name": "Progressive vlandia Troop Tier",
-      "count": 5,
-      "progression": true
-    },
-    {
-      "name": "Progressive khuzait Troop Tier",
       "count": 5,
       "progression": true
     },
@@ -32,8 +12,49 @@
       "progression": true
     },
     {
-      "name": "Progressive nord Troop Tier",
+      "name": "Progressive sturgia Troop Tier",
       "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive battania Troop Tier",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive empire Troop Tier",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive khuzait Troop Tier",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive nord Troop Tier",
+      "category": "WarSails",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Progressive darshi Troop Tier",
+      "count": 3,
+      "progression": true
+    },
+    {
+      "name": "Progressive vakken Troop Tier",
+      "count": 3,
+      "progression": true
+    },
+    {
+      "name": "Progressive Bandit Troop Tier",
+      "count": 3,
+      "progression": true
+    },
+    {
+      "name": "Progressive Mercenary Troop Tier",
+      "count": 4,
       "progression": true
     },
     {
@@ -71,31 +92,37 @@
     {
       "name": "Vigor Attribute",
       "count": 7,
+      "category": "ShipmasterAttributes",
       "progression": true
     },
     {
       "name": "Control Attribute",
       "count": 7,
+      "category": "BoatswainAttributes",
       "progression": true
     },
     {
       "name": "Endurance Attribute",
       "count": 7,
+      "category": "MarinerAttributes",
       "progression": true
     },
     {
       "name": "Cunning Attribute",
+      "category": "MarinerAttributes",
       "count": 7,
       "progression": true
     },
     {
       "name": "Social Attribute",
       "count": 7,
+      "category": "BoatswainAttributes",
       "progression": true
     },
     {
       "name": "Intelligence Attribute",
       "count": 7,
+      "category": "ShipmasterAttributes",
       "progression": true
     },
     {
@@ -189,42 +216,68 @@
       "progression": true
     },
     {
+      "name": "Mariner Focus",
+      "category": "WarSails",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Boatswain Focus",
+      "category": "WarSails",
+      "count": 5,
+      "progression": true
+    },
+    {
+      "name": "Shipmaster Focus",
+      "category": "WarSails",
+      "count": 5,
+      "progression": true
+    },
+    {
       "name": "Tournament Pass - Aserai",
+      "category": "TournamentPass",
       "count": 1,
       "progression": true
     },
     {
       "name": "Tournament Pass - Battania",
+      "category": "TournamentPass",
       "count": 1,
       "progression": true
     },
     {
       "name": "Tournament Pass - Khuzait",
+      "category": "TournamentPass",
       "count": 1,
       "progression": true
     },
     {
       "name": "Tournament Pass - Sturgia",
+      "category": "TournamentPass",
       "count": 1,
       "progression": true
     },
     {
       "name": "Tournament Pass - Vlandia",
+      "category": "TournamentPass",
       "count": 1,
       "progression": true
     },
     {
       "name": "Tournament Pass - Northern Empire",
+      "category": "TournamentPass",
       "count": 1,
       "progression": true
     },
     {
       "name": "Tournament Pass - Southern Empire",
+      "category": "TournamentPass",
       "count": 1,
       "progression": true
     },
     {
       "name": "Tournament Pass - Western Empire",
+      "category": "TournamentPass",
       "count": 1,
       "progression": true
     },

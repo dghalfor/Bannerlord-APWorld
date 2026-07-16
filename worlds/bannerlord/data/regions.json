@@ -45,129 +45,416 @@
   "MerchantQuest": {
     "connects_to": []
   },
-  "empireTier2": {
-    "connects_to": [ "empireTier3" ],
-    "requires": "|Progressive empire Troop Tier|"
-  },
-  "empireTier3": {
-    "connects_to": [ "empireTier4" ],
-    "requires": "|Progressive empire Troop Tier:2|"
-  },
-  "empireTier4": {
-    "connects_to": [ "empireTier5" ],
-    "requires": "|Progressive empire Troop Tier:3|"
-  },
-  "empireTier5": {
-    "connects_to": [ "empireTier6" ],
-    "requires": "|Progressive empire Troop Tier:4|"
-  },
-  "empireTier6": {
-    "connects_to": [],
-    "requires": "|Progressive empire Troop Tier:5|"
-  },
-
-  "sturgiaTier2": {
-    "connects_to": [ "sturgiaTier3" ],
-    "requires": "|Progressive sturgia Troop Tier|"
-  },
-  "sturgiaTier3": {
-    "connects_to": [ "sturgiaTier4" ],
-    "requires": "|Progressive sturgia Troop Tier:2|"
-  },
-  "sturgiaTier4": {
-    "connects_to": [ "sturgiaTier5" ],
-    "requires": "|Progressive sturgia Troop Tier:3|"
-  },
-  "sturgiaTier5": {
-    "connects_to": [ "sturgiaTier6" ],
-    "requires": "|Progressive sturgia Troop Tier:4|"
-  },
-  "sturgiaTier6": {
-    "connects_to": [],
-    "requires": "|Progressive sturgia Troop Tier:5|"
-  },
-
-  "battaniaTier2": {
-    "connects_to": [ "battaniaTier3" ],
-    "requires": "|Progressive battania Troop Tier|"
-  },
-  "battaniaTier3": {
-    "connects_to": [ "battaniaTier4" ],
-    "requires": "|Progressive battania Troop Tier:2|"
-  },
-  "battaniaTier4": {
-    "connects_to": [ "battaniaTier5" ],
-    "requires": "|Progressive battania Troop Tier:3|"
-  },
-  "battaniaTier5": {
-    "connects_to": [ "battaniaTier6" ],
-    "requires": "|Progressive battania Troop Tier:4|"
-  },
-  "battaniaTier6": {
-    "connects_to": [],
-    "requires": "|Progressive battania Troop Tier:5|"
-  },
-
   "vlandiaTier2": {
-    "connects_to": [ "vlandiaTier3" ],
+    "connects_to": [
+      "vlandiaTier3"
+    ],
     "requires": "|Progressive vlandia Troop Tier|"
   },
   "vlandiaTier3": {
-    "connects_to": [ "vlandiaTier4" ],
+    "connects_to": [
+      "vlandiaTier4"
+    ],
     "requires": "|Progressive vlandia Troop Tier:2|"
   },
   "vlandiaTier4": {
-    "connects_to": [ "vlandiaTier5" ],
+    "connects_to": [
+      "vlandiaTier5"
+    ],
     "requires": "|Progressive vlandia Troop Tier:3|"
   },
   "vlandiaTier5": {
-    "connects_to": [ "vlandiaTier6" ],
+    "connects_to": [
+      "vlandiaTier6"
+    ],
     "requires": "|Progressive vlandia Troop Tier:4|"
   },
   "vlandiaTier6": {
     "connects_to": [],
     "requires": "|Progressive vlandia Troop Tier:5|"
   },
-
+  "vlandiaMinorFactionTier2": {
+    "connects_to": [
+      "vlandiaMinorFactionTier3"
+    ],
+    "requires": "|Progressive vlandia Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "vlandiaMinorFactionTier3": {
+    "connects_to": [
+      "vlandiaMinorFactionTier4"
+    ],
+    "requires": "|Progressive vlandia Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "vlandiaMinorFactionTier4": {
+    "connects_to": [],
+    "requires": "|Progressive vlandia Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "aseraiTier2": {
+    "connects_to": [
+      "aseraiTier3"
+    ],
+    "requires": "|Progressive aserai Troop Tier|"
+  },
+  "aseraiTier3": {
+    "connects_to": [
+      "aseraiTier4"
+    ],
+    "requires": "|Progressive aserai Troop Tier:2|"
+  },
+  "aseraiTier4": {
+    "connects_to": [
+      "aseraiTier5"
+    ],
+    "requires": "|Progressive aserai Troop Tier:3|"
+  },
+  "aseraiTier5": {
+    "connects_to": [
+      "aseraiTier6"
+    ],
+    "requires": "|Progressive aserai Troop Tier:4|"
+  },
+  "aseraiTier6": {
+    "connects_to": [],
+    "requires": "|Progressive aserai Troop Tier:5|"
+  },
+  "aseraiMinorFactionTier2": {
+    "connects_to": [
+      "aseraiMinorFactionTier3"
+    ],
+    "requires": "|Progressive aserai Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "aseraiMinorFactionTier3": {
+    "connects_to": [
+      "aseraiMinorFactionTier4"
+    ],
+    "requires": "|Progressive aserai Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "aseraiMinorFactionTier4": {
+    "connects_to": [],
+    "requires": "|Progressive aserai Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "sturgiaTier2": {
+    "connects_to": [
+      "sturgiaTier3"
+    ],
+    "requires": "|Progressive sturgia Troop Tier|"
+  },
+  "sturgiaTier3": {
+    "connects_to": [
+      "sturgiaTier4"
+    ],
+    "requires": "|Progressive sturgia Troop Tier:2|"
+  },
+  "sturgiaTier4": {
+    "connects_to": [
+      "sturgiaTier5"
+    ],
+    "requires": "|Progressive sturgia Troop Tier:3|"
+  },
+  "sturgiaTier5": {
+    "connects_to": [
+      "sturgiaTier6"
+    ],
+    "requires": "|Progressive sturgia Troop Tier:4|"
+  },
+  "sturgiaTier6": {
+    "connects_to": [],
+    "requires": "|Progressive sturgia Troop Tier:5|"
+  },
+  "sturgiaMinorFactionTier2": {
+    "connects_to": [
+      "sturgiaMinorFactionTier3"
+    ],
+    "requires": "|Progressive sturgia Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "sturgiaMinorFactionTier3": {
+    "connects_to": [
+      "sturgiaMinorFactionTier4"
+    ],
+    "requires": "|Progressive sturgia Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "sturgiaMinorFactionTier4": {
+    "connects_to": [],
+    "requires": "|Progressive sturgia Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "battaniaTier2": {
+    "connects_to": [
+      "battaniaTier3"
+    ],
+    "requires": "|Progressive battania Troop Tier|"
+  },
+  "battaniaTier3": {
+    "connects_to": [
+      "battaniaTier4"
+    ],
+    "requires": "|Progressive battania Troop Tier:2|"
+  },
+  "battaniaTier4": {
+    "connects_to": [
+      "battaniaTier5"
+    ],
+    "requires": "|Progressive battania Troop Tier:3|"
+  },
+  "battaniaTier5": {
+    "connects_to": [
+      "battaniaTier6"
+    ],
+    "requires": "|Progressive battania Troop Tier:4|"
+  },
+  "battaniaTier6": {
+    "connects_to": [],
+    "requires": "|Progressive battania Troop Tier:5|"
+  },
+  "battaniaMinorFactionTier2": {
+    "connects_to": [
+      "battaniaMinorFactionTier3"
+    ],
+    "requires": "|Progressive battania Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "battaniaMinorFactionTier3": {
+    "connects_to": [
+      "battaniaMinorFactionTier4"
+    ],
+    "requires": "|Progressive battania Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "battaniaMinorFactionTier4": {
+    "connects_to": [],
+    "requires": "|Progressive battania Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "empireTier2": {
+    "connects_to": [
+      "empireTier3"
+    ],
+    "requires": "|Progressive empire Troop Tier|"
+  },
+  "empireTier3": {
+    "connects_to": [
+      "empireTier4"
+    ],
+    "requires": "|Progressive empire Troop Tier:2|"
+  },
+  "empireTier4": {
+    "connects_to": [
+      "empireTier5"
+    ],
+    "requires": "|Progressive empire Troop Tier:3|"
+  },
+  "empireTier5": {
+    "connects_to": [
+      "empireTier6"
+    ],
+    "requires": "|Progressive empire Troop Tier:4|"
+  },
+  "empireTier6": {
+    "connects_to": [],
+    "requires": "|Progressive empire Troop Tier:5|"
+  },
+  "empireMinorFactionTier2": {
+    "connects_to": [
+      "empireMinorFactionTier3"
+    ],
+    "requires": "|Progressive empire Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "empireMinorFactionTier3": {
+    "connects_to": [
+      "empireMinorFactionTier4"
+    ],
+    "requires": "|Progressive empire Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "empireMinorFactionTier4": {
+    "connects_to": [],
+    "requires": "|Progressive empire Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
   "khuzaitTier2": {
-    "connects_to": [ "khuzaitTier3" ],
+    "connects_to": [
+      "khuzaitTier3"
+    ],
     "requires": "|Progressive khuzait Troop Tier|"
   },
   "khuzaitTier3": {
-    "connects_to": [ "khuzaitTier4" ],
+    "connects_to": [
+      "khuzaitTier4"
+    ],
     "requires": "|Progressive khuzait Troop Tier:2|"
   },
   "khuzaitTier4": {
-    "connects_to": [ "khuzaitTier5" ],
+    "connects_to": [
+      "khuzaitTier5"
+    ],
     "requires": "|Progressive khuzait Troop Tier:3|"
   },
   "khuzaitTier5": {
-    "connects_to": [ "khuzaitTier6" ],
+    "connects_to": [
+      "khuzaitTier6"
+    ],
     "requires": "|Progressive khuzait Troop Tier:4|"
   },
   "khuzaitTier6": {
     "connects_to": [],
     "requires": "|Progressive khuzait Troop Tier:5|"
   },
-  "aseraiTier2": {
-    "connects_to": [ "aseraiTier3" ],
-    "requires": "|Progressive aserai Troop Tier|"
+  "khuzaitMinorFactionTier2": {
+    "connects_to": [
+      "khuzaitMinorFactionTier3"
+    ],
+    "requires": "|Progressive khuzait Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)}"
   },
-  "aseraiTier3": {
-    "connects_to": [ "aseraiTier4" ],
-    "requires": "|Progressive aserai Troop Tier:2|"
+  "khuzaitMinorFactionTier3": {
+    "connects_to": [
+      "khuzaitMinorFactionTier4"
+    ],
+    "requires": "|Progressive khuzait Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)}"
   },
-  "aseraiTier4": {
-    "connects_to": [ "aseraiTier5" ],
-    "requires": "|Progressive aserai Troop Tier:3|"
-  },
-  "aseraiTier5": {
-    "connects_to": [ "aseraiTier6" ],
-    "requires": "|Progressive aserai Troop Tier:4|"
-  },
-  "aseraiTier6": {
+  "khuzaitMinorFactionTier4": {
     "connects_to": [],
-    "requires": "|Progressive aserai Troop Tier:5|"
+    "requires": "|Progressive khuzait Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "nordTier2": {
+    "connects_to": [
+      "nordTier3"
+    ],
+    "requires": "|Progressive nord Troop Tier| AND {YamlEnabled(war_sails)}"
+  },
+  "nordTier3": {
+    "connects_to": [
+      "nordTier4"
+    ],
+    "requires": "|Progressive nord Troop Tier:2| AND {YamlEnabled(war_sails)}"
+  },
+  "nordTier4": {
+    "connects_to": [
+      "nordTier5"
+    ],
+    "requires": "|Progressive nord Troop Tier:3| AND {YamlEnabled(war_sails)}"
+  },
+  "nordTier5": {
+    "connects_to": [
+      "nordTier6"
+    ],
+    "requires": "|Progressive nord Troop Tier:4| AND {YamlEnabled(war_sails)}"
+  },
+  "nordTier6": {
+    "connects_to": [],
+    "requires": "|Progressive nord Troop Tier:5| AND {YamlEnabled(war_sails)}"
+  },
+  "nordMinorFactionTier2": {
+    "connects_to": [
+      "nordMinorFactionTier3"
+    ],
+    "requires": "|Progressive nord Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)} AND {YamlEnabled(war_sails)}"
+  },
+  "nordMinorFactionTier3": {
+    "connects_to": [
+      "nordMinorFactionTier4"
+    ],
+    "requires": "|Progressive nord Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)} AND {YamlEnabled(war_sails)}"
+  },
+  "nordMinorFactionTier4": {
+    "connects_to": [],
+    "requires": "|Progressive nord Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)} AND {YamlEnabled(war_sails)}"
+  },
+  "darshiTier2": {
+    "connects_to": [
+      "darshiTier3"
+    ],
+    "requires": "|Progressive darshi Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "darshiTier3": {
+    "connects_to": [
+      "darshiTier4"
+    ],
+    "requires": "|Progressive darshi Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "darshiTier4": {
+    "connects_to": [],
+    "requires": "|Progressive darshi Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "darshiMinorFactionTier2": {
+    "connects_to": [
+      "darshiMinorFactionTier3"
+    ],
+    "requires": "|Progressive darshi Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "darshiMinorFactionTier3": {
+    "connects_to": [
+      "darshiMinorFactionTier4"
+    ],
+    "requires": "|Progressive darshi Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "darshiMinorFactionTier4": {
+    "connects_to": [],
+    "requires": "|Progressive darshi Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "vakkenTier2": {
+    "connects_to": [
+      "vakkenTier3"
+    ],
+    "requires": "|Progressive vakken Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "vakkenTier3": {
+    "connects_to": [
+      "vakkenTier4"
+    ],
+    "requires": "|Progressive vakken Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "vakkenTier4": {
+    "connects_to": [],
+    "requires": "|Progressive vakken Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "vakkenMinorFactionTier2": {
+    "connects_to": [
+      "vakkenMinorFactionTier3"
+    ],
+    "requires": "|Progressive vakken Troop Tier| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "vakkenMinorFactionTier3": {
+    "connects_to": [
+      "vakkenMinorFactionTier4"
+    ],
+    "requires": "|Progressive vakken Troop Tier:2| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "vakkenMinorFactionTier4": {
+    "connects_to": [],
+    "requires": "|Progressive vakken Troop Tier:3| AND {YamlEnabled(minor_faction_troop_sanity)}"
+  },
+  "banditTier2": {
+    "connects_to": [
+      "banditTier3"
+    ],
+    "requires": "|Progressive Bandit Troop Tier| AND {YamlEnabled(bandit_troop_sanity)}"
+  },
+  "banditTier3": {
+    "connects_to": [
+      "banditTier4"
+    ],
+    "requires": "|Progressive Bandit Troop Tier:2| AND {YamlEnabled(bandit_troop_sanity)}"
+  },
+  "banditTier4": {
+    "connects_to": [
+    ],
+    "requires": "|Progressive Bandit Troop Tier:3| AND {YamlEnabled(bandit_troop_sanity)}"
+  },
+  "mercenaryTier2": {
+    "connects_to": [
+      "mercenaryTier3"
+    ],
+    "requires": "|Progressive Mercenary Troop Tier| AND {YamlEnabled(mercenary_troop_sanity)}"
+  },
+  "mercenaryTier3": {
+    "connects_to": [
+      "mercenaryTier4"
+    ],
+    "requires": "|Progressive Mercenary Troop Tier:2| AND {YamlEnabled(mercenary_troop_sanity)}"
+  },
+  "mercenaryTier4": {
+    "connects_to": [
+      "mercenaryTier5"
+    ],
+    "requires": "|Progressive Mercenary Troop Tier:3| AND {YamlEnabled(mercenary_troop_sanity)}"
+  },
+  "mercenaryTier5": {
+    "connects_to": [],
+    "requires": "|Progressive Mercenary Troop Tier:4| AND {YamlEnabled(mercenary_troop_sanity)}"
   },
   "craftingTier1": {
     "connects_to": [ "craftingTier2" ]

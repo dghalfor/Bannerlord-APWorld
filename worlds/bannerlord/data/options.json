@@ -1,26 +1,34 @@
 {
     "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.options.schema.json",
     "_comment": "Add a _ before an option name to comment it out and it wont be added to the apworld",
-    "core": {
-        "goal":{
-            "_comment": [
-                "Using 'goal' as the name of an option let you override some of the generated goal parameters"
-            ],
-            "display_name": "The End Objective",
-            "description": "How to End your Randomized playthrough.",
-            "aliases": {"easiest": 0},
-            "hidden": false
-        },
-        "death_link": {
-            "default": false
-        },
-        "filler_traps": {
-            "_comment": "Using values here let you set a 'recommended' filler_trap percentage or even a default percentage",
-            "values": {
-                "recommended": 20
-            }
-        }
+  "core": {
+    "goal": {
+      "_comment": [
+        "Using 'goal' as the name of an option let you override some of the generated goal parameters"
+      ],
+      "display_name": "The End Objective",
+      "description": "How to End your Randomized playthrough.",
+      "aliases": { "easiest": 0 },
+      "hidden": false
     },
+    "death_link": {
+      "default": false
+    },
+    "filler_traps": {
+      "_comment": "Using values here let you set a 'recommended' filler_trap percentage or even a default percentage",
+      "values": {
+        "recommended": 20
+      }
+    },
+    "war_sails": {
+      "display_name": "War Sails Enabled",
+      "description": [
+        "War Sails skills and troops will be included in the randomization."
+      ],
+      "type": "Toggle",
+      "default": false
+    }
+  },
   "user": {
     "dragon_banner_pieces_required": {
       "display_name": "Dragon Banner Pieces Required",
@@ -43,7 +51,6 @@
     "onehanded_skill_max": {
       "display_name": "One-Handed Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum One-Handed skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -56,7 +63,6 @@
     "twohanded_skill_max": {
       "display_name": "Two-Handed Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Two-Handed skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -69,7 +75,6 @@
     "polearm_skill_max": {
       "display_name": "Polearm Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Polearm skill level that will have Archipelago locations.",
         " Locations are added in multiples of 25 up to this value."
       ],
@@ -82,7 +87,6 @@
     "bow_skill_max": {
       "display_name": "Bow Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Bow skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -95,7 +99,6 @@
     "crossbow_skill_max": {
       "display_name": "Crossbow Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Crossbow skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -108,7 +111,6 @@
     "throwing_skill_max": {
       "display_name": "Throwing Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Throwing skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -121,7 +123,6 @@
     "riding_skill_max": {
       "display_name": "Riding Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Riding skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -134,7 +135,6 @@
     "athletics_skill_max": {
       "display_name": "Athletics Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Athletics skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -156,7 +156,6 @@
     "scouting_skill_max": {
       "display_name": "Scouting Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Scouting skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -169,7 +168,6 @@
     "tactics_skill_max": {
       "display_name": "Tactics Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Tactics skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -182,7 +180,6 @@
     "roguery_skill_max": {
       "display_name": "Roguery Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Roguery skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -195,7 +192,6 @@
     "charm_skill_max": {
       "display_name": "Charm Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Charm skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -208,7 +204,6 @@
     "leadership_skill_max": {
       "display_name": "Leadership Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Leadership skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -221,7 +216,6 @@
     "trade_skill_max": {
       "display_name": "Trade Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Trade skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -234,7 +228,6 @@
     "steward_skill_max": {
       "display_name": "Steward Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Steward skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -247,7 +240,6 @@
     "medicine_skill_max": {
       "display_name": "Medicine Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Medicine skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
@@ -260,8 +252,43 @@
     "engineering_skill_max": {
       "display_name": "Engineering Skill Max Level",
       "description": [
-        "~~~WARNING all of these will be considered Sphere 1. Only select as high as you are comfortable farming in the beginning of the game.~~~",
         "Maximum Engineering skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "mariner_skill_max": {
+      "display_name": "Mariner Skill Max Level",
+      "description": [
+        "Maximum Mariner skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "boatswain_skill_max": {
+      "display_name": "Boatswain Skill Max Level",
+      "description": [
+        "Maximum Boatswain skill level that will have Archipelago locations.",
+        "Locations are added in multiples of 25 up to this value."
+      ],
+      "type": "Range",
+      "range_start": 25,
+      "range_end": 300,
+      "default": 100,
+      "group": "Skill Sanity"
+    },
+    "shipmaster_skill_max": {
+      "display_name": "Shipmaster Skill Max Level",
+      "description": [
+        "Maximum Shipmaster skill level that will have Archipelago locations.",
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
@@ -284,7 +311,43 @@
       "description": [ "When enabled, winning tournaments in each town will be Archipelago locations." ],
       "type": "Toggle",
       "default": true,
-      "group": "Tournament Sanity"
+      "group": "Other Sanity"
+    },
+    "minor_faction_troop_sanity": {
+      "display_name": "Minor Faction Troop Sanity",
+      "description": [
+        "THIS IS NOT AN EASY GOAL, BE FOREWARNED",
+        "When enabled, upgrading minor faction's troops will be required for troopSanity,",
+        "Minor factions include Vakken and Darshi, as well as factions like Children of the Woods, Eleftheroi, Skolderbroda, and Company of the Golden Boar",
+        "This will require targeted attacks against these factions, capturing prisoners, and then keeping them alive long enough to upgrade them.",
+        "These troops will still have items in the archipelago to be able to recruit/upgrade them regardless of whether you have this option enabled."
+      ],
+      "type": "Toggle",
+      "default": false,
+      "group": "Troop Sanity"
+    },
+    "bandit_troop_sanity": {
+      "display_name": "Bandit Troop Sanity",
+      "description": [
+        "When enabled, upgrading bandit's troops will be required for troopSanity,",
+        "Bandit factions include various bandit types like Forest Bandits, Mountain Bandits, and Desert Bandits.",
+        "This will require capturing prisoners, recruting bandits, and then keeping them alive long enough to upgrade them.",
+        "These troops will still have items in the archipelago to be able to recruit/upgrade them regardless of whether you have this option enabled."
+      ],
+      "type": "Toggle",
+      "default": false,
+      "group": "Troop Sanity"
+    },
+    "mercenary_troop_sanity": {
+      "display_name": "Mercenary Troop Sanity",
+      "description": [
+        "When enabled, upgrading mercenary's troops will be required for troopSanity,",
+        "This will require either capturing mercenaries as prisoners, or hiring them directly and upgrading from the lowest to the highest tier.",
+        "These troops will still have items in the archipelago to be able to recruit/upgrade them regardless of whether you have this option enabled."
+      ],
+      "type": "Toggle",
+      "default": false,
+      "group": "Troop Sanity"
     },
     "quest_sanity": {
       "display_name": "Quest Sanity",

@@ -55,7 +55,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 150,
       "group": "Skill Sanity"
@@ -67,7 +67,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 150,
       "group": "Skill Sanity"
@@ -79,7 +79,7 @@
         " Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 150,
       "group": "Skill Sanity"
@@ -91,7 +91,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 150,
       "group": "Skill Sanity"
@@ -103,7 +103,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 150,
       "group": "Skill Sanity"
@@ -115,7 +115,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 150,
       "group": "Skill Sanity"
@@ -127,7 +127,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -139,7 +139,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -148,7 +148,7 @@
       "display_name": "Crafting Skill Max Level",
       "description": [ "Maximum Crafting (Smithing) skill level that will have Archipelago locations. Locations are added in multiples of 25 up to this value." ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -160,7 +160,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -172,7 +172,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -184,7 +184,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -196,7 +196,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -208,7 +208,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -220,7 +220,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -232,7 +232,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -244,7 +244,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -256,7 +256,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -268,7 +268,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -280,7 +280,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -292,7 +292,7 @@
         "Locations are added in multiples of 25 up to this value."
       ],
       "type": "Range",
-      "range_start": 25,
+      "range_start": 0,
       "range_end": 300,
       "default": 100,
       "group": "Skill Sanity"
@@ -301,7 +301,7 @@
       "display_name": "Crafting Sanity Max Tier",
       "description": [ "Maximum weapon tier that will have Archipelago locations. Locations are included for all tiers up to and including this value." ],
       "type": "Range",
-      "range_start": 1,
+      "range_start": 0,
       "range_end": 6,
       "default": 3,
       "group": "Crafting Sanity"

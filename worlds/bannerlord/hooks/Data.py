@@ -13,9 +13,23 @@ def after_load_progressive_item_file(progressive_item_table: list) -> list:
 
 # called after the locations.json file has been loaded, before any location loading or processing has occurred
 # if you need access to the locations after processing to add ids, etc., you should use the hooks in World.py
-def after_load_location_file(location_table: list) -> list:
-    return location_table
+QUEST_TOTAL_MAX = 25
+QUEST_TOTAL_TYPES = {
+    "Merchant": "MerchantQuest",
+    "Village":  "VillageQuest",
+    "Lord":     "LordQuest",
+    "Gang":     "GangQuest",
+}
 
+def after_load_location_file(location_table: list) -> list:
+    for label, region in QUEST_TOTAL_TYPES.items():
+        for n in range(1, QUEST_TOTAL_MAX + 1):
+            location_table.append({
+                "name": f"{label} Quest Completed {n}",
+                "category": ["Quest", f"{region}Total"],
+                "region": region,
+            })
+    return location_table
 # called after the events.json file has been loaded, before any processing has occurred
 # If you need access to the events after processing, you should use the hooks in World.py
 def after_load_event_file(event_table: list) -> list:

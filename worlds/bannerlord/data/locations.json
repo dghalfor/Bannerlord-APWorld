@@ -7,11 +7,6 @@
       "region": "MerchantQuest"
     },
     {
-      "name": "Army Needs Supplies Quest",
-      "category": [ "Quest", "MerchantQuest" ],
-      "region": "MerchantQuest"
-    },
-    {
       "name": "Artisan Overpriced Goods Quest",
       "category": [ "Quest", "MerchantQuest" ],
       "region": "MerchantQuest"
@@ -20,7 +15,7 @@
       "name": "Betting Fraud Quest",
       "category": [ "Quest", "GangQuest" ],
       "region": "GangQuest",
-      "requires":  "|@TournamentPass:5|"
+      "requires": "|@TournamentPass:5|"
     },
     {
       "name": "Captured by Bounty Hunters Quest",
@@ -107,6 +102,11 @@
       "name": "Village Needs Tools Quest",
       "category": [ "Quest", "VillageQuest" ],
       "region": "VillageQuest"
+    },
+    {
+      "name": "Army Needs Supplies Quest",
+      "category": [ "Quest", "LordQuest" ],
+      "region": "LordQuest"
     },
     {
       "name": "Lady's Knight Out Quest",
@@ -469,13 +469,6 @@
       "region": "vlandiaTier2"
     },
     {
-      "name": "Upgraded to Vlandian Squire",
-      "category": [
-        "TroopUpgrade"
-      ],
-      "region": "vlandiaTier2"
-    },
-    {
       "name": "Upgraded to Vlandian Crossbowman",
       "category": [
         "TroopUpgrade"
@@ -547,7 +540,7 @@
     },
     {
       "name": "Upgraded to Vlandian Nauta",
-      "category": [ "TroopUpgrade", "WarSails" ], 
+      "category": [ "TroopUpgrade", "WarSails" ],
       "region": "vlandiaTier5"
     },
     {
@@ -636,13 +629,6 @@
     },
     {
       "name": "Upgraded to Aserai Tribesman",
-      "category": [
-        "TroopUpgrade"
-      ],
-      "region": "aseraiTier2"
-    },
-    {
-      "name": "Upgraded to Aserai Youth",
       "category": [
         "TroopUpgrade"
       ],
@@ -815,13 +801,6 @@
       "region": "sturgiaTier2"
     },
     {
-      "name": "Upgraded to Sturgian Otrok",
-      "category": [
-        "TroopUpgrade"
-      ],
-      "region": "sturgiaTier2"
-    },
-    {
       "name": "Upgraded to Sturgian Brigand",
       "category": [
         "TroopUpgrade"
@@ -975,13 +954,6 @@
     },
     {
       "name": "Upgraded to Battanian Wood Runner",
-      "category": [
-        "TroopUpgrade"
-      ],
-      "region": "battaniaTier2"
-    },
-    {
-      "name": "Upgraded to Battanian Highborn Youth",
       "category": [
         "TroopUpgrade"
       ],
@@ -1148,13 +1120,6 @@
     },
     {
       "name": "Upgraded to Imperial Infantryman",
-      "category": [
-        "TroopUpgrade"
-      ],
-      "region": "empireTier2"
-    },
-    {
-      "name": "Upgraded to Imperial Vigla Recruit",
       "category": [
         "TroopUpgrade"
       ],
@@ -1363,13 +1328,6 @@
     },
     {
       "name": "Upgraded to Khuzait Tribal Warrior",
-      "category": [
-        "TroopUpgrade"
-      ],
-      "region": "khuzaitTier2"
-    },
-    {
-      "name": "Upgraded to Khuzait Noble's Son",
       "category": [
         "TroopUpgrade"
       ],
@@ -2356,7 +2314,8 @@
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Vigor Attribute:1| OR |OneHanded Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "OneHanded Skill Level 50",
@@ -2364,7 +2323,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:2| OR |OneHanded Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Vigor Attribute:3| OR |OneHanded Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:2| OR |OneHanded Focus:1|))"
     },
     {
       "name": "OneHanded Skill Level 75",
@@ -2372,7 +2331,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:4| OR (|OneHanded Focus:1| AND |Vigor Attribute:1|) OR |OneHanded Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Vigor Attribute:6| OR (|OneHanded Focus:1| AND |Vigor Attribute:3|) OR |OneHanded Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Vigor Attribute:5| OR (|OneHanded Focus:1| AND |Vigor Attribute:2|) OR |OneHanded Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:4| OR (|OneHanded Focus:1| AND |Vigor Attribute:1|) OR |OneHanded Focus:2|))"
     },
     {
       "name": "OneHanded Skill Level 100",
@@ -2380,7 +2339,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:5| OR (|OneHanded Focus:1| AND |Vigor Attribute:2|) OR |OneHanded Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|OneHanded Focus:1| AND |Vigor Attribute:5|) OR (|OneHanded Focus:2| AND |Vigor Attribute:2|) OR |OneHanded Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Vigor Attribute:7| OR (|OneHanded Focus:1| AND |Vigor Attribute:4|) OR (|OneHanded Focus:2| AND |Vigor Attribute:1|) OR |OneHanded Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:5| OR (|OneHanded Focus:1| AND |Vigor Attribute:2|) OR |OneHanded Focus:2|))"
     },
     {
       "name": "OneHanded Skill Level 125",
@@ -2388,7 +2347,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:7| OR (|OneHanded Focus:1| AND |Vigor Attribute:4|) OR (|OneHanded Focus:2| AND |Vigor Attribute:1|) OR |OneHanded Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|OneHanded Focus:2| AND |Vigor Attribute:5|) OR (|OneHanded Focus:3| AND |Vigor Attribute:2|) OR |OneHanded Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|OneHanded Focus:1| AND |Vigor Attribute:6|) OR (|OneHanded Focus:2| AND |Vigor Attribute:3|) OR |OneHanded Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:7| OR (|OneHanded Focus:1| AND |Vigor Attribute:4|) OR (|OneHanded Focus:2| AND |Vigor Attribute:1|) OR |OneHanded Focus:3|))"
     },
     {
       "name": "OneHanded Skill Level 150",
@@ -2396,7 +2355,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|OneHanded Focus:1| AND |Vigor Attribute:6|) OR (|OneHanded Focus:2| AND |Vigor Attribute:3|) OR |OneHanded Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|OneHanded Focus:2| AND |Vigor Attribute:7|) OR (|OneHanded Focus:3| AND |Vigor Attribute:4|) OR (|OneHanded Focus:4| AND |Vigor Attribute:1|) OR |OneHanded Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|OneHanded Focus:2| AND |Vigor Attribute:5|) OR (|OneHanded Focus:3| AND |Vigor Attribute:2|) OR |OneHanded Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|OneHanded Focus:1| AND |Vigor Attribute:6|) OR (|OneHanded Focus:2| AND |Vigor Attribute:3|) OR |OneHanded Focus:3|))"
     },
     {
       "name": "OneHanded Skill Level 175",
@@ -2404,7 +2363,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|OneHanded Focus:2| AND |Vigor Attribute:5|) OR (|OneHanded Focus:3| AND |Vigor Attribute:2|) OR |OneHanded Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|OneHanded Focus:3| AND |Vigor Attribute:7|) OR (|OneHanded Focus:4| AND |Vigor Attribute:4|) OR (|OneHanded Focus:5| AND |Vigor Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|OneHanded Focus:2| AND |Vigor Attribute:7|) OR (|OneHanded Focus:3| AND |Vigor Attribute:4|) OR (|OneHanded Focus:4| AND |Vigor Attribute:1|) OR |OneHanded Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|OneHanded Focus:2| AND |Vigor Attribute:5|) OR (|OneHanded Focus:3| AND |Vigor Attribute:2|) OR |OneHanded Focus:4|))"
     },
     {
       "name": "OneHanded Skill Level 200",
@@ -2412,7 +2371,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|OneHanded Focus:2| AND |Vigor Attribute:7|) OR (|OneHanded Focus:3| AND |Vigor Attribute:4|) OR (|OneHanded Focus:4| AND |Vigor Attribute:1|) OR |OneHanded Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|OneHanded Focus:4| AND |Vigor Attribute:6|) OR (|OneHanded Focus:5| AND |Vigor Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|OneHanded Focus:3| AND |Vigor Attribute:7|) OR (|OneHanded Focus:4| AND |Vigor Attribute:4|) OR (|OneHanded Focus:5| AND |Vigor Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|OneHanded Focus:2| AND |Vigor Attribute:7|) OR (|OneHanded Focus:3| AND |Vigor Attribute:4|) OR (|OneHanded Focus:4| AND |Vigor Attribute:1|) OR |OneHanded Focus:5|))"
     },
     {
       "name": "OneHanded Skill Level 225",
@@ -2420,7 +2379,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|OneHanded Focus:3| AND |Vigor Attribute:6|) OR (|OneHanded Focus:4| AND |Vigor Attribute:3|) OR |OneHanded Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|OneHanded Focus:5| AND |Vigor Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|OneHanded Focus:4| AND |Vigor Attribute:6|) OR (|OneHanded Focus:5| AND |Vigor Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|OneHanded Focus:3| AND |Vigor Attribute:6|) OR (|OneHanded Focus:4| AND |Vigor Attribute:3|) OR |OneHanded Focus:5|))"
     },
     {
       "name": "OneHanded Skill Level 250",
@@ -2428,7 +2387,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|OneHanded Focus:3| AND |Vigor Attribute:7|) OR (|OneHanded Focus:4| AND |Vigor Attribute:5|) OR (|OneHanded Focus:5| AND |Vigor Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|OneHanded Focus:5| AND |Vigor Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|OneHanded Focus:3| AND |Vigor Attribute:7|) OR (|OneHanded Focus:4| AND |Vigor Attribute:5|) OR (|OneHanded Focus:5| AND |Vigor Attribute:2|)))"
     },
     {
       "name": "OneHanded Skill Level 275",
@@ -2436,7 +2395,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|OneHanded Focus:4| AND |Vigor Attribute:6|) OR (|OneHanded Focus:5| AND |Vigor Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|OneHanded Focus:5| AND |Vigor Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|OneHanded Focus:4| AND |Vigor Attribute:6|) OR (|OneHanded Focus:5| AND |Vigor Attribute:4|)))"
     },
     {
       "name": "OneHanded Skill Level 300",
@@ -2444,7 +2403,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|OneHanded Focus:5| AND |Vigor Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|OneHanded Focus:5| AND |Vigor Attribute:5|)))"
     },
     {
       "name": "OneHanded Skill Level 325",
@@ -2452,14 +2411,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|OneHanded Focus:5| AND |Vigor Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|OneHanded Focus:5| AND |Vigor Attribute:7|)))"
     },
     {
       "name": "TwoHanded Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Vigor Attribute:1| OR |TwoHanded Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "TwoHanded Skill Level 50",
@@ -2467,7 +2427,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:2| OR |TwoHanded Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Vigor Attribute:3| OR |TwoHanded Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:2| OR |TwoHanded Focus:1|))"
     },
     {
       "name": "TwoHanded Skill Level 75",
@@ -2475,7 +2435,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:4| OR (|TwoHanded Focus:1| AND |Vigor Attribute:1|) OR |TwoHanded Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Vigor Attribute:6| OR (|TwoHanded Focus:1| AND |Vigor Attribute:3|) OR |TwoHanded Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Vigor Attribute:5| OR (|TwoHanded Focus:1| AND |Vigor Attribute:2|) OR |TwoHanded Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:4| OR (|TwoHanded Focus:1| AND |Vigor Attribute:1|) OR |TwoHanded Focus:2|))"
     },
     {
       "name": "TwoHanded Skill Level 100",
@@ -2483,7 +2443,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:5| OR (|TwoHanded Focus:1| AND |Vigor Attribute:2|) OR |TwoHanded Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|TwoHanded Focus:1| AND |Vigor Attribute:5|) OR (|TwoHanded Focus:2| AND |Vigor Attribute:2|) OR |TwoHanded Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Vigor Attribute:7| OR (|TwoHanded Focus:1| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:2| AND |Vigor Attribute:1|) OR |TwoHanded Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:5| OR (|TwoHanded Focus:1| AND |Vigor Attribute:2|) OR |TwoHanded Focus:2|))"
     },
     {
       "name": "TwoHanded Skill Level 125",
@@ -2491,7 +2451,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:7| OR (|TwoHanded Focus:1| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:2| AND |Vigor Attribute:1|) OR |TwoHanded Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|TwoHanded Focus:2| AND |Vigor Attribute:5|) OR (|TwoHanded Focus:3| AND |Vigor Attribute:2|) OR |TwoHanded Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|TwoHanded Focus:1| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:2| AND |Vigor Attribute:3|) OR |TwoHanded Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:7| OR (|TwoHanded Focus:1| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:2| AND |Vigor Attribute:1|) OR |TwoHanded Focus:3|))"
     },
     {
       "name": "TwoHanded Skill Level 150",
@@ -2499,7 +2459,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|TwoHanded Focus:1| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:2| AND |Vigor Attribute:3|) OR |TwoHanded Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|TwoHanded Focus:2| AND |Vigor Attribute:7|) OR (|TwoHanded Focus:3| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:1|) OR |TwoHanded Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|TwoHanded Focus:2| AND |Vigor Attribute:5|) OR (|TwoHanded Focus:3| AND |Vigor Attribute:2|) OR |TwoHanded Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|TwoHanded Focus:1| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:2| AND |Vigor Attribute:3|) OR |TwoHanded Focus:3|))"
     },
     {
       "name": "TwoHanded Skill Level 175",
@@ -2507,7 +2467,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|TwoHanded Focus:2| AND |Vigor Attribute:5|) OR (|TwoHanded Focus:3| AND |Vigor Attribute:2|) OR |TwoHanded Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|TwoHanded Focus:3| AND |Vigor Attribute:7|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:5| AND |Vigor Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|TwoHanded Focus:2| AND |Vigor Attribute:7|) OR (|TwoHanded Focus:3| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:1|) OR |TwoHanded Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|TwoHanded Focus:2| AND |Vigor Attribute:5|) OR (|TwoHanded Focus:3| AND |Vigor Attribute:2|) OR |TwoHanded Focus:4|))"
     },
     {
       "name": "TwoHanded Skill Level 200",
@@ -2515,7 +2475,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|TwoHanded Focus:2| AND |Vigor Attribute:7|) OR (|TwoHanded Focus:3| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:1|) OR |TwoHanded Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|TwoHanded Focus:4| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:5| AND |Vigor Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|TwoHanded Focus:3| AND |Vigor Attribute:7|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:5| AND |Vigor Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|TwoHanded Focus:2| AND |Vigor Attribute:7|) OR (|TwoHanded Focus:3| AND |Vigor Attribute:4|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:1|) OR |TwoHanded Focus:5|))"
     },
     {
       "name": "TwoHanded Skill Level 225",
@@ -2523,7 +2483,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|TwoHanded Focus:3| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:3|) OR |TwoHanded Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|TwoHanded Focus:5| AND |Vigor Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|TwoHanded Focus:4| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:5| AND |Vigor Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|TwoHanded Focus:3| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:3|) OR |TwoHanded Focus:5|))"
     },
     {
       "name": "TwoHanded Skill Level 250",
@@ -2531,7 +2491,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|TwoHanded Focus:3| AND |Vigor Attribute:7|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:5|) OR (|TwoHanded Focus:5| AND |Vigor Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|TwoHanded Focus:5| AND |Vigor Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|TwoHanded Focus:3| AND |Vigor Attribute:7|) OR (|TwoHanded Focus:4| AND |Vigor Attribute:5|) OR (|TwoHanded Focus:5| AND |Vigor Attribute:2|)))"
     },
     {
       "name": "TwoHanded Skill Level 275",
@@ -2539,7 +2499,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|TwoHanded Focus:4| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:5| AND |Vigor Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|TwoHanded Focus:5| AND |Vigor Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|TwoHanded Focus:4| AND |Vigor Attribute:6|) OR (|TwoHanded Focus:5| AND |Vigor Attribute:4|)))"
     },
     {
       "name": "TwoHanded Skill Level 300",
@@ -2547,7 +2507,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|TwoHanded Focus:5| AND |Vigor Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|TwoHanded Focus:5| AND |Vigor Attribute:5|)))"
     },
     {
       "name": "TwoHanded Skill Level 325",
@@ -2555,14 +2515,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|TwoHanded Focus:5| AND |Vigor Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|TwoHanded Focus:5| AND |Vigor Attribute:7|)))"
     },
     {
       "name": "Polearm Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Vigor Attribute:1| OR |Polearm Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Polearm Skill Level 50",
@@ -2570,7 +2531,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:2| OR |Polearm Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Vigor Attribute:3| OR |Polearm Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:2| OR |Polearm Focus:1|))"
     },
     {
       "name": "Polearm Skill Level 75",
@@ -2578,7 +2539,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:4| OR (|Polearm Focus:1| AND |Vigor Attribute:1|) OR |Polearm Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Vigor Attribute:6| OR (|Polearm Focus:1| AND |Vigor Attribute:3|) OR |Polearm Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Vigor Attribute:5| OR (|Polearm Focus:1| AND |Vigor Attribute:2|) OR |Polearm Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:4| OR (|Polearm Focus:1| AND |Vigor Attribute:1|) OR |Polearm Focus:2|))"
     },
     {
       "name": "Polearm Skill Level 100",
@@ -2586,7 +2547,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:5| OR (|Polearm Focus:1| AND |Vigor Attribute:2|) OR |Polearm Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Polearm Focus:1| AND |Vigor Attribute:5|) OR (|Polearm Focus:2| AND |Vigor Attribute:2|) OR |Polearm Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Vigor Attribute:7| OR (|Polearm Focus:1| AND |Vigor Attribute:4|) OR (|Polearm Focus:2| AND |Vigor Attribute:1|) OR |Polearm Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:5| OR (|Polearm Focus:1| AND |Vigor Attribute:2|) OR |Polearm Focus:2|))"
     },
     {
       "name": "Polearm Skill Level 125",
@@ -2594,7 +2555,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Vigor Attribute:7| OR (|Polearm Focus:1| AND |Vigor Attribute:4|) OR (|Polearm Focus:2| AND |Vigor Attribute:1|) OR |Polearm Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Polearm Focus:2| AND |Vigor Attribute:5|) OR (|Polearm Focus:3| AND |Vigor Attribute:2|) OR |Polearm Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Polearm Focus:1| AND |Vigor Attribute:6|) OR (|Polearm Focus:2| AND |Vigor Attribute:3|) OR |Polearm Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Vigor Attribute:7| OR (|Polearm Focus:1| AND |Vigor Attribute:4|) OR (|Polearm Focus:2| AND |Vigor Attribute:1|) OR |Polearm Focus:3|))"
     },
     {
       "name": "Polearm Skill Level 150",
@@ -2602,7 +2563,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Polearm Focus:1| AND |Vigor Attribute:6|) OR (|Polearm Focus:2| AND |Vigor Attribute:3|) OR |Polearm Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Polearm Focus:2| AND |Vigor Attribute:7|) OR (|Polearm Focus:3| AND |Vigor Attribute:4|) OR (|Polearm Focus:4| AND |Vigor Attribute:1|) OR |Polearm Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Polearm Focus:2| AND |Vigor Attribute:5|) OR (|Polearm Focus:3| AND |Vigor Attribute:2|) OR |Polearm Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Polearm Focus:1| AND |Vigor Attribute:6|) OR (|Polearm Focus:2| AND |Vigor Attribute:3|) OR |Polearm Focus:3|))"
     },
     {
       "name": "Polearm Skill Level 175",
@@ -2610,7 +2571,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Polearm Focus:2| AND |Vigor Attribute:5|) OR (|Polearm Focus:3| AND |Vigor Attribute:2|) OR |Polearm Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Polearm Focus:3| AND |Vigor Attribute:7|) OR (|Polearm Focus:4| AND |Vigor Attribute:4|) OR (|Polearm Focus:5| AND |Vigor Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Polearm Focus:2| AND |Vigor Attribute:7|) OR (|Polearm Focus:3| AND |Vigor Attribute:4|) OR (|Polearm Focus:4| AND |Vigor Attribute:1|) OR |Polearm Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Polearm Focus:2| AND |Vigor Attribute:5|) OR (|Polearm Focus:3| AND |Vigor Attribute:2|) OR |Polearm Focus:4|))"
     },
     {
       "name": "Polearm Skill Level 200",
@@ -2618,7 +2579,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Polearm Focus:2| AND |Vigor Attribute:7|) OR (|Polearm Focus:3| AND |Vigor Attribute:4|) OR (|Polearm Focus:4| AND |Vigor Attribute:1|) OR |Polearm Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Polearm Focus:4| AND |Vigor Attribute:6|) OR (|Polearm Focus:5| AND |Vigor Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Polearm Focus:3| AND |Vigor Attribute:7|) OR (|Polearm Focus:4| AND |Vigor Attribute:4|) OR (|Polearm Focus:5| AND |Vigor Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Polearm Focus:2| AND |Vigor Attribute:7|) OR (|Polearm Focus:3| AND |Vigor Attribute:4|) OR (|Polearm Focus:4| AND |Vigor Attribute:1|) OR |Polearm Focus:5|))"
     },
     {
       "name": "Polearm Skill Level 225",
@@ -2626,7 +2587,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Polearm Focus:3| AND |Vigor Attribute:6|) OR (|Polearm Focus:4| AND |Vigor Attribute:3|) OR |Polearm Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Polearm Focus:5| AND |Vigor Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Polearm Focus:4| AND |Vigor Attribute:6|) OR (|Polearm Focus:5| AND |Vigor Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Polearm Focus:3| AND |Vigor Attribute:6|) OR (|Polearm Focus:4| AND |Vigor Attribute:3|) OR |Polearm Focus:5|))"
     },
     {
       "name": "Polearm Skill Level 250",
@@ -2634,7 +2595,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Polearm Focus:3| AND |Vigor Attribute:7|) OR (|Polearm Focus:4| AND |Vigor Attribute:5|) OR (|Polearm Focus:5| AND |Vigor Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Polearm Focus:5| AND |Vigor Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Polearm Focus:3| AND |Vigor Attribute:7|) OR (|Polearm Focus:4| AND |Vigor Attribute:5|) OR (|Polearm Focus:5| AND |Vigor Attribute:2|)))"
     },
     {
       "name": "Polearm Skill Level 275",
@@ -2642,7 +2603,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Polearm Focus:4| AND |Vigor Attribute:6|) OR (|Polearm Focus:5| AND |Vigor Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Polearm Focus:5| AND |Vigor Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Polearm Focus:4| AND |Vigor Attribute:6|) OR (|Polearm Focus:5| AND |Vigor Attribute:4|)))"
     },
     {
       "name": "Polearm Skill Level 300",
@@ -2650,7 +2611,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Polearm Focus:5| AND |Vigor Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Polearm Focus:5| AND |Vigor Attribute:5|)))"
     },
     {
       "name": "Polearm Skill Level 325",
@@ -2658,14 +2619,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Polearm Focus:5| AND |Vigor Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Polearm Focus:5| AND |Vigor Attribute:7|)))"
     },
     {
       "name": "Bow Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Control Attribute:1| OR |Bow Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Bow Skill Level 50",
@@ -2673,7 +2635,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:2| OR |Bow Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Control Attribute:3| OR |Bow Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:2| OR |Bow Focus:1|))"
     },
     {
       "name": "Bow Skill Level 75",
@@ -2681,7 +2643,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:4| OR (|Bow Focus:1| AND |Control Attribute:1|) OR |Bow Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Control Attribute:6| OR (|Bow Focus:1| AND |Control Attribute:3|) OR |Bow Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Control Attribute:5| OR (|Bow Focus:1| AND |Control Attribute:2|) OR |Bow Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:4| OR (|Bow Focus:1| AND |Control Attribute:1|) OR |Bow Focus:2|))"
     },
     {
       "name": "Bow Skill Level 100",
@@ -2689,7 +2651,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:5| OR (|Bow Focus:1| AND |Control Attribute:2|) OR |Bow Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Bow Focus:1| AND |Control Attribute:5|) OR (|Bow Focus:2| AND |Control Attribute:2|) OR |Bow Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Control Attribute:7| OR (|Bow Focus:1| AND |Control Attribute:4|) OR (|Bow Focus:2| AND |Control Attribute:1|) OR |Bow Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:5| OR (|Bow Focus:1| AND |Control Attribute:2|) OR |Bow Focus:2|))"
     },
     {
       "name": "Bow Skill Level 125",
@@ -2697,7 +2659,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:7| OR (|Bow Focus:1| AND |Control Attribute:4|) OR (|Bow Focus:2| AND |Control Attribute:1|) OR |Bow Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Bow Focus:2| AND |Control Attribute:5|) OR (|Bow Focus:3| AND |Control Attribute:2|) OR |Bow Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Bow Focus:1| AND |Control Attribute:6|) OR (|Bow Focus:2| AND |Control Attribute:3|) OR |Bow Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:7| OR (|Bow Focus:1| AND |Control Attribute:4|) OR (|Bow Focus:2| AND |Control Attribute:1|) OR |Bow Focus:3|))"
     },
     {
       "name": "Bow Skill Level 150",
@@ -2705,7 +2667,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Bow Focus:1| AND |Control Attribute:6|) OR (|Bow Focus:2| AND |Control Attribute:3|) OR |Bow Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Bow Focus:2| AND |Control Attribute:7|) OR (|Bow Focus:3| AND |Control Attribute:4|) OR (|Bow Focus:4| AND |Control Attribute:1|) OR |Bow Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Bow Focus:2| AND |Control Attribute:5|) OR (|Bow Focus:3| AND |Control Attribute:2|) OR |Bow Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Bow Focus:1| AND |Control Attribute:6|) OR (|Bow Focus:2| AND |Control Attribute:3|) OR |Bow Focus:3|))"
     },
     {
       "name": "Bow Skill Level 175",
@@ -2713,7 +2675,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Bow Focus:2| AND |Control Attribute:5|) OR (|Bow Focus:3| AND |Control Attribute:2|) OR |Bow Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Bow Focus:3| AND |Control Attribute:7|) OR (|Bow Focus:4| AND |Control Attribute:4|) OR (|Bow Focus:5| AND |Control Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Bow Focus:2| AND |Control Attribute:7|) OR (|Bow Focus:3| AND |Control Attribute:4|) OR (|Bow Focus:4| AND |Control Attribute:1|) OR |Bow Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Bow Focus:2| AND |Control Attribute:5|) OR (|Bow Focus:3| AND |Control Attribute:2|) OR |Bow Focus:4|))"
     },
     {
       "name": "Bow Skill Level 200",
@@ -2721,7 +2683,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Bow Focus:2| AND |Control Attribute:7|) OR (|Bow Focus:3| AND |Control Attribute:4|) OR (|Bow Focus:4| AND |Control Attribute:1|) OR |Bow Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Bow Focus:4| AND |Control Attribute:6|) OR (|Bow Focus:5| AND |Control Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Bow Focus:3| AND |Control Attribute:7|) OR (|Bow Focus:4| AND |Control Attribute:4|) OR (|Bow Focus:5| AND |Control Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Bow Focus:2| AND |Control Attribute:7|) OR (|Bow Focus:3| AND |Control Attribute:4|) OR (|Bow Focus:4| AND |Control Attribute:1|) OR |Bow Focus:5|))"
     },
     {
       "name": "Bow Skill Level 225",
@@ -2729,7 +2691,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Bow Focus:3| AND |Control Attribute:6|) OR (|Bow Focus:4| AND |Control Attribute:3|) OR |Bow Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Bow Focus:5| AND |Control Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Bow Focus:4| AND |Control Attribute:6|) OR (|Bow Focus:5| AND |Control Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Bow Focus:3| AND |Control Attribute:6|) OR (|Bow Focus:4| AND |Control Attribute:3|) OR |Bow Focus:5|))"
     },
     {
       "name": "Bow Skill Level 250",
@@ -2737,7 +2699,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Bow Focus:3| AND |Control Attribute:7|) OR (|Bow Focus:4| AND |Control Attribute:5|) OR (|Bow Focus:5| AND |Control Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Bow Focus:5| AND |Control Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Bow Focus:3| AND |Control Attribute:7|) OR (|Bow Focus:4| AND |Control Attribute:5|) OR (|Bow Focus:5| AND |Control Attribute:2|)))"
     },
     {
       "name": "Bow Skill Level 275",
@@ -2745,7 +2707,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Bow Focus:4| AND |Control Attribute:6|) OR (|Bow Focus:5| AND |Control Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Bow Focus:5| AND |Control Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Bow Focus:4| AND |Control Attribute:6|) OR (|Bow Focus:5| AND |Control Attribute:4|)))"
     },
     {
       "name": "Bow Skill Level 300",
@@ -2753,7 +2715,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Bow Focus:5| AND |Control Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Bow Focus:5| AND |Control Attribute:5|)))"
     },
     {
       "name": "Bow Skill Level 325",
@@ -2761,14 +2723,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Bow Focus:5| AND |Control Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Bow Focus:5| AND |Control Attribute:7|)))"
     },
     {
       "name": "Crossbow Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Control Attribute:1| OR |Crossbow Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Crossbow Skill Level 50",
@@ -2776,7 +2739,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:2| OR |Crossbow Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Control Attribute:3| OR |Crossbow Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:2| OR |Crossbow Focus:1|))"
     },
     {
       "name": "Crossbow Skill Level 75",
@@ -2784,7 +2747,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:4| OR (|Crossbow Focus:1| AND |Control Attribute:1|) OR |Crossbow Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Control Attribute:6| OR (|Crossbow Focus:1| AND |Control Attribute:3|) OR |Crossbow Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Control Attribute:5| OR (|Crossbow Focus:1| AND |Control Attribute:2|) OR |Crossbow Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:4| OR (|Crossbow Focus:1| AND |Control Attribute:1|) OR |Crossbow Focus:2|))"
     },
     {
       "name": "Crossbow Skill Level 100",
@@ -2792,7 +2755,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:5| OR (|Crossbow Focus:1| AND |Control Attribute:2|) OR |Crossbow Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crossbow Focus:1| AND |Control Attribute:5|) OR (|Crossbow Focus:2| AND |Control Attribute:2|) OR |Crossbow Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Control Attribute:7| OR (|Crossbow Focus:1| AND |Control Attribute:4|) OR (|Crossbow Focus:2| AND |Control Attribute:1|) OR |Crossbow Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:5| OR (|Crossbow Focus:1| AND |Control Attribute:2|) OR |Crossbow Focus:2|))"
     },
     {
       "name": "Crossbow Skill Level 125",
@@ -2800,7 +2763,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:7| OR (|Crossbow Focus:1| AND |Control Attribute:4|) OR (|Crossbow Focus:2| AND |Control Attribute:1|) OR |Crossbow Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crossbow Focus:2| AND |Control Attribute:5|) OR (|Crossbow Focus:3| AND |Control Attribute:2|) OR |Crossbow Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Crossbow Focus:1| AND |Control Attribute:6|) OR (|Crossbow Focus:2| AND |Control Attribute:3|) OR |Crossbow Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:7| OR (|Crossbow Focus:1| AND |Control Attribute:4|) OR (|Crossbow Focus:2| AND |Control Attribute:1|) OR |Crossbow Focus:3|))"
     },
     {
       "name": "Crossbow Skill Level 150",
@@ -2808,7 +2771,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crossbow Focus:1| AND |Control Attribute:6|) OR (|Crossbow Focus:2| AND |Control Attribute:3|) OR |Crossbow Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crossbow Focus:2| AND |Control Attribute:7|) OR (|Crossbow Focus:3| AND |Control Attribute:4|) OR (|Crossbow Focus:4| AND |Control Attribute:1|) OR |Crossbow Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Crossbow Focus:2| AND |Control Attribute:5|) OR (|Crossbow Focus:3| AND |Control Attribute:2|) OR |Crossbow Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crossbow Focus:1| AND |Control Attribute:6|) OR (|Crossbow Focus:2| AND |Control Attribute:3|) OR |Crossbow Focus:3|))"
     },
     {
       "name": "Crossbow Skill Level 175",
@@ -2816,7 +2779,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crossbow Focus:2| AND |Control Attribute:5|) OR (|Crossbow Focus:3| AND |Control Attribute:2|) OR |Crossbow Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crossbow Focus:3| AND |Control Attribute:7|) OR (|Crossbow Focus:4| AND |Control Attribute:4|) OR (|Crossbow Focus:5| AND |Control Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Crossbow Focus:2| AND |Control Attribute:7|) OR (|Crossbow Focus:3| AND |Control Attribute:4|) OR (|Crossbow Focus:4| AND |Control Attribute:1|) OR |Crossbow Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crossbow Focus:2| AND |Control Attribute:5|) OR (|Crossbow Focus:3| AND |Control Attribute:2|) OR |Crossbow Focus:4|))"
     },
     {
       "name": "Crossbow Skill Level 200",
@@ -2824,7 +2787,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crossbow Focus:2| AND |Control Attribute:7|) OR (|Crossbow Focus:3| AND |Control Attribute:4|) OR (|Crossbow Focus:4| AND |Control Attribute:1|) OR |Crossbow Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crossbow Focus:4| AND |Control Attribute:6|) OR (|Crossbow Focus:5| AND |Control Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Crossbow Focus:3| AND |Control Attribute:7|) OR (|Crossbow Focus:4| AND |Control Attribute:4|) OR (|Crossbow Focus:5| AND |Control Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crossbow Focus:2| AND |Control Attribute:7|) OR (|Crossbow Focus:3| AND |Control Attribute:4|) OR (|Crossbow Focus:4| AND |Control Attribute:1|) OR |Crossbow Focus:5|))"
     },
     {
       "name": "Crossbow Skill Level 225",
@@ -2832,7 +2795,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crossbow Focus:3| AND |Control Attribute:6|) OR (|Crossbow Focus:4| AND |Control Attribute:3|) OR |Crossbow Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crossbow Focus:5| AND |Control Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Crossbow Focus:4| AND |Control Attribute:6|) OR (|Crossbow Focus:5| AND |Control Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crossbow Focus:3| AND |Control Attribute:6|) OR (|Crossbow Focus:4| AND |Control Attribute:3|) OR |Crossbow Focus:5|))"
     },
     {
       "name": "Crossbow Skill Level 250",
@@ -2840,7 +2803,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crossbow Focus:3| AND |Control Attribute:7|) OR (|Crossbow Focus:4| AND |Control Attribute:5|) OR (|Crossbow Focus:5| AND |Control Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Crossbow Focus:5| AND |Control Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crossbow Focus:3| AND |Control Attribute:7|) OR (|Crossbow Focus:4| AND |Control Attribute:5|) OR (|Crossbow Focus:5| AND |Control Attribute:2|)))"
     },
     {
       "name": "Crossbow Skill Level 275",
@@ -2848,7 +2811,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crossbow Focus:4| AND |Control Attribute:6|) OR (|Crossbow Focus:5| AND |Control Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Crossbow Focus:5| AND |Control Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crossbow Focus:4| AND |Control Attribute:6|) OR (|Crossbow Focus:5| AND |Control Attribute:4|)))"
     },
     {
       "name": "Crossbow Skill Level 300",
@@ -2856,7 +2819,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crossbow Focus:5| AND |Control Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Crossbow Focus:5| AND |Control Attribute:5|)))"
     },
     {
       "name": "Crossbow Skill Level 325",
@@ -2864,14 +2827,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crossbow Focus:5| AND |Control Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Crossbow Focus:5| AND |Control Attribute:7|)))"
     },
     {
       "name": "Throwing Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Control Attribute:1| OR |Throwing Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Throwing Skill Level 50",
@@ -2879,7 +2843,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:2| OR |Throwing Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Control Attribute:3| OR |Throwing Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:2| OR |Throwing Focus:1|))"
     },
     {
       "name": "Throwing Skill Level 75",
@@ -2887,7 +2851,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:4| OR (|Throwing Focus:1| AND |Control Attribute:1|) OR |Throwing Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Control Attribute:6| OR (|Throwing Focus:1| AND |Control Attribute:3|) OR |Throwing Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Control Attribute:5| OR (|Throwing Focus:1| AND |Control Attribute:2|) OR |Throwing Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:4| OR (|Throwing Focus:1| AND |Control Attribute:1|) OR |Throwing Focus:2|))"
     },
     {
       "name": "Throwing Skill Level 100",
@@ -2895,7 +2859,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:5| OR (|Throwing Focus:1| AND |Control Attribute:2|) OR |Throwing Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Throwing Focus:1| AND |Control Attribute:5|) OR (|Throwing Focus:2| AND |Control Attribute:2|) OR |Throwing Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Control Attribute:7| OR (|Throwing Focus:1| AND |Control Attribute:4|) OR (|Throwing Focus:2| AND |Control Attribute:1|) OR |Throwing Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:5| OR (|Throwing Focus:1| AND |Control Attribute:2|) OR |Throwing Focus:2|))"
     },
     {
       "name": "Throwing Skill Level 125",
@@ -2903,7 +2867,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Control Attribute:7| OR (|Throwing Focus:1| AND |Control Attribute:4|) OR (|Throwing Focus:2| AND |Control Attribute:1|) OR |Throwing Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Throwing Focus:2| AND |Control Attribute:5|) OR (|Throwing Focus:3| AND |Control Attribute:2|) OR |Throwing Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Throwing Focus:1| AND |Control Attribute:6|) OR (|Throwing Focus:2| AND |Control Attribute:3|) OR |Throwing Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Control Attribute:7| OR (|Throwing Focus:1| AND |Control Attribute:4|) OR (|Throwing Focus:2| AND |Control Attribute:1|) OR |Throwing Focus:3|))"
     },
     {
       "name": "Throwing Skill Level 150",
@@ -2911,7 +2875,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Throwing Focus:1| AND |Control Attribute:6|) OR (|Throwing Focus:2| AND |Control Attribute:3|) OR |Throwing Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Throwing Focus:2| AND |Control Attribute:7|) OR (|Throwing Focus:3| AND |Control Attribute:4|) OR (|Throwing Focus:4| AND |Control Attribute:1|) OR |Throwing Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Throwing Focus:2| AND |Control Attribute:5|) OR (|Throwing Focus:3| AND |Control Attribute:2|) OR |Throwing Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Throwing Focus:1| AND |Control Attribute:6|) OR (|Throwing Focus:2| AND |Control Attribute:3|) OR |Throwing Focus:3|))"
     },
     {
       "name": "Throwing Skill Level 175",
@@ -2919,7 +2883,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Throwing Focus:2| AND |Control Attribute:5|) OR (|Throwing Focus:3| AND |Control Attribute:2|) OR |Throwing Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Throwing Focus:3| AND |Control Attribute:7|) OR (|Throwing Focus:4| AND |Control Attribute:4|) OR (|Throwing Focus:5| AND |Control Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Throwing Focus:2| AND |Control Attribute:7|) OR (|Throwing Focus:3| AND |Control Attribute:4|) OR (|Throwing Focus:4| AND |Control Attribute:1|) OR |Throwing Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Throwing Focus:2| AND |Control Attribute:5|) OR (|Throwing Focus:3| AND |Control Attribute:2|) OR |Throwing Focus:4|))"
     },
     {
       "name": "Throwing Skill Level 200",
@@ -2927,7 +2891,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Throwing Focus:2| AND |Control Attribute:7|) OR (|Throwing Focus:3| AND |Control Attribute:4|) OR (|Throwing Focus:4| AND |Control Attribute:1|) OR |Throwing Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Throwing Focus:4| AND |Control Attribute:6|) OR (|Throwing Focus:5| AND |Control Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Throwing Focus:3| AND |Control Attribute:7|) OR (|Throwing Focus:4| AND |Control Attribute:4|) OR (|Throwing Focus:5| AND |Control Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Throwing Focus:2| AND |Control Attribute:7|) OR (|Throwing Focus:3| AND |Control Attribute:4|) OR (|Throwing Focus:4| AND |Control Attribute:1|) OR |Throwing Focus:5|))"
     },
     {
       "name": "Throwing Skill Level 225",
@@ -2935,7 +2899,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Throwing Focus:3| AND |Control Attribute:6|) OR (|Throwing Focus:4| AND |Control Attribute:3|) OR |Throwing Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Throwing Focus:5| AND |Control Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Throwing Focus:4| AND |Control Attribute:6|) OR (|Throwing Focus:5| AND |Control Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Throwing Focus:3| AND |Control Attribute:6|) OR (|Throwing Focus:4| AND |Control Attribute:3|) OR |Throwing Focus:5|))"
     },
     {
       "name": "Throwing Skill Level 250",
@@ -2943,7 +2907,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Throwing Focus:3| AND |Control Attribute:7|) OR (|Throwing Focus:4| AND |Control Attribute:5|) OR (|Throwing Focus:5| AND |Control Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Throwing Focus:5| AND |Control Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Throwing Focus:3| AND |Control Attribute:7|) OR (|Throwing Focus:4| AND |Control Attribute:5|) OR (|Throwing Focus:5| AND |Control Attribute:2|)))"
     },
     {
       "name": "Throwing Skill Level 275",
@@ -2951,7 +2915,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Throwing Focus:4| AND |Control Attribute:6|) OR (|Throwing Focus:5| AND |Control Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Throwing Focus:5| AND |Control Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Throwing Focus:4| AND |Control Attribute:6|) OR (|Throwing Focus:5| AND |Control Attribute:4|)))"
     },
     {
       "name": "Throwing Skill Level 300",
@@ -2959,7 +2923,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Throwing Focus:5| AND |Control Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Throwing Focus:5| AND |Control Attribute:5|)))"
     },
     {
       "name": "Throwing Skill Level 325",
@@ -2967,14 +2931,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Throwing Focus:5| AND |Control Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Throwing Focus:5| AND |Control Attribute:7|)))"
     },
     {
       "name": "Riding Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Endurance Attribute:1| OR |Riding Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Riding Skill Level 50",
@@ -2982,7 +2947,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:2| OR |Riding Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Endurance Attribute:3| OR |Riding Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:2| OR |Riding Focus:1|))"
     },
     {
       "name": "Riding Skill Level 75",
@@ -2990,7 +2955,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:4| OR (|Riding Focus:1| AND |Endurance Attribute:1|) OR |Riding Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Endurance Attribute:6| OR (|Riding Focus:1| AND |Endurance Attribute:3|) OR |Riding Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Endurance Attribute:5| OR (|Riding Focus:1| AND |Endurance Attribute:2|) OR |Riding Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:4| OR (|Riding Focus:1| AND |Endurance Attribute:1|) OR |Riding Focus:2|))"
     },
     {
       "name": "Riding Skill Level 100",
@@ -2998,7 +2963,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:5| OR (|Riding Focus:1| AND |Endurance Attribute:2|) OR |Riding Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Riding Focus:1| AND |Endurance Attribute:5|) OR (|Riding Focus:2| AND |Endurance Attribute:2|) OR |Riding Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Endurance Attribute:7| OR (|Riding Focus:1| AND |Endurance Attribute:4|) OR (|Riding Focus:2| AND |Endurance Attribute:1|) OR |Riding Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:5| OR (|Riding Focus:1| AND |Endurance Attribute:2|) OR |Riding Focus:2|))"
     },
     {
       "name": "Riding Skill Level 125",
@@ -3006,7 +2971,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:7| OR (|Riding Focus:1| AND |Endurance Attribute:4|) OR (|Riding Focus:2| AND |Endurance Attribute:1|) OR |Riding Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Riding Focus:2| AND |Endurance Attribute:5|) OR (|Riding Focus:3| AND |Endurance Attribute:2|) OR |Riding Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Riding Focus:1| AND |Endurance Attribute:6|) OR (|Riding Focus:2| AND |Endurance Attribute:3|) OR |Riding Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:7| OR (|Riding Focus:1| AND |Endurance Attribute:4|) OR (|Riding Focus:2| AND |Endurance Attribute:1|) OR |Riding Focus:3|))"
     },
     {
       "name": "Riding Skill Level 150",
@@ -3014,7 +2979,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Riding Focus:1| AND |Endurance Attribute:6|) OR (|Riding Focus:2| AND |Endurance Attribute:3|) OR |Riding Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Riding Focus:2| AND |Endurance Attribute:7|) OR (|Riding Focus:3| AND |Endurance Attribute:4|) OR (|Riding Focus:4| AND |Endurance Attribute:1|) OR |Riding Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Riding Focus:2| AND |Endurance Attribute:5|) OR (|Riding Focus:3| AND |Endurance Attribute:2|) OR |Riding Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Riding Focus:1| AND |Endurance Attribute:6|) OR (|Riding Focus:2| AND |Endurance Attribute:3|) OR |Riding Focus:3|))"
     },
     {
       "name": "Riding Skill Level 175",
@@ -3022,7 +2987,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Riding Focus:2| AND |Endurance Attribute:5|) OR (|Riding Focus:3| AND |Endurance Attribute:2|) OR |Riding Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Riding Focus:3| AND |Endurance Attribute:7|) OR (|Riding Focus:4| AND |Endurance Attribute:4|) OR (|Riding Focus:5| AND |Endurance Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Riding Focus:2| AND |Endurance Attribute:7|) OR (|Riding Focus:3| AND |Endurance Attribute:4|) OR (|Riding Focus:4| AND |Endurance Attribute:1|) OR |Riding Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Riding Focus:2| AND |Endurance Attribute:5|) OR (|Riding Focus:3| AND |Endurance Attribute:2|) OR |Riding Focus:4|))"
     },
     {
       "name": "Riding Skill Level 200",
@@ -3030,7 +2995,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Riding Focus:2| AND |Endurance Attribute:7|) OR (|Riding Focus:3| AND |Endurance Attribute:4|) OR (|Riding Focus:4| AND |Endurance Attribute:1|) OR |Riding Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Riding Focus:4| AND |Endurance Attribute:6|) OR (|Riding Focus:5| AND |Endurance Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Riding Focus:3| AND |Endurance Attribute:7|) OR (|Riding Focus:4| AND |Endurance Attribute:4|) OR (|Riding Focus:5| AND |Endurance Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Riding Focus:2| AND |Endurance Attribute:7|) OR (|Riding Focus:3| AND |Endurance Attribute:4|) OR (|Riding Focus:4| AND |Endurance Attribute:1|) OR |Riding Focus:5|))"
     },
     {
       "name": "Riding Skill Level 225",
@@ -3038,7 +3003,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Riding Focus:3| AND |Endurance Attribute:6|) OR (|Riding Focus:4| AND |Endurance Attribute:3|) OR |Riding Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Riding Focus:5| AND |Endurance Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Riding Focus:4| AND |Endurance Attribute:6|) OR (|Riding Focus:5| AND |Endurance Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Riding Focus:3| AND |Endurance Attribute:6|) OR (|Riding Focus:4| AND |Endurance Attribute:3|) OR |Riding Focus:5|))"
     },
     {
       "name": "Riding Skill Level 250",
@@ -3046,7 +3011,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Riding Focus:3| AND |Endurance Attribute:7|) OR (|Riding Focus:4| AND |Endurance Attribute:5|) OR (|Riding Focus:5| AND |Endurance Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Riding Focus:5| AND |Endurance Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Riding Focus:3| AND |Endurance Attribute:7|) OR (|Riding Focus:4| AND |Endurance Attribute:5|) OR (|Riding Focus:5| AND |Endurance Attribute:2|)))"
     },
     {
       "name": "Riding Skill Level 275",
@@ -3054,7 +3019,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Riding Focus:4| AND |Endurance Attribute:6|) OR (|Riding Focus:5| AND |Endurance Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Riding Focus:5| AND |Endurance Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Riding Focus:4| AND |Endurance Attribute:6|) OR (|Riding Focus:5| AND |Endurance Attribute:4|)))"
     },
     {
       "name": "Riding Skill Level 300",
@@ -3062,7 +3027,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Riding Focus:5| AND |Endurance Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Riding Focus:5| AND |Endurance Attribute:5|)))"
     },
     {
       "name": "Riding Skill Level 325",
@@ -3070,14 +3035,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Riding Focus:5| AND |Endurance Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Riding Focus:5| AND |Endurance Attribute:7|)))"
     },
     {
       "name": "Athletics Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Endurance Attribute:1| OR |Athletics Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Athletics Skill Level 50",
@@ -3085,7 +3051,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:2| OR |Athletics Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Endurance Attribute:3| OR |Athletics Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:2| OR |Athletics Focus:1|))"
     },
     {
       "name": "Athletics Skill Level 75",
@@ -3093,7 +3059,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:4| OR (|Athletics Focus:1| AND |Endurance Attribute:1|) OR |Athletics Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Endurance Attribute:6| OR (|Athletics Focus:1| AND |Endurance Attribute:3|) OR |Athletics Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Endurance Attribute:5| OR (|Athletics Focus:1| AND |Endurance Attribute:2|) OR |Athletics Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:4| OR (|Athletics Focus:1| AND |Endurance Attribute:1|) OR |Athletics Focus:2|))"
     },
     {
       "name": "Athletics Skill Level 100",
@@ -3101,7 +3067,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:5| OR (|Athletics Focus:1| AND |Endurance Attribute:2|) OR |Athletics Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Athletics Focus:1| AND |Endurance Attribute:5|) OR (|Athletics Focus:2| AND |Endurance Attribute:2|) OR |Athletics Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Endurance Attribute:7| OR (|Athletics Focus:1| AND |Endurance Attribute:4|) OR (|Athletics Focus:2| AND |Endurance Attribute:1|) OR |Athletics Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:5| OR (|Athletics Focus:1| AND |Endurance Attribute:2|) OR |Athletics Focus:2|))"
     },
     {
       "name": "Athletics Skill Level 125",
@@ -3109,7 +3075,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:7| OR (|Athletics Focus:1| AND |Endurance Attribute:4|) OR (|Athletics Focus:2| AND |Endurance Attribute:1|) OR |Athletics Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Athletics Focus:2| AND |Endurance Attribute:5|) OR (|Athletics Focus:3| AND |Endurance Attribute:2|) OR |Athletics Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Athletics Focus:1| AND |Endurance Attribute:6|) OR (|Athletics Focus:2| AND |Endurance Attribute:3|) OR |Athletics Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:7| OR (|Athletics Focus:1| AND |Endurance Attribute:4|) OR (|Athletics Focus:2| AND |Endurance Attribute:1|) OR |Athletics Focus:3|))"
     },
     {
       "name": "Athletics Skill Level 150",
@@ -3117,7 +3083,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Athletics Focus:1| AND |Endurance Attribute:6|) OR (|Athletics Focus:2| AND |Endurance Attribute:3|) OR |Athletics Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Athletics Focus:2| AND |Endurance Attribute:7|) OR (|Athletics Focus:3| AND |Endurance Attribute:4|) OR (|Athletics Focus:4| AND |Endurance Attribute:1|) OR |Athletics Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Athletics Focus:2| AND |Endurance Attribute:5|) OR (|Athletics Focus:3| AND |Endurance Attribute:2|) OR |Athletics Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Athletics Focus:1| AND |Endurance Attribute:6|) OR (|Athletics Focus:2| AND |Endurance Attribute:3|) OR |Athletics Focus:3|))"
     },
     {
       "name": "Athletics Skill Level 175",
@@ -3125,7 +3091,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Athletics Focus:2| AND |Endurance Attribute:5|) OR (|Athletics Focus:3| AND |Endurance Attribute:2|) OR |Athletics Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Athletics Focus:3| AND |Endurance Attribute:7|) OR (|Athletics Focus:4| AND |Endurance Attribute:4|) OR (|Athletics Focus:5| AND |Endurance Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Athletics Focus:2| AND |Endurance Attribute:7|) OR (|Athletics Focus:3| AND |Endurance Attribute:4|) OR (|Athletics Focus:4| AND |Endurance Attribute:1|) OR |Athletics Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Athletics Focus:2| AND |Endurance Attribute:5|) OR (|Athletics Focus:3| AND |Endurance Attribute:2|) OR |Athletics Focus:4|))"
     },
     {
       "name": "Athletics Skill Level 200",
@@ -3133,7 +3099,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Athletics Focus:2| AND |Endurance Attribute:7|) OR (|Athletics Focus:3| AND |Endurance Attribute:4|) OR (|Athletics Focus:4| AND |Endurance Attribute:1|) OR |Athletics Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Athletics Focus:4| AND |Endurance Attribute:6|) OR (|Athletics Focus:5| AND |Endurance Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Athletics Focus:3| AND |Endurance Attribute:7|) OR (|Athletics Focus:4| AND |Endurance Attribute:4|) OR (|Athletics Focus:5| AND |Endurance Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Athletics Focus:2| AND |Endurance Attribute:7|) OR (|Athletics Focus:3| AND |Endurance Attribute:4|) OR (|Athletics Focus:4| AND |Endurance Attribute:1|) OR |Athletics Focus:5|))"
     },
     {
       "name": "Athletics Skill Level 225",
@@ -3141,7 +3107,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Athletics Focus:3| AND |Endurance Attribute:6|) OR (|Athletics Focus:4| AND |Endurance Attribute:3|) OR |Athletics Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Athletics Focus:5| AND |Endurance Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Athletics Focus:4| AND |Endurance Attribute:6|) OR (|Athletics Focus:5| AND |Endurance Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Athletics Focus:3| AND |Endurance Attribute:6|) OR (|Athletics Focus:4| AND |Endurance Attribute:3|) OR |Athletics Focus:5|))"
     },
     {
       "name": "Athletics Skill Level 250",
@@ -3149,7 +3115,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Athletics Focus:3| AND |Endurance Attribute:7|) OR (|Athletics Focus:4| AND |Endurance Attribute:5|) OR (|Athletics Focus:5| AND |Endurance Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Athletics Focus:5| AND |Endurance Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Athletics Focus:3| AND |Endurance Attribute:7|) OR (|Athletics Focus:4| AND |Endurance Attribute:5|) OR (|Athletics Focus:5| AND |Endurance Attribute:2|)))"
     },
     {
       "name": "Athletics Skill Level 275",
@@ -3157,7 +3123,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Athletics Focus:4| AND |Endurance Attribute:6|) OR (|Athletics Focus:5| AND |Endurance Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Athletics Focus:5| AND |Endurance Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Athletics Focus:4| AND |Endurance Attribute:6|) OR (|Athletics Focus:5| AND |Endurance Attribute:4|)))"
     },
     {
       "name": "Athletics Skill Level 300",
@@ -3165,7 +3131,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Athletics Focus:5| AND |Endurance Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Athletics Focus:5| AND |Endurance Attribute:5|)))"
     },
     {
       "name": "Athletics Skill Level 325",
@@ -3173,14 +3139,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Athletics Focus:5| AND |Endurance Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Athletics Focus:5| AND |Endurance Attribute:7|)))"
     },
     {
       "name": "Crafting Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Endurance Attribute:1| OR |Crafting Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Crafting Skill Level 50",
@@ -3188,7 +3155,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:2| OR |Crafting Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Endurance Attribute:3| OR |Crafting Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:2| OR |Crafting Focus:1|))"
     },
     {
       "name": "Crafting Skill Level 75",
@@ -3196,7 +3163,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:4| OR (|Crafting Focus:1| AND |Endurance Attribute:1|) OR |Crafting Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Endurance Attribute:6| OR (|Crafting Focus:1| AND |Endurance Attribute:3|) OR |Crafting Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Endurance Attribute:5| OR (|Crafting Focus:1| AND |Endurance Attribute:2|) OR |Crafting Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:4| OR (|Crafting Focus:1| AND |Endurance Attribute:1|) OR |Crafting Focus:2|))"
     },
     {
       "name": "Crafting Skill Level 100",
@@ -3204,7 +3171,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:5| OR (|Crafting Focus:1| AND |Endurance Attribute:2|) OR |Crafting Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crafting Focus:1| AND |Endurance Attribute:5|) OR (|Crafting Focus:2| AND |Endurance Attribute:2|) OR |Crafting Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Endurance Attribute:7| OR (|Crafting Focus:1| AND |Endurance Attribute:4|) OR (|Crafting Focus:2| AND |Endurance Attribute:1|) OR |Crafting Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:5| OR (|Crafting Focus:1| AND |Endurance Attribute:2|) OR |Crafting Focus:2|))"
     },
     {
       "name": "Crafting Skill Level 125",
@@ -3212,7 +3179,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Endurance Attribute:7| OR (|Crafting Focus:1| AND |Endurance Attribute:4|) OR (|Crafting Focus:2| AND |Endurance Attribute:1|) OR |Crafting Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crafting Focus:2| AND |Endurance Attribute:5|) OR (|Crafting Focus:3| AND |Endurance Attribute:2|) OR |Crafting Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Crafting Focus:1| AND |Endurance Attribute:6|) OR (|Crafting Focus:2| AND |Endurance Attribute:3|) OR |Crafting Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Endurance Attribute:7| OR (|Crafting Focus:1| AND |Endurance Attribute:4|) OR (|Crafting Focus:2| AND |Endurance Attribute:1|) OR |Crafting Focus:3|))"
     },
     {
       "name": "Crafting Skill Level 150",
@@ -3220,7 +3187,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crafting Focus:1| AND |Endurance Attribute:6|) OR (|Crafting Focus:2| AND |Endurance Attribute:3|) OR |Crafting Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crafting Focus:2| AND |Endurance Attribute:7|) OR (|Crafting Focus:3| AND |Endurance Attribute:4|) OR (|Crafting Focus:4| AND |Endurance Attribute:1|) OR |Crafting Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Crafting Focus:2| AND |Endurance Attribute:5|) OR (|Crafting Focus:3| AND |Endurance Attribute:2|) OR |Crafting Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crafting Focus:1| AND |Endurance Attribute:6|) OR (|Crafting Focus:2| AND |Endurance Attribute:3|) OR |Crafting Focus:3|))"
     },
     {
       "name": "Crafting Skill Level 175",
@@ -3228,7 +3195,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crafting Focus:2| AND |Endurance Attribute:5|) OR (|Crafting Focus:3| AND |Endurance Attribute:2|) OR |Crafting Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crafting Focus:3| AND |Endurance Attribute:7|) OR (|Crafting Focus:4| AND |Endurance Attribute:4|) OR (|Crafting Focus:5| AND |Endurance Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Crafting Focus:2| AND |Endurance Attribute:7|) OR (|Crafting Focus:3| AND |Endurance Attribute:4|) OR (|Crafting Focus:4| AND |Endurance Attribute:1|) OR |Crafting Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crafting Focus:2| AND |Endurance Attribute:5|) OR (|Crafting Focus:3| AND |Endurance Attribute:2|) OR |Crafting Focus:4|))"
     },
     {
       "name": "Crafting Skill Level 200",
@@ -3236,7 +3203,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crafting Focus:2| AND |Endurance Attribute:7|) OR (|Crafting Focus:3| AND |Endurance Attribute:4|) OR (|Crafting Focus:4| AND |Endurance Attribute:1|) OR |Crafting Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crafting Focus:4| AND |Endurance Attribute:6|) OR (|Crafting Focus:5| AND |Endurance Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Crafting Focus:3| AND |Endurance Attribute:7|) OR (|Crafting Focus:4| AND |Endurance Attribute:4|) OR (|Crafting Focus:5| AND |Endurance Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crafting Focus:2| AND |Endurance Attribute:7|) OR (|Crafting Focus:3| AND |Endurance Attribute:4|) OR (|Crafting Focus:4| AND |Endurance Attribute:1|) OR |Crafting Focus:5|))"
     },
     {
       "name": "Crafting Skill Level 225",
@@ -3244,7 +3211,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crafting Focus:3| AND |Endurance Attribute:6|) OR (|Crafting Focus:4| AND |Endurance Attribute:3|) OR |Crafting Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Crafting Focus:5| AND |Endurance Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Crafting Focus:4| AND |Endurance Attribute:6|) OR (|Crafting Focus:5| AND |Endurance Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crafting Focus:3| AND |Endurance Attribute:6|) OR (|Crafting Focus:4| AND |Endurance Attribute:3|) OR |Crafting Focus:5|))"
     },
     {
       "name": "Crafting Skill Level 250",
@@ -3252,7 +3219,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crafting Focus:3| AND |Endurance Attribute:7|) OR (|Crafting Focus:4| AND |Endurance Attribute:5|) OR (|Crafting Focus:5| AND |Endurance Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Crafting Focus:5| AND |Endurance Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crafting Focus:3| AND |Endurance Attribute:7|) OR (|Crafting Focus:4| AND |Endurance Attribute:5|) OR (|Crafting Focus:5| AND |Endurance Attribute:2|)))"
     },
     {
       "name": "Crafting Skill Level 275",
@@ -3260,7 +3227,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crafting Focus:4| AND |Endurance Attribute:6|) OR (|Crafting Focus:5| AND |Endurance Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Crafting Focus:5| AND |Endurance Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Crafting Focus:4| AND |Endurance Attribute:6|) OR (|Crafting Focus:5| AND |Endurance Attribute:4|)))"
     },
     {
       "name": "Crafting Skill Level 300",
@@ -3268,7 +3235,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crafting Focus:5| AND |Endurance Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Crafting Focus:5| AND |Endurance Attribute:5|)))"
     },
     {
       "name": "Crafting Skill Level 325",
@@ -3276,14 +3243,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Crafting Focus:5| AND |Endurance Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Crafting Focus:5| AND |Endurance Attribute:7|)))"
     },
     {
       "name": "Scouting Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Cunning Attribute:1| OR |Scouting Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Scouting Skill Level 50",
@@ -3291,7 +3259,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:2| OR |Scouting Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Cunning Attribute:3| OR |Scouting Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:2| OR |Scouting Focus:1|))"
     },
     {
       "name": "Scouting Skill Level 75",
@@ -3299,7 +3267,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:4| OR (|Scouting Focus:1| AND |Cunning Attribute:1|) OR |Scouting Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Cunning Attribute:6| OR (|Scouting Focus:1| AND |Cunning Attribute:3|) OR |Scouting Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Cunning Attribute:5| OR (|Scouting Focus:1| AND |Cunning Attribute:2|) OR |Scouting Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:4| OR (|Scouting Focus:1| AND |Cunning Attribute:1|) OR |Scouting Focus:2|))"
     },
     {
       "name": "Scouting Skill Level 100",
@@ -3307,7 +3275,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:5| OR (|Scouting Focus:1| AND |Cunning Attribute:2|) OR |Scouting Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Scouting Focus:1| AND |Cunning Attribute:5|) OR (|Scouting Focus:2| AND |Cunning Attribute:2|) OR |Scouting Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Cunning Attribute:7| OR (|Scouting Focus:1| AND |Cunning Attribute:4|) OR (|Scouting Focus:2| AND |Cunning Attribute:1|) OR |Scouting Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:5| OR (|Scouting Focus:1| AND |Cunning Attribute:2|) OR |Scouting Focus:2|))"
     },
     {
       "name": "Scouting Skill Level 125",
@@ -3315,7 +3283,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:7| OR (|Scouting Focus:1| AND |Cunning Attribute:4|) OR (|Scouting Focus:2| AND |Cunning Attribute:1|) OR |Scouting Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Scouting Focus:2| AND |Cunning Attribute:5|) OR (|Scouting Focus:3| AND |Cunning Attribute:2|) OR |Scouting Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Scouting Focus:1| AND |Cunning Attribute:6|) OR (|Scouting Focus:2| AND |Cunning Attribute:3|) OR |Scouting Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:7| OR (|Scouting Focus:1| AND |Cunning Attribute:4|) OR (|Scouting Focus:2| AND |Cunning Attribute:1|) OR |Scouting Focus:3|))"
     },
     {
       "name": "Scouting Skill Level 150",
@@ -3323,7 +3291,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Scouting Focus:1| AND |Cunning Attribute:6|) OR (|Scouting Focus:2| AND |Cunning Attribute:3|) OR |Scouting Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Scouting Focus:2| AND |Cunning Attribute:7|) OR (|Scouting Focus:3| AND |Cunning Attribute:4|) OR (|Scouting Focus:4| AND |Cunning Attribute:1|) OR |Scouting Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Scouting Focus:2| AND |Cunning Attribute:5|) OR (|Scouting Focus:3| AND |Cunning Attribute:2|) OR |Scouting Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Scouting Focus:1| AND |Cunning Attribute:6|) OR (|Scouting Focus:2| AND |Cunning Attribute:3|) OR |Scouting Focus:3|))"
     },
     {
       "name": "Scouting Skill Level 175",
@@ -3331,7 +3299,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Scouting Focus:2| AND |Cunning Attribute:5|) OR (|Scouting Focus:3| AND |Cunning Attribute:2|) OR |Scouting Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Scouting Focus:3| AND |Cunning Attribute:7|) OR (|Scouting Focus:4| AND |Cunning Attribute:4|) OR (|Scouting Focus:5| AND |Cunning Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Scouting Focus:2| AND |Cunning Attribute:7|) OR (|Scouting Focus:3| AND |Cunning Attribute:4|) OR (|Scouting Focus:4| AND |Cunning Attribute:1|) OR |Scouting Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Scouting Focus:2| AND |Cunning Attribute:5|) OR (|Scouting Focus:3| AND |Cunning Attribute:2|) OR |Scouting Focus:4|))"
     },
     {
       "name": "Scouting Skill Level 200",
@@ -3339,7 +3307,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Scouting Focus:2| AND |Cunning Attribute:7|) OR (|Scouting Focus:3| AND |Cunning Attribute:4|) OR (|Scouting Focus:4| AND |Cunning Attribute:1|) OR |Scouting Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Scouting Focus:4| AND |Cunning Attribute:6|) OR (|Scouting Focus:5| AND |Cunning Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Scouting Focus:3| AND |Cunning Attribute:7|) OR (|Scouting Focus:4| AND |Cunning Attribute:4|) OR (|Scouting Focus:5| AND |Cunning Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Scouting Focus:2| AND |Cunning Attribute:7|) OR (|Scouting Focus:3| AND |Cunning Attribute:4|) OR (|Scouting Focus:4| AND |Cunning Attribute:1|) OR |Scouting Focus:5|))"
     },
     {
       "name": "Scouting Skill Level 225",
@@ -3347,7 +3315,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Scouting Focus:3| AND |Cunning Attribute:6|) OR (|Scouting Focus:4| AND |Cunning Attribute:3|) OR |Scouting Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Scouting Focus:5| AND |Cunning Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Scouting Focus:4| AND |Cunning Attribute:6|) OR (|Scouting Focus:5| AND |Cunning Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Scouting Focus:3| AND |Cunning Attribute:6|) OR (|Scouting Focus:4| AND |Cunning Attribute:3|) OR |Scouting Focus:5|))"
     },
     {
       "name": "Scouting Skill Level 250",
@@ -3355,7 +3323,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Scouting Focus:3| AND |Cunning Attribute:7|) OR (|Scouting Focus:4| AND |Cunning Attribute:5|) OR (|Scouting Focus:5| AND |Cunning Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Scouting Focus:5| AND |Cunning Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Scouting Focus:3| AND |Cunning Attribute:7|) OR (|Scouting Focus:4| AND |Cunning Attribute:5|) OR (|Scouting Focus:5| AND |Cunning Attribute:2|)))"
     },
     {
       "name": "Scouting Skill Level 275",
@@ -3363,7 +3331,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Scouting Focus:4| AND |Cunning Attribute:6|) OR (|Scouting Focus:5| AND |Cunning Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Scouting Focus:5| AND |Cunning Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Scouting Focus:4| AND |Cunning Attribute:6|) OR (|Scouting Focus:5| AND |Cunning Attribute:4|)))"
     },
     {
       "name": "Scouting Skill Level 300",
@@ -3371,7 +3339,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Scouting Focus:5| AND |Cunning Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Scouting Focus:5| AND |Cunning Attribute:5|)))"
     },
     {
       "name": "Scouting Skill Level 325",
@@ -3379,14 +3347,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Scouting Focus:5| AND |Cunning Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Scouting Focus:5| AND |Cunning Attribute:7|)))"
     },
     {
       "name": "Tactics Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Cunning Attribute:1| OR |Tactics Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Tactics Skill Level 50",
@@ -3394,7 +3363,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:2| OR |Tactics Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Cunning Attribute:3| OR |Tactics Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:2| OR |Tactics Focus:1|))"
     },
     {
       "name": "Tactics Skill Level 75",
@@ -3402,7 +3371,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:4| OR (|Tactics Focus:1| AND |Cunning Attribute:1|) OR |Tactics Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Cunning Attribute:6| OR (|Tactics Focus:1| AND |Cunning Attribute:3|) OR |Tactics Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Cunning Attribute:5| OR (|Tactics Focus:1| AND |Cunning Attribute:2|) OR |Tactics Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:4| OR (|Tactics Focus:1| AND |Cunning Attribute:1|) OR |Tactics Focus:2|))"
     },
     {
       "name": "Tactics Skill Level 100",
@@ -3410,7 +3379,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:5| OR (|Tactics Focus:1| AND |Cunning Attribute:2|) OR |Tactics Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Tactics Focus:1| AND |Cunning Attribute:5|) OR (|Tactics Focus:2| AND |Cunning Attribute:2|) OR |Tactics Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Cunning Attribute:7| OR (|Tactics Focus:1| AND |Cunning Attribute:4|) OR (|Tactics Focus:2| AND |Cunning Attribute:1|) OR |Tactics Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:5| OR (|Tactics Focus:1| AND |Cunning Attribute:2|) OR |Tactics Focus:2|))"
     },
     {
       "name": "Tactics Skill Level 125",
@@ -3418,7 +3387,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:7| OR (|Tactics Focus:1| AND |Cunning Attribute:4|) OR (|Tactics Focus:2| AND |Cunning Attribute:1|) OR |Tactics Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Tactics Focus:2| AND |Cunning Attribute:5|) OR (|Tactics Focus:3| AND |Cunning Attribute:2|) OR |Tactics Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Tactics Focus:1| AND |Cunning Attribute:6|) OR (|Tactics Focus:2| AND |Cunning Attribute:3|) OR |Tactics Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:7| OR (|Tactics Focus:1| AND |Cunning Attribute:4|) OR (|Tactics Focus:2| AND |Cunning Attribute:1|) OR |Tactics Focus:3|))"
     },
     {
       "name": "Tactics Skill Level 150",
@@ -3426,7 +3395,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Tactics Focus:1| AND |Cunning Attribute:6|) OR (|Tactics Focus:2| AND |Cunning Attribute:3|) OR |Tactics Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Tactics Focus:2| AND |Cunning Attribute:7|) OR (|Tactics Focus:3| AND |Cunning Attribute:4|) OR (|Tactics Focus:4| AND |Cunning Attribute:1|) OR |Tactics Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Tactics Focus:2| AND |Cunning Attribute:5|) OR (|Tactics Focus:3| AND |Cunning Attribute:2|) OR |Tactics Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Tactics Focus:1| AND |Cunning Attribute:6|) OR (|Tactics Focus:2| AND |Cunning Attribute:3|) OR |Tactics Focus:3|))"
     },
     {
       "name": "Tactics Skill Level 175",
@@ -3434,7 +3403,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Tactics Focus:2| AND |Cunning Attribute:5|) OR (|Tactics Focus:3| AND |Cunning Attribute:2|) OR |Tactics Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Tactics Focus:3| AND |Cunning Attribute:7|) OR (|Tactics Focus:4| AND |Cunning Attribute:4|) OR (|Tactics Focus:5| AND |Cunning Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Tactics Focus:2| AND |Cunning Attribute:7|) OR (|Tactics Focus:3| AND |Cunning Attribute:4|) OR (|Tactics Focus:4| AND |Cunning Attribute:1|) OR |Tactics Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Tactics Focus:2| AND |Cunning Attribute:5|) OR (|Tactics Focus:3| AND |Cunning Attribute:2|) OR |Tactics Focus:4|))"
     },
     {
       "name": "Tactics Skill Level 200",
@@ -3442,7 +3411,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Tactics Focus:2| AND |Cunning Attribute:7|) OR (|Tactics Focus:3| AND |Cunning Attribute:4|) OR (|Tactics Focus:4| AND |Cunning Attribute:1|) OR |Tactics Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Tactics Focus:4| AND |Cunning Attribute:6|) OR (|Tactics Focus:5| AND |Cunning Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Tactics Focus:3| AND |Cunning Attribute:7|) OR (|Tactics Focus:4| AND |Cunning Attribute:4|) OR (|Tactics Focus:5| AND |Cunning Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Tactics Focus:2| AND |Cunning Attribute:7|) OR (|Tactics Focus:3| AND |Cunning Attribute:4|) OR (|Tactics Focus:4| AND |Cunning Attribute:1|) OR |Tactics Focus:5|))"
     },
     {
       "name": "Tactics Skill Level 225",
@@ -3450,7 +3419,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Tactics Focus:3| AND |Cunning Attribute:6|) OR (|Tactics Focus:4| AND |Cunning Attribute:3|) OR |Tactics Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Tactics Focus:5| AND |Cunning Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Tactics Focus:4| AND |Cunning Attribute:6|) OR (|Tactics Focus:5| AND |Cunning Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Tactics Focus:3| AND |Cunning Attribute:6|) OR (|Tactics Focus:4| AND |Cunning Attribute:3|) OR |Tactics Focus:5|))"
     },
     {
       "name": "Tactics Skill Level 250",
@@ -3458,7 +3427,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Tactics Focus:3| AND |Cunning Attribute:7|) OR (|Tactics Focus:4| AND |Cunning Attribute:5|) OR (|Tactics Focus:5| AND |Cunning Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Tactics Focus:5| AND |Cunning Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Tactics Focus:3| AND |Cunning Attribute:7|) OR (|Tactics Focus:4| AND |Cunning Attribute:5|) OR (|Tactics Focus:5| AND |Cunning Attribute:2|)))"
     },
     {
       "name": "Tactics Skill Level 275",
@@ -3466,7 +3435,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Tactics Focus:4| AND |Cunning Attribute:6|) OR (|Tactics Focus:5| AND |Cunning Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Tactics Focus:5| AND |Cunning Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Tactics Focus:4| AND |Cunning Attribute:6|) OR (|Tactics Focus:5| AND |Cunning Attribute:4|)))"
     },
     {
       "name": "Tactics Skill Level 300",
@@ -3474,7 +3443,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Tactics Focus:5| AND |Cunning Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Tactics Focus:5| AND |Cunning Attribute:5|)))"
     },
     {
       "name": "Tactics Skill Level 325",
@@ -3482,14 +3451,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Tactics Focus:5| AND |Cunning Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Tactics Focus:5| AND |Cunning Attribute:7|)))"
     },
     {
       "name": "Roguery Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Cunning Attribute:1| OR |Roguery Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Roguery Skill Level 50",
@@ -3497,7 +3467,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:2| OR |Roguery Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Cunning Attribute:3| OR |Roguery Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:2| OR |Roguery Focus:1|))"
     },
     {
       "name": "Roguery Skill Level 75",
@@ -3505,7 +3475,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:4| OR (|Roguery Focus:1| AND |Cunning Attribute:1|) OR |Roguery Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Cunning Attribute:6| OR (|Roguery Focus:1| AND |Cunning Attribute:3|) OR |Roguery Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Cunning Attribute:5| OR (|Roguery Focus:1| AND |Cunning Attribute:2|) OR |Roguery Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:4| OR (|Roguery Focus:1| AND |Cunning Attribute:1|) OR |Roguery Focus:2|))"
     },
     {
       "name": "Roguery Skill Level 100",
@@ -3513,7 +3483,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:5| OR (|Roguery Focus:1| AND |Cunning Attribute:2|) OR |Roguery Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Roguery Focus:1| AND |Cunning Attribute:5|) OR (|Roguery Focus:2| AND |Cunning Attribute:2|) OR |Roguery Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Cunning Attribute:7| OR (|Roguery Focus:1| AND |Cunning Attribute:4|) OR (|Roguery Focus:2| AND |Cunning Attribute:1|) OR |Roguery Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:5| OR (|Roguery Focus:1| AND |Cunning Attribute:2|) OR |Roguery Focus:2|))"
     },
     {
       "name": "Roguery Skill Level 125",
@@ -3521,7 +3491,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Cunning Attribute:7| OR (|Roguery Focus:1| AND |Cunning Attribute:4|) OR (|Roguery Focus:2| AND |Cunning Attribute:1|) OR |Roguery Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Roguery Focus:2| AND |Cunning Attribute:5|) OR (|Roguery Focus:3| AND |Cunning Attribute:2|) OR |Roguery Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Roguery Focus:1| AND |Cunning Attribute:6|) OR (|Roguery Focus:2| AND |Cunning Attribute:3|) OR |Roguery Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Cunning Attribute:7| OR (|Roguery Focus:1| AND |Cunning Attribute:4|) OR (|Roguery Focus:2| AND |Cunning Attribute:1|) OR |Roguery Focus:3|))"
     },
     {
       "name": "Roguery Skill Level 150",
@@ -3529,7 +3499,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Roguery Focus:1| AND |Cunning Attribute:6|) OR (|Roguery Focus:2| AND |Cunning Attribute:3|) OR |Roguery Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Roguery Focus:2| AND |Cunning Attribute:7|) OR (|Roguery Focus:3| AND |Cunning Attribute:4|) OR (|Roguery Focus:4| AND |Cunning Attribute:1|) OR |Roguery Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Roguery Focus:2| AND |Cunning Attribute:5|) OR (|Roguery Focus:3| AND |Cunning Attribute:2|) OR |Roguery Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Roguery Focus:1| AND |Cunning Attribute:6|) OR (|Roguery Focus:2| AND |Cunning Attribute:3|) OR |Roguery Focus:3|))"
     },
     {
       "name": "Roguery Skill Level 175",
@@ -3537,7 +3507,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Roguery Focus:2| AND |Cunning Attribute:5|) OR (|Roguery Focus:3| AND |Cunning Attribute:2|) OR |Roguery Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Roguery Focus:3| AND |Cunning Attribute:7|) OR (|Roguery Focus:4| AND |Cunning Attribute:4|) OR (|Roguery Focus:5| AND |Cunning Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Roguery Focus:2| AND |Cunning Attribute:7|) OR (|Roguery Focus:3| AND |Cunning Attribute:4|) OR (|Roguery Focus:4| AND |Cunning Attribute:1|) OR |Roguery Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Roguery Focus:2| AND |Cunning Attribute:5|) OR (|Roguery Focus:3| AND |Cunning Attribute:2|) OR |Roguery Focus:4|))"
     },
     {
       "name": "Roguery Skill Level 200",
@@ -3545,7 +3515,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Roguery Focus:2| AND |Cunning Attribute:7|) OR (|Roguery Focus:3| AND |Cunning Attribute:4|) OR (|Roguery Focus:4| AND |Cunning Attribute:1|) OR |Roguery Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Roguery Focus:4| AND |Cunning Attribute:6|) OR (|Roguery Focus:5| AND |Cunning Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Roguery Focus:3| AND |Cunning Attribute:7|) OR (|Roguery Focus:4| AND |Cunning Attribute:4|) OR (|Roguery Focus:5| AND |Cunning Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Roguery Focus:2| AND |Cunning Attribute:7|) OR (|Roguery Focus:3| AND |Cunning Attribute:4|) OR (|Roguery Focus:4| AND |Cunning Attribute:1|) OR |Roguery Focus:5|))"
     },
     {
       "name": "Roguery Skill Level 225",
@@ -3553,7 +3523,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Roguery Focus:3| AND |Cunning Attribute:6|) OR (|Roguery Focus:4| AND |Cunning Attribute:3|) OR |Roguery Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Roguery Focus:5| AND |Cunning Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Roguery Focus:4| AND |Cunning Attribute:6|) OR (|Roguery Focus:5| AND |Cunning Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Roguery Focus:3| AND |Cunning Attribute:6|) OR (|Roguery Focus:4| AND |Cunning Attribute:3|) OR |Roguery Focus:5|))"
     },
     {
       "name": "Roguery Skill Level 250",
@@ -3561,7 +3531,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Roguery Focus:3| AND |Cunning Attribute:7|) OR (|Roguery Focus:4| AND |Cunning Attribute:5|) OR (|Roguery Focus:5| AND |Cunning Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Roguery Focus:5| AND |Cunning Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Roguery Focus:3| AND |Cunning Attribute:7|) OR (|Roguery Focus:4| AND |Cunning Attribute:5|) OR (|Roguery Focus:5| AND |Cunning Attribute:2|)))"
     },
     {
       "name": "Roguery Skill Level 275",
@@ -3569,7 +3539,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Roguery Focus:4| AND |Cunning Attribute:6|) OR (|Roguery Focus:5| AND |Cunning Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Roguery Focus:5| AND |Cunning Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Roguery Focus:4| AND |Cunning Attribute:6|) OR (|Roguery Focus:5| AND |Cunning Attribute:4|)))"
     },
     {
       "name": "Roguery Skill Level 300",
@@ -3577,7 +3547,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Roguery Focus:5| AND |Cunning Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Roguery Focus:5| AND |Cunning Attribute:5|)))"
     },
     {
       "name": "Roguery Skill Level 325",
@@ -3585,14 +3555,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Roguery Focus:5| AND |Cunning Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Roguery Focus:5| AND |Cunning Attribute:7|)))"
     },
     {
       "name": "Charm Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Social Attribute:1| OR |Charm Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Charm Skill Level 50",
@@ -3600,7 +3571,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:2| OR |Charm Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Social Attribute:3| OR |Charm Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:2| OR |Charm Focus:1|))"
     },
     {
       "name": "Charm Skill Level 75",
@@ -3608,7 +3579,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:4| OR (|Charm Focus:1| AND |Social Attribute:1|) OR |Charm Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Social Attribute:6| OR (|Charm Focus:1| AND |Social Attribute:3|) OR |Charm Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Social Attribute:5| OR (|Charm Focus:1| AND |Social Attribute:2|) OR |Charm Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:4| OR (|Charm Focus:1| AND |Social Attribute:1|) OR |Charm Focus:2|))"
     },
     {
       "name": "Charm Skill Level 100",
@@ -3616,7 +3587,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:5| OR (|Charm Focus:1| AND |Social Attribute:2|) OR |Charm Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Charm Focus:1| AND |Social Attribute:5|) OR (|Charm Focus:2| AND |Social Attribute:2|) OR |Charm Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Social Attribute:7| OR (|Charm Focus:1| AND |Social Attribute:4|) OR (|Charm Focus:2| AND |Social Attribute:1|) OR |Charm Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:5| OR (|Charm Focus:1| AND |Social Attribute:2|) OR |Charm Focus:2|))"
     },
     {
       "name": "Charm Skill Level 125",
@@ -3624,7 +3595,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:7| OR (|Charm Focus:1| AND |Social Attribute:4|) OR (|Charm Focus:2| AND |Social Attribute:1|) OR |Charm Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Charm Focus:2| AND |Social Attribute:5|) OR (|Charm Focus:3| AND |Social Attribute:2|) OR |Charm Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Charm Focus:1| AND |Social Attribute:6|) OR (|Charm Focus:2| AND |Social Attribute:3|) OR |Charm Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:7| OR (|Charm Focus:1| AND |Social Attribute:4|) OR (|Charm Focus:2| AND |Social Attribute:1|) OR |Charm Focus:3|))"
     },
     {
       "name": "Charm Skill Level 150",
@@ -3632,7 +3603,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Charm Focus:1| AND |Social Attribute:6|) OR (|Charm Focus:2| AND |Social Attribute:3|) OR |Charm Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Charm Focus:2| AND |Social Attribute:7|) OR (|Charm Focus:3| AND |Social Attribute:4|) OR (|Charm Focus:4| AND |Social Attribute:1|) OR |Charm Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Charm Focus:2| AND |Social Attribute:5|) OR (|Charm Focus:3| AND |Social Attribute:2|) OR |Charm Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Charm Focus:1| AND |Social Attribute:6|) OR (|Charm Focus:2| AND |Social Attribute:3|) OR |Charm Focus:3|))"
     },
     {
       "name": "Charm Skill Level 175",
@@ -3640,7 +3611,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Charm Focus:2| AND |Social Attribute:5|) OR (|Charm Focus:3| AND |Social Attribute:2|) OR |Charm Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Charm Focus:3| AND |Social Attribute:7|) OR (|Charm Focus:4| AND |Social Attribute:4|) OR (|Charm Focus:5| AND |Social Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Charm Focus:2| AND |Social Attribute:7|) OR (|Charm Focus:3| AND |Social Attribute:4|) OR (|Charm Focus:4| AND |Social Attribute:1|) OR |Charm Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Charm Focus:2| AND |Social Attribute:5|) OR (|Charm Focus:3| AND |Social Attribute:2|) OR |Charm Focus:4|))"
     },
     {
       "name": "Charm Skill Level 200",
@@ -3648,7 +3619,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Charm Focus:2| AND |Social Attribute:7|) OR (|Charm Focus:3| AND |Social Attribute:4|) OR (|Charm Focus:4| AND |Social Attribute:1|) OR |Charm Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Charm Focus:4| AND |Social Attribute:6|) OR (|Charm Focus:5| AND |Social Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Charm Focus:3| AND |Social Attribute:7|) OR (|Charm Focus:4| AND |Social Attribute:4|) OR (|Charm Focus:5| AND |Social Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Charm Focus:2| AND |Social Attribute:7|) OR (|Charm Focus:3| AND |Social Attribute:4|) OR (|Charm Focus:4| AND |Social Attribute:1|) OR |Charm Focus:5|))"
     },
     {
       "name": "Charm Skill Level 225",
@@ -3656,7 +3627,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Charm Focus:3| AND |Social Attribute:6|) OR (|Charm Focus:4| AND |Social Attribute:3|) OR |Charm Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Charm Focus:5| AND |Social Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Charm Focus:4| AND |Social Attribute:6|) OR (|Charm Focus:5| AND |Social Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Charm Focus:3| AND |Social Attribute:6|) OR (|Charm Focus:4| AND |Social Attribute:3|) OR |Charm Focus:5|))"
     },
     {
       "name": "Charm Skill Level 250",
@@ -3664,7 +3635,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Charm Focus:3| AND |Social Attribute:7|) OR (|Charm Focus:4| AND |Social Attribute:5|) OR (|Charm Focus:5| AND |Social Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Charm Focus:5| AND |Social Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Charm Focus:3| AND |Social Attribute:7|) OR (|Charm Focus:4| AND |Social Attribute:5|) OR (|Charm Focus:5| AND |Social Attribute:2|)))"
     },
     {
       "name": "Charm Skill Level 275",
@@ -3672,7 +3643,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Charm Focus:4| AND |Social Attribute:6|) OR (|Charm Focus:5| AND |Social Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Charm Focus:5| AND |Social Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Charm Focus:4| AND |Social Attribute:6|) OR (|Charm Focus:5| AND |Social Attribute:4|)))"
     },
     {
       "name": "Charm Skill Level 300",
@@ -3680,7 +3651,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Charm Focus:5| AND |Social Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Charm Focus:5| AND |Social Attribute:5|)))"
     },
     {
       "name": "Charm Skill Level 325",
@@ -3688,14 +3659,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Charm Focus:5| AND |Social Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Charm Focus:5| AND |Social Attribute:7|)))"
     },
     {
       "name": "Leadership Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Social Attribute:1| OR |Leadership Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Leadership Skill Level 50",
@@ -3703,7 +3675,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:2| OR |Leadership Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Social Attribute:3| OR |Leadership Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:2| OR |Leadership Focus:1|))"
     },
     {
       "name": "Leadership Skill Level 75",
@@ -3711,7 +3683,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:4| OR (|Leadership Focus:1| AND |Social Attribute:1|) OR |Leadership Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Social Attribute:6| OR (|Leadership Focus:1| AND |Social Attribute:3|) OR |Leadership Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Social Attribute:5| OR (|Leadership Focus:1| AND |Social Attribute:2|) OR |Leadership Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:4| OR (|Leadership Focus:1| AND |Social Attribute:1|) OR |Leadership Focus:2|))"
     },
     {
       "name": "Leadership Skill Level 100",
@@ -3719,7 +3691,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:5| OR (|Leadership Focus:1| AND |Social Attribute:2|) OR |Leadership Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Leadership Focus:1| AND |Social Attribute:5|) OR (|Leadership Focus:2| AND |Social Attribute:2|) OR |Leadership Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Social Attribute:7| OR (|Leadership Focus:1| AND |Social Attribute:4|) OR (|Leadership Focus:2| AND |Social Attribute:1|) OR |Leadership Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:5| OR (|Leadership Focus:1| AND |Social Attribute:2|) OR |Leadership Focus:2|))"
     },
     {
       "name": "Leadership Skill Level 125",
@@ -3727,7 +3699,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:7| OR (|Leadership Focus:1| AND |Social Attribute:4|) OR (|Leadership Focus:2| AND |Social Attribute:1|) OR |Leadership Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Leadership Focus:2| AND |Social Attribute:5|) OR (|Leadership Focus:3| AND |Social Attribute:2|) OR |Leadership Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Leadership Focus:1| AND |Social Attribute:6|) OR (|Leadership Focus:2| AND |Social Attribute:3|) OR |Leadership Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:7| OR (|Leadership Focus:1| AND |Social Attribute:4|) OR (|Leadership Focus:2| AND |Social Attribute:1|) OR |Leadership Focus:3|))"
     },
     {
       "name": "Leadership Skill Level 150",
@@ -3735,7 +3707,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Leadership Focus:1| AND |Social Attribute:6|) OR (|Leadership Focus:2| AND |Social Attribute:3|) OR |Leadership Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Leadership Focus:2| AND |Social Attribute:7|) OR (|Leadership Focus:3| AND |Social Attribute:4|) OR (|Leadership Focus:4| AND |Social Attribute:1|) OR |Leadership Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Leadership Focus:2| AND |Social Attribute:5|) OR (|Leadership Focus:3| AND |Social Attribute:2|) OR |Leadership Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Leadership Focus:1| AND |Social Attribute:6|) OR (|Leadership Focus:2| AND |Social Attribute:3|) OR |Leadership Focus:3|))"
     },
     {
       "name": "Leadership Skill Level 175",
@@ -3743,7 +3715,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Leadership Focus:2| AND |Social Attribute:5|) OR (|Leadership Focus:3| AND |Social Attribute:2|) OR |Leadership Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Leadership Focus:3| AND |Social Attribute:7|) OR (|Leadership Focus:4| AND |Social Attribute:4|) OR (|Leadership Focus:5| AND |Social Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Leadership Focus:2| AND |Social Attribute:7|) OR (|Leadership Focus:3| AND |Social Attribute:4|) OR (|Leadership Focus:4| AND |Social Attribute:1|) OR |Leadership Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Leadership Focus:2| AND |Social Attribute:5|) OR (|Leadership Focus:3| AND |Social Attribute:2|) OR |Leadership Focus:4|))"
     },
     {
       "name": "Leadership Skill Level 200",
@@ -3751,7 +3723,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Leadership Focus:2| AND |Social Attribute:7|) OR (|Leadership Focus:3| AND |Social Attribute:4|) OR (|Leadership Focus:4| AND |Social Attribute:1|) OR |Leadership Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Leadership Focus:4| AND |Social Attribute:6|) OR (|Leadership Focus:5| AND |Social Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Leadership Focus:3| AND |Social Attribute:7|) OR (|Leadership Focus:4| AND |Social Attribute:4|) OR (|Leadership Focus:5| AND |Social Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Leadership Focus:2| AND |Social Attribute:7|) OR (|Leadership Focus:3| AND |Social Attribute:4|) OR (|Leadership Focus:4| AND |Social Attribute:1|) OR |Leadership Focus:5|))"
     },
     {
       "name": "Leadership Skill Level 225",
@@ -3759,7 +3731,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Leadership Focus:3| AND |Social Attribute:6|) OR (|Leadership Focus:4| AND |Social Attribute:3|) OR |Leadership Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Leadership Focus:5| AND |Social Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Leadership Focus:4| AND |Social Attribute:6|) OR (|Leadership Focus:5| AND |Social Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Leadership Focus:3| AND |Social Attribute:6|) OR (|Leadership Focus:4| AND |Social Attribute:3|) OR |Leadership Focus:5|))"
     },
     {
       "name": "Leadership Skill Level 250",
@@ -3767,7 +3739,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Leadership Focus:3| AND |Social Attribute:7|) OR (|Leadership Focus:4| AND |Social Attribute:5|) OR (|Leadership Focus:5| AND |Social Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Leadership Focus:5| AND |Social Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Leadership Focus:3| AND |Social Attribute:7|) OR (|Leadership Focus:4| AND |Social Attribute:5|) OR (|Leadership Focus:5| AND |Social Attribute:2|)))"
     },
     {
       "name": "Leadership Skill Level 275",
@@ -3775,7 +3747,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Leadership Focus:4| AND |Social Attribute:6|) OR (|Leadership Focus:5| AND |Social Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Leadership Focus:5| AND |Social Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Leadership Focus:4| AND |Social Attribute:6|) OR (|Leadership Focus:5| AND |Social Attribute:4|)))"
     },
     {
       "name": "Leadership Skill Level 300",
@@ -3783,7 +3755,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Leadership Focus:5| AND |Social Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Leadership Focus:5| AND |Social Attribute:5|)))"
     },
     {
       "name": "Leadership Skill Level 325",
@@ -3791,14 +3763,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Leadership Focus:5| AND |Social Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Leadership Focus:5| AND |Social Attribute:7|)))"
     },
     {
       "name": "Trade Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Social Attribute:1| OR |Trade Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Trade Skill Level 50",
@@ -3806,7 +3779,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:2| OR |Trade Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Social Attribute:3| OR |Trade Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:2| OR |Trade Focus:1|))"
     },
     {
       "name": "Trade Skill Level 75",
@@ -3814,7 +3787,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:4| OR (|Trade Focus:1| AND |Social Attribute:1|) OR |Trade Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Social Attribute:6| OR (|Trade Focus:1| AND |Social Attribute:3|) OR |Trade Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Social Attribute:5| OR (|Trade Focus:1| AND |Social Attribute:2|) OR |Trade Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:4| OR (|Trade Focus:1| AND |Social Attribute:1|) OR |Trade Focus:2|))"
     },
     {
       "name": "Trade Skill Level 100",
@@ -3822,7 +3795,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:5| OR (|Trade Focus:1| AND |Social Attribute:2|) OR |Trade Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Trade Focus:1| AND |Social Attribute:5|) OR (|Trade Focus:2| AND |Social Attribute:2|) OR |Trade Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Social Attribute:7| OR (|Trade Focus:1| AND |Social Attribute:4|) OR (|Trade Focus:2| AND |Social Attribute:1|) OR |Trade Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:5| OR (|Trade Focus:1| AND |Social Attribute:2|) OR |Trade Focus:2|))"
     },
     {
       "name": "Trade Skill Level 125",
@@ -3830,7 +3803,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Social Attribute:7| OR (|Trade Focus:1| AND |Social Attribute:4|) OR (|Trade Focus:2| AND |Social Attribute:1|) OR |Trade Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Trade Focus:2| AND |Social Attribute:5|) OR (|Trade Focus:3| AND |Social Attribute:2|) OR |Trade Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Trade Focus:1| AND |Social Attribute:6|) OR (|Trade Focus:2| AND |Social Attribute:3|) OR |Trade Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Social Attribute:7| OR (|Trade Focus:1| AND |Social Attribute:4|) OR (|Trade Focus:2| AND |Social Attribute:1|) OR |Trade Focus:3|))"
     },
     {
       "name": "Trade Skill Level 150",
@@ -3838,7 +3811,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Trade Focus:1| AND |Social Attribute:6|) OR (|Trade Focus:2| AND |Social Attribute:3|) OR |Trade Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Trade Focus:2| AND |Social Attribute:7|) OR (|Trade Focus:3| AND |Social Attribute:4|) OR (|Trade Focus:4| AND |Social Attribute:1|) OR |Trade Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Trade Focus:2| AND |Social Attribute:5|) OR (|Trade Focus:3| AND |Social Attribute:2|) OR |Trade Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Trade Focus:1| AND |Social Attribute:6|) OR (|Trade Focus:2| AND |Social Attribute:3|) OR |Trade Focus:3|))"
     },
     {
       "name": "Trade Skill Level 175",
@@ -3846,7 +3819,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Trade Focus:2| AND |Social Attribute:5|) OR (|Trade Focus:3| AND |Social Attribute:2|) OR |Trade Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Trade Focus:3| AND |Social Attribute:7|) OR (|Trade Focus:4| AND |Social Attribute:4|) OR (|Trade Focus:5| AND |Social Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Trade Focus:2| AND |Social Attribute:7|) OR (|Trade Focus:3| AND |Social Attribute:4|) OR (|Trade Focus:4| AND |Social Attribute:1|) OR |Trade Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Trade Focus:2| AND |Social Attribute:5|) OR (|Trade Focus:3| AND |Social Attribute:2|) OR |Trade Focus:4|))"
     },
     {
       "name": "Trade Skill Level 200",
@@ -3854,7 +3827,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Trade Focus:2| AND |Social Attribute:7|) OR (|Trade Focus:3| AND |Social Attribute:4|) OR (|Trade Focus:4| AND |Social Attribute:1|) OR |Trade Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Trade Focus:4| AND |Social Attribute:6|) OR (|Trade Focus:5| AND |Social Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Trade Focus:3| AND |Social Attribute:7|) OR (|Trade Focus:4| AND |Social Attribute:4|) OR (|Trade Focus:5| AND |Social Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Trade Focus:2| AND |Social Attribute:7|) OR (|Trade Focus:3| AND |Social Attribute:4|) OR (|Trade Focus:4| AND |Social Attribute:1|) OR |Trade Focus:5|))"
     },
     {
       "name": "Trade Skill Level 225",
@@ -3862,7 +3835,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Trade Focus:3| AND |Social Attribute:6|) OR (|Trade Focus:4| AND |Social Attribute:3|) OR |Trade Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Trade Focus:5| AND |Social Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Trade Focus:4| AND |Social Attribute:6|) OR (|Trade Focus:5| AND |Social Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Trade Focus:3| AND |Social Attribute:6|) OR (|Trade Focus:4| AND |Social Attribute:3|) OR |Trade Focus:5|))"
     },
     {
       "name": "Trade Skill Level 250",
@@ -3870,7 +3843,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Trade Focus:3| AND |Social Attribute:7|) OR (|Trade Focus:4| AND |Social Attribute:5|) OR (|Trade Focus:5| AND |Social Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Trade Focus:5| AND |Social Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Trade Focus:3| AND |Social Attribute:7|) OR (|Trade Focus:4| AND |Social Attribute:5|) OR (|Trade Focus:5| AND |Social Attribute:2|)))"
     },
     {
       "name": "Trade Skill Level 275",
@@ -3878,7 +3851,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Trade Focus:4| AND |Social Attribute:6|) OR (|Trade Focus:5| AND |Social Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Trade Focus:5| AND |Social Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Trade Focus:4| AND |Social Attribute:6|) OR (|Trade Focus:5| AND |Social Attribute:4|)))"
     },
     {
       "name": "Trade Skill Level 300",
@@ -3886,7 +3859,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Trade Focus:5| AND |Social Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Trade Focus:5| AND |Social Attribute:5|)))"
     },
     {
       "name": "Trade Skill Level 325",
@@ -3894,14 +3867,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Trade Focus:5| AND |Social Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Trade Focus:5| AND |Social Attribute:7|)))"
     },
     {
       "name": "Steward Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Intelligence Attribute:1| OR |Steward Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Steward Skill Level 50",
@@ -3909,7 +3883,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:2| OR |Steward Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Intelligence Attribute:3| OR |Steward Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:2| OR |Steward Focus:1|))"
     },
     {
       "name": "Steward Skill Level 75",
@@ -3917,7 +3891,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:4| OR (|Steward Focus:1| AND |Intelligence Attribute:1|) OR |Steward Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Intelligence Attribute:6| OR (|Steward Focus:1| AND |Intelligence Attribute:3|) OR |Steward Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Intelligence Attribute:5| OR (|Steward Focus:1| AND |Intelligence Attribute:2|) OR |Steward Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:4| OR (|Steward Focus:1| AND |Intelligence Attribute:1|) OR |Steward Focus:2|))"
     },
     {
       "name": "Steward Skill Level 100",
@@ -3925,7 +3899,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:5| OR (|Steward Focus:1| AND |Intelligence Attribute:2|) OR |Steward Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Steward Focus:1| AND |Intelligence Attribute:5|) OR (|Steward Focus:2| AND |Intelligence Attribute:2|) OR |Steward Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Intelligence Attribute:7| OR (|Steward Focus:1| AND |Intelligence Attribute:4|) OR (|Steward Focus:2| AND |Intelligence Attribute:1|) OR |Steward Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:5| OR (|Steward Focus:1| AND |Intelligence Attribute:2|) OR |Steward Focus:2|))"
     },
     {
       "name": "Steward Skill Level 125",
@@ -3933,7 +3907,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:7| OR (|Steward Focus:1| AND |Intelligence Attribute:4|) OR (|Steward Focus:2| AND |Intelligence Attribute:1|) OR |Steward Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Steward Focus:2| AND |Intelligence Attribute:5|) OR (|Steward Focus:3| AND |Intelligence Attribute:2|) OR |Steward Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Steward Focus:1| AND |Intelligence Attribute:6|) OR (|Steward Focus:2| AND |Intelligence Attribute:3|) OR |Steward Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:7| OR (|Steward Focus:1| AND |Intelligence Attribute:4|) OR (|Steward Focus:2| AND |Intelligence Attribute:1|) OR |Steward Focus:3|))"
     },
     {
       "name": "Steward Skill Level 150",
@@ -3941,7 +3915,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Steward Focus:1| AND |Intelligence Attribute:6|) OR (|Steward Focus:2| AND |Intelligence Attribute:3|) OR |Steward Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Steward Focus:2| AND |Intelligence Attribute:7|) OR (|Steward Focus:3| AND |Intelligence Attribute:4|) OR (|Steward Focus:4| AND |Intelligence Attribute:1|) OR |Steward Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Steward Focus:2| AND |Intelligence Attribute:5|) OR (|Steward Focus:3| AND |Intelligence Attribute:2|) OR |Steward Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Steward Focus:1| AND |Intelligence Attribute:6|) OR (|Steward Focus:2| AND |Intelligence Attribute:3|) OR |Steward Focus:3|))"
     },
     {
       "name": "Steward Skill Level 175",
@@ -3949,7 +3923,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Steward Focus:2| AND |Intelligence Attribute:5|) OR (|Steward Focus:3| AND |Intelligence Attribute:2|) OR |Steward Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Steward Focus:3| AND |Intelligence Attribute:7|) OR (|Steward Focus:4| AND |Intelligence Attribute:4|) OR (|Steward Focus:5| AND |Intelligence Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Steward Focus:2| AND |Intelligence Attribute:7|) OR (|Steward Focus:3| AND |Intelligence Attribute:4|) OR (|Steward Focus:4| AND |Intelligence Attribute:1|) OR |Steward Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Steward Focus:2| AND |Intelligence Attribute:5|) OR (|Steward Focus:3| AND |Intelligence Attribute:2|) OR |Steward Focus:4|))"
     },
     {
       "name": "Steward Skill Level 200",
@@ -3957,7 +3931,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Steward Focus:2| AND |Intelligence Attribute:7|) OR (|Steward Focus:3| AND |Intelligence Attribute:4|) OR (|Steward Focus:4| AND |Intelligence Attribute:1|) OR |Steward Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Steward Focus:4| AND |Intelligence Attribute:6|) OR (|Steward Focus:5| AND |Intelligence Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Steward Focus:3| AND |Intelligence Attribute:7|) OR (|Steward Focus:4| AND |Intelligence Attribute:4|) OR (|Steward Focus:5| AND |Intelligence Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Steward Focus:2| AND |Intelligence Attribute:7|) OR (|Steward Focus:3| AND |Intelligence Attribute:4|) OR (|Steward Focus:4| AND |Intelligence Attribute:1|) OR |Steward Focus:5|))"
     },
     {
       "name": "Steward Skill Level 225",
@@ -3965,7 +3939,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Steward Focus:3| AND |Intelligence Attribute:6|) OR (|Steward Focus:4| AND |Intelligence Attribute:3|) OR |Steward Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Steward Focus:5| AND |Intelligence Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Steward Focus:4| AND |Intelligence Attribute:6|) OR (|Steward Focus:5| AND |Intelligence Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Steward Focus:3| AND |Intelligence Attribute:6|) OR (|Steward Focus:4| AND |Intelligence Attribute:3|) OR |Steward Focus:5|))"
     },
     {
       "name": "Steward Skill Level 250",
@@ -3973,7 +3947,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Steward Focus:3| AND |Intelligence Attribute:7|) OR (|Steward Focus:4| AND |Intelligence Attribute:5|) OR (|Steward Focus:5| AND |Intelligence Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Steward Focus:5| AND |Intelligence Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Steward Focus:3| AND |Intelligence Attribute:7|) OR (|Steward Focus:4| AND |Intelligence Attribute:5|) OR (|Steward Focus:5| AND |Intelligence Attribute:2|)))"
     },
     {
       "name": "Steward Skill Level 275",
@@ -3981,7 +3955,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Steward Focus:4| AND |Intelligence Attribute:6|) OR (|Steward Focus:5| AND |Intelligence Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Steward Focus:5| AND |Intelligence Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Steward Focus:4| AND |Intelligence Attribute:6|) OR (|Steward Focus:5| AND |Intelligence Attribute:4|)))"
     },
     {
       "name": "Steward Skill Level 300",
@@ -3989,7 +3963,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Steward Focus:5| AND |Intelligence Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Steward Focus:5| AND |Intelligence Attribute:5|)))"
     },
     {
       "name": "Steward Skill Level 325",
@@ -3997,14 +3971,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Steward Focus:5| AND |Intelligence Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Steward Focus:5| AND |Intelligence Attribute:7|)))"
     },
     {
       "name": "Medicine Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Intelligence Attribute:1| OR |Medicine Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Medicine Skill Level 50",
@@ -4012,7 +3987,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:2| OR |Medicine Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Intelligence Attribute:3| OR |Medicine Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:2| OR |Medicine Focus:1|))"
     },
     {
       "name": "Medicine Skill Level 75",
@@ -4020,7 +3995,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:4| OR (|Medicine Focus:1| AND |Intelligence Attribute:1|) OR |Medicine Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Intelligence Attribute:6| OR (|Medicine Focus:1| AND |Intelligence Attribute:3|) OR |Medicine Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Intelligence Attribute:5| OR (|Medicine Focus:1| AND |Intelligence Attribute:2|) OR |Medicine Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:4| OR (|Medicine Focus:1| AND |Intelligence Attribute:1|) OR |Medicine Focus:2|))"
     },
     {
       "name": "Medicine Skill Level 100",
@@ -4028,7 +4003,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:5| OR (|Medicine Focus:1| AND |Intelligence Attribute:2|) OR |Medicine Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Medicine Focus:1| AND |Intelligence Attribute:5|) OR (|Medicine Focus:2| AND |Intelligence Attribute:2|) OR |Medicine Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Intelligence Attribute:7| OR (|Medicine Focus:1| AND |Intelligence Attribute:4|) OR (|Medicine Focus:2| AND |Intelligence Attribute:1|) OR |Medicine Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:5| OR (|Medicine Focus:1| AND |Intelligence Attribute:2|) OR |Medicine Focus:2|))"
     },
     {
       "name": "Medicine Skill Level 125",
@@ -4036,7 +4011,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:7| OR (|Medicine Focus:1| AND |Intelligence Attribute:4|) OR (|Medicine Focus:2| AND |Intelligence Attribute:1|) OR |Medicine Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Medicine Focus:2| AND |Intelligence Attribute:5|) OR (|Medicine Focus:3| AND |Intelligence Attribute:2|) OR |Medicine Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Medicine Focus:1| AND |Intelligence Attribute:6|) OR (|Medicine Focus:2| AND |Intelligence Attribute:3|) OR |Medicine Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:7| OR (|Medicine Focus:1| AND |Intelligence Attribute:4|) OR (|Medicine Focus:2| AND |Intelligence Attribute:1|) OR |Medicine Focus:3|))"
     },
     {
       "name": "Medicine Skill Level 150",
@@ -4044,7 +4019,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Medicine Focus:1| AND |Intelligence Attribute:6|) OR (|Medicine Focus:2| AND |Intelligence Attribute:3|) OR |Medicine Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Medicine Focus:2| AND |Intelligence Attribute:7|) OR (|Medicine Focus:3| AND |Intelligence Attribute:4|) OR (|Medicine Focus:4| AND |Intelligence Attribute:1|) OR |Medicine Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Medicine Focus:2| AND |Intelligence Attribute:5|) OR (|Medicine Focus:3| AND |Intelligence Attribute:2|) OR |Medicine Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Medicine Focus:1| AND |Intelligence Attribute:6|) OR (|Medicine Focus:2| AND |Intelligence Attribute:3|) OR |Medicine Focus:3|))"
     },
     {
       "name": "Medicine Skill Level 175",
@@ -4052,7 +4027,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Medicine Focus:2| AND |Intelligence Attribute:5|) OR (|Medicine Focus:3| AND |Intelligence Attribute:2|) OR |Medicine Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Medicine Focus:3| AND |Intelligence Attribute:7|) OR (|Medicine Focus:4| AND |Intelligence Attribute:4|) OR (|Medicine Focus:5| AND |Intelligence Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Medicine Focus:2| AND |Intelligence Attribute:7|) OR (|Medicine Focus:3| AND |Intelligence Attribute:4|) OR (|Medicine Focus:4| AND |Intelligence Attribute:1|) OR |Medicine Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Medicine Focus:2| AND |Intelligence Attribute:5|) OR (|Medicine Focus:3| AND |Intelligence Attribute:2|) OR |Medicine Focus:4|))"
     },
     {
       "name": "Medicine Skill Level 200",
@@ -4060,7 +4035,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Medicine Focus:2| AND |Intelligence Attribute:7|) OR (|Medicine Focus:3| AND |Intelligence Attribute:4|) OR (|Medicine Focus:4| AND |Intelligence Attribute:1|) OR |Medicine Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Medicine Focus:4| AND |Intelligence Attribute:6|) OR (|Medicine Focus:5| AND |Intelligence Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Medicine Focus:3| AND |Intelligence Attribute:7|) OR (|Medicine Focus:4| AND |Intelligence Attribute:4|) OR (|Medicine Focus:5| AND |Intelligence Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Medicine Focus:2| AND |Intelligence Attribute:7|) OR (|Medicine Focus:3| AND |Intelligence Attribute:4|) OR (|Medicine Focus:4| AND |Intelligence Attribute:1|) OR |Medicine Focus:5|))"
     },
     {
       "name": "Medicine Skill Level 225",
@@ -4068,7 +4043,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Medicine Focus:3| AND |Intelligence Attribute:6|) OR (|Medicine Focus:4| AND |Intelligence Attribute:3|) OR |Medicine Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Medicine Focus:5| AND |Intelligence Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Medicine Focus:4| AND |Intelligence Attribute:6|) OR (|Medicine Focus:5| AND |Intelligence Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Medicine Focus:3| AND |Intelligence Attribute:6|) OR (|Medicine Focus:4| AND |Intelligence Attribute:3|) OR |Medicine Focus:5|))"
     },
     {
       "name": "Medicine Skill Level 250",
@@ -4076,7 +4051,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Medicine Focus:3| AND |Intelligence Attribute:7|) OR (|Medicine Focus:4| AND |Intelligence Attribute:5|) OR (|Medicine Focus:5| AND |Intelligence Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Medicine Focus:5| AND |Intelligence Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Medicine Focus:3| AND |Intelligence Attribute:7|) OR (|Medicine Focus:4| AND |Intelligence Attribute:5|) OR (|Medicine Focus:5| AND |Intelligence Attribute:2|)))"
     },
     {
       "name": "Medicine Skill Level 275",
@@ -4084,7 +4059,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Medicine Focus:4| AND |Intelligence Attribute:6|) OR (|Medicine Focus:5| AND |Intelligence Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Medicine Focus:5| AND |Intelligence Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Medicine Focus:4| AND |Intelligence Attribute:6|) OR (|Medicine Focus:5| AND |Intelligence Attribute:4|)))"
     },
     {
       "name": "Medicine Skill Level 300",
@@ -4092,7 +4067,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Medicine Focus:5| AND |Intelligence Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Medicine Focus:5| AND |Intelligence Attribute:5|)))"
     },
     {
       "name": "Medicine Skill Level 325",
@@ -4100,14 +4075,15 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Medicine Focus:5| AND |Intelligence Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Medicine Focus:5| AND |Intelligence Attribute:7|)))"
     },
     {
       "name": "Engineering Skill Level 25",
       "category": [
         "SkillSanity"
       ],
-      "region": "menu"
+      "region": "menu",
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Intelligence Attribute:1| OR |Engineering Focus:1|)) OR {YamlCompare(skillsanity_cap == hard)}"
     },
     {
       "name": "Engineering Skill Level 50",
@@ -4115,7 +4091,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:2| OR |Engineering Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} OR {YamlCompare(skillsanity_cap == medium)}) AND (|Intelligence Attribute:3| OR |Engineering Focus:1|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:2| OR |Engineering Focus:1|))"
     },
     {
       "name": "Engineering Skill Level 75",
@@ -4123,7 +4099,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:4| OR (|Engineering Focus:1| AND |Intelligence Attribute:1|) OR |Engineering Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND (|Intelligence Attribute:6| OR (|Engineering Focus:1| AND |Intelligence Attribute:3|) OR |Engineering Focus:2|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Intelligence Attribute:5| OR (|Engineering Focus:1| AND |Intelligence Attribute:2|) OR |Engineering Focus:2|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:4| OR (|Engineering Focus:1| AND |Intelligence Attribute:1|) OR |Engineering Focus:2|))"
     },
     {
       "name": "Engineering Skill Level 100",
@@ -4131,7 +4107,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:5| OR (|Engineering Focus:1| AND |Intelligence Attribute:2|) OR |Engineering Focus:2|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Engineering Focus:1| AND |Intelligence Attribute:5|) OR (|Engineering Focus:2| AND |Intelligence Attribute:2|) OR |Engineering Focus:3|)) OR ({YamlCompare(skillsanity_cap == medium)} AND (|Intelligence Attribute:7| OR (|Engineering Focus:1| AND |Intelligence Attribute:4|) OR (|Engineering Focus:2| AND |Intelligence Attribute:1|) OR |Engineering Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:5| OR (|Engineering Focus:1| AND |Intelligence Attribute:2|) OR |Engineering Focus:2|))"
     },
     {
       "name": "Engineering Skill Level 125",
@@ -4139,7 +4115,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "|Intelligence Attribute:7| OR (|Engineering Focus:1| AND |Intelligence Attribute:4|) OR (|Engineering Focus:2| AND |Intelligence Attribute:1|) OR |Engineering Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Engineering Focus:2| AND |Intelligence Attribute:5|) OR (|Engineering Focus:3| AND |Intelligence Attribute:2|) OR |Engineering Focus:4|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Engineering Focus:1| AND |Intelligence Attribute:6|) OR (|Engineering Focus:2| AND |Intelligence Attribute:3|) OR |Engineering Focus:3|)) OR ({YamlCompare(skillsanity_cap == hard)} AND (|Intelligence Attribute:7| OR (|Engineering Focus:1| AND |Intelligence Attribute:4|) OR (|Engineering Focus:2| AND |Intelligence Attribute:1|) OR |Engineering Focus:3|))"
     },
     {
       "name": "Engineering Skill Level 150",
@@ -4147,7 +4123,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Engineering Focus:1| AND |Intelligence Attribute:6|) OR (|Engineering Focus:2| AND |Intelligence Attribute:3|) OR |Engineering Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Engineering Focus:2| AND |Intelligence Attribute:7|) OR (|Engineering Focus:3| AND |Intelligence Attribute:4|) OR (|Engineering Focus:4| AND |Intelligence Attribute:1|) OR |Engineering Focus:5|)) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Engineering Focus:2| AND |Intelligence Attribute:5|) OR (|Engineering Focus:3| AND |Intelligence Attribute:2|) OR |Engineering Focus:4|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Engineering Focus:1| AND |Intelligence Attribute:6|) OR (|Engineering Focus:2| AND |Intelligence Attribute:3|) OR |Engineering Focus:3|))"
     },
     {
       "name": "Engineering Skill Level 175",
@@ -4155,7 +4131,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Engineering Focus:2| AND |Intelligence Attribute:5|) OR (|Engineering Focus:3| AND |Intelligence Attribute:2|) OR |Engineering Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Engineering Focus:3| AND |Intelligence Attribute:7|) OR (|Engineering Focus:4| AND |Intelligence Attribute:4|) OR (|Engineering Focus:5| AND |Intelligence Attribute:1|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Engineering Focus:2| AND |Intelligence Attribute:7|) OR (|Engineering Focus:3| AND |Intelligence Attribute:4|) OR (|Engineering Focus:4| AND |Intelligence Attribute:1|) OR |Engineering Focus:5|)) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Engineering Focus:2| AND |Intelligence Attribute:5|) OR (|Engineering Focus:3| AND |Intelligence Attribute:2|) OR |Engineering Focus:4|))"
     },
     {
       "name": "Engineering Skill Level 200",
@@ -4163,7 +4139,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Engineering Focus:2| AND |Intelligence Attribute:7|) OR (|Engineering Focus:3| AND |Intelligence Attribute:4|) OR (|Engineering Focus:4| AND |Intelligence Attribute:1|) OR |Engineering Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Engineering Focus:4| AND |Intelligence Attribute:6|) OR (|Engineering Focus:5| AND |Intelligence Attribute:3|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Engineering Focus:3| AND |Intelligence Attribute:7|) OR (|Engineering Focus:4| AND |Intelligence Attribute:4|) OR (|Engineering Focus:5| AND |Intelligence Attribute:1|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Engineering Focus:2| AND |Intelligence Attribute:7|) OR (|Engineering Focus:3| AND |Intelligence Attribute:4|) OR (|Engineering Focus:4| AND |Intelligence Attribute:1|) OR |Engineering Focus:5|))"
     },
     {
       "name": "Engineering Skill Level 225",
@@ -4171,7 +4147,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Engineering Focus:3| AND |Intelligence Attribute:6|) OR (|Engineering Focus:4| AND |Intelligence Attribute:3|) OR |Engineering Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} AND ((|Engineering Focus:5| AND |Intelligence Attribute:6|))) OR ({YamlCompare(skillsanity_cap == medium)} AND ((|Engineering Focus:4| AND |Intelligence Attribute:6|) OR (|Engineering Focus:5| AND |Intelligence Attribute:3|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Engineering Focus:3| AND |Intelligence Attribute:6|) OR (|Engineering Focus:4| AND |Intelligence Attribute:3|) OR |Engineering Focus:5|))"
     },
     {
       "name": "Engineering Skill Level 250",
@@ -4179,7 +4155,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Engineering Focus:3| AND |Intelligence Attribute:7|) OR (|Engineering Focus:4| AND |Intelligence Attribute:5|) OR (|Engineering Focus:5| AND |Intelligence Attribute:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Engineering Focus:5| AND |Intelligence Attribute:5|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Engineering Focus:3| AND |Intelligence Attribute:7|) OR (|Engineering Focus:4| AND |Intelligence Attribute:5|) OR (|Engineering Focus:5| AND |Intelligence Attribute:2|)))"
     },
     {
       "name": "Engineering Skill Level 275",
@@ -4187,7 +4163,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Engineering Focus:4| AND |Intelligence Attribute:6|) OR (|Engineering Focus:5| AND |Intelligence Attribute:4|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} AND ((|Engineering Focus:5| AND |Intelligence Attribute:7|))) OR ({YamlCompare(skillsanity_cap == hard)} AND ((|Engineering Focus:4| AND |Intelligence Attribute:6|) OR (|Engineering Focus:5| AND |Intelligence Attribute:4|)))"
     },
     {
       "name": "Engineering Skill Level 300",
@@ -4195,7 +4171,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Engineering Focus:5| AND |Intelligence Attribute:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Engineering Focus:5| AND |Intelligence Attribute:5|)))"
     },
     {
       "name": "Engineering Skill Level 325",
@@ -4203,7 +4179,7 @@
         "SkillSanity"
       ],
       "region": "menu",
-      "requires": "(|Engineering Focus:5| AND |Intelligence Attribute:7|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} AND ((|Engineering Focus:5| AND |Intelligence Attribute:7|)))"
     },
     {
       "name": "Mariner Skill Level 25",
@@ -4212,7 +4188,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@MarinerAttributes:5| or |Mariner Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} or {YamlCompare(skillsanity_cap == medium)}) and (|@MarinerAttributes:7| or |Mariner Focus:1|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@MarinerAttributes:5| or |Mariner Focus:1|))"
     },
     {
       "name": "Mariner Skill Level 50",
@@ -4221,7 +4197,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@MarinerAttributes:9| or (|Mariner Focus:1| and |@MarinerAttributes:3|) or |Mariner Focus:2|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} or {YamlCompare(skillsanity_cap == medium)}) and (|@MarinerAttributes:12| or (|Mariner Focus:1| and |@MarinerAttributes:6|) or |Mariner Focus:2|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@MarinerAttributes:9| or (|Mariner Focus:1| and |@MarinerAttributes:3|) or |Mariner Focus:2|))"
     },
     {
       "name": "Mariner Skill Level 75",
@@ -4230,7 +4206,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@MarinerAttributes:13| or (|Mariner Focus:1| and |@MarinerAttributes:7|) or (|Mariner Focus:2| and |@MarinerAttributes:1|) or |Mariner Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and (|@MarinerAttributes:17| or (|Mariner Focus:1| and |@MarinerAttributes:11|) or (|Mariner Focus:2| and |@MarinerAttributes:5|) or |Mariner Focus:3|)) or ({YamlCompare(skillsanity_cap == medium)} and (|@MarinerAttributes:16| or (|Mariner Focus:1| and |@MarinerAttributes:10|) or (|Mariner Focus:2| and |@MarinerAttributes:5|) or |Mariner Focus:3|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@MarinerAttributes:13| or (|Mariner Focus:1| and |@MarinerAttributes:7|) or (|Mariner Focus:2| and |@MarinerAttributes:1|) or |Mariner Focus:3|))"
     },
     {
       "name": "Mariner Skill Level 100",
@@ -4239,7 +4215,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@MarinerAttributes:16| or (|Mariner Focus:1| and |@MarinerAttributes:10|) or (|Mariner Focus:2| and |@MarinerAttributes:5|) or |Mariner Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Mariner Focus:1| and |@MarinerAttributes:16|) or (|Mariner Focus:2| and |@MarinerAttributes:10|) or (|Mariner Focus:3| and |@MarinerAttributes:4|) or |Mariner Focus:4|)) or ({YamlCompare(skillsanity_cap == medium)} and (|@MarinerAttributes:20| or (|Mariner Focus:1| and |@MarinerAttributes:14|) or (|Mariner Focus:2| and |@MarinerAttributes:8|) or (|Mariner Focus:3| and |@MarinerAttributes:3|) or |Mariner Focus:4|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@MarinerAttributes:16| or (|Mariner Focus:1| and |@MarinerAttributes:10|) or (|Mariner Focus:2| and |@MarinerAttributes:5|) or |Mariner Focus:3|))"
     },
     {
       "name": "Mariner Skill Level 125",
@@ -4248,7 +4224,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@MarinerAttributes:20| or (|Mariner Focus:1| and |@MarinerAttributes:14|) or (|Mariner Focus:2| and |@MarinerAttributes:8|) or (|Mariner Focus:3| and |@MarinerAttributes:3|) or |Mariner Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Mariner Focus:2| and |@MarinerAttributes:15|) or (|Mariner Focus:3| and |@MarinerAttributes:9|) or (|Mariner Focus:4| and |@MarinerAttributes:3|) or |Mariner Focus:5|)) or ({YamlCompare(skillsanity_cap == medium)} and ((|Mariner Focus:1| and |@MarinerAttributes:18|) or (|Mariner Focus:2| and |@MarinerAttributes:12|) or (|Mariner Focus:3| and |@MarinerAttributes:6|) or |Mariner Focus:4|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@MarinerAttributes:20| or (|Mariner Focus:1| and |@MarinerAttributes:14|) or (|Mariner Focus:2| and |@MarinerAttributes:8|) or (|Mariner Focus:3| and |@MarinerAttributes:3|) or |Mariner Focus:4|))"
     },
     {
       "name": "Mariner Skill Level 150",
@@ -4257,7 +4233,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Mariner Focus:1| and |@MarinerAttributes:18|) or (|Mariner Focus:2| and |@MarinerAttributes:12|) or (|Mariner Focus:3| and |@MarinerAttributes:6|) or |Mariner Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Mariner Focus:2| and |@MarinerAttributes:20|) or (|Mariner Focus:3| and |@MarinerAttributes:14|) or (|Mariner Focus:4| and |@MarinerAttributes:8|) or |Mariner Focus:5|)) or ({YamlCompare(skillsanity_cap == medium)} and ((|Mariner Focus:2| and |@MarinerAttributes:15|) or (|Mariner Focus:3| and |@MarinerAttributes:10|) or (|Mariner Focus:4| and |@MarinerAttributes:4|) or |Mariner Focus:5|)) or ({YamlCompare(skillsanity_cap == hard)} and ((|Mariner Focus:1| and |@MarinerAttributes:18|) or (|Mariner Focus:2| and |@MarinerAttributes:12|) or (|Mariner Focus:3| and |@MarinerAttributes:6|) or |Mariner Focus:4|))"
     },
     {
       "name": "Mariner Skill Level 175",
@@ -4266,7 +4242,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Mariner Focus:2| and |@MarinerAttributes:15|) or (|Mariner Focus:3| and |@MarinerAttributes:10|) or (|Mariner Focus:4| and |@MarinerAttributes:4|) or |Mariner Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Mariner Focus:3| and |@MarinerAttributes:19|) or (|Mariner Focus:4| and |@MarinerAttributes:13|) or (|Mariner Focus:5| and |@MarinerAttributes:7|))) or ({YamlCompare(skillsanity_cap == medium)} and ((|Mariner Focus:2| and |@MarinerAttributes:20|) or (|Mariner Focus:3| and |@MarinerAttributes:14|) or (|Mariner Focus:4| and |@MarinerAttributes:8|) or (|Mariner Focus:5| and |@MarinerAttributes:2|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Mariner Focus:2| and |@MarinerAttributes:15|) or (|Mariner Focus:3| and |@MarinerAttributes:10|) or (|Mariner Focus:4| and |@MarinerAttributes:4|) or |Mariner Focus:5|))"
     },
     {
       "name": "Mariner Skill Level 200",
@@ -4275,7 +4251,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Mariner Focus:2| and |@MarinerAttributes:19|) or (|Mariner Focus:3| and |@MarinerAttributes:13|) or (|Mariner Focus:4| and |@MarinerAttributes:8|) or (|Mariner Focus:5| and |@MarinerAttributes:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Mariner Focus:4| and |@MarinerAttributes:18|) or (|Mariner Focus:5| and |@MarinerAttributes:12|))) or ({YamlCompare(skillsanity_cap == medium)} and ((|Mariner Focus:3| and |@MarinerAttributes:19|) or (|Mariner Focus:4| and |@MarinerAttributes:13|) or (|Mariner Focus:5| and |@MarinerAttributes:7|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Mariner Focus:2| and |@MarinerAttributes:19|) or (|Mariner Focus:3| and |@MarinerAttributes:13|) or (|Mariner Focus:4| and |@MarinerAttributes:8|) or (|Mariner Focus:5| and |@MarinerAttributes:2|)))"
     },
     {
       "name": "Mariner Skill Level 225",
@@ -4284,7 +4260,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Mariner Focus:3| and |@MarinerAttributes:17|) or (|Mariner Focus:4| and |@MarinerAttributes:11|) or (|Mariner Focus:5| and |@MarinerAttributes:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Mariner Focus:5| and |@MarinerAttributes:17|))) or ({YamlCompare(skillsanity_cap == medium)} and ((|Mariner Focus:4| and |@MarinerAttributes:18|) or (|Mariner Focus:5| and |@MarinerAttributes:12|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Mariner Focus:3| and |@MarinerAttributes:17|) or (|Mariner Focus:4| and |@MarinerAttributes:11|) or (|Mariner Focus:5| and |@MarinerAttributes:5|)))"
     },
     {
       "name": "Mariner Skill Level 250",
@@ -4293,7 +4269,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Mariner Focus:3| and |@MarinerAttributes:20|) or (|Mariner Focus:4| and |@MarinerAttributes:15|) or (|Mariner Focus:5| and |@MarinerAttributes:9|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} and ((|Mariner Focus:5| and |@MarinerAttributes:16|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Mariner Focus:3| and |@MarinerAttributes:20|) or (|Mariner Focus:4| and |@MarinerAttributes:15|) or (|Mariner Focus:5| and |@MarinerAttributes:9|)))"
     },
     {
       "name": "Mariner Skill Level 275",
@@ -4302,7 +4278,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Mariner Focus:4| and |@MarinerAttributes:18|) or (|Mariner Focus:5| and |@MarinerAttributes:13|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} and ((|Mariner Focus:5| and |@MarinerAttributes:20|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Mariner Focus:4| and |@MarinerAttributes:18|) or (|Mariner Focus:5| and |@MarinerAttributes:13|)))"
     },
     {
       "name": "Mariner Skill Level 300",
@@ -4311,7 +4287,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Mariner Focus:5| and |@MarinerAttributes:16|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} and ((|Mariner Focus:5| and |@MarinerAttributes:16|)))"
     },
     {
       "name": "Mariner Skill Level 325",
@@ -4320,7 +4296,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Mariner Focus:5| and |@MarinerAttributes:20|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} and ((|Mariner Focus:5| and |@MarinerAttributes:20|)))"
     },
     {
       "name": "Boatswain Skill Level 25",
@@ -4329,7 +4305,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@BoatswainAttributes:5| or |Boatswain Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} or {YamlCompare(skillsanity_cap == medium)}) and (|@BoatswainAttributes:7| or |Boatswain Focus:1|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@BoatswainAttributes:5| or |Boatswain Focus:1|))"
     },
     {
       "name": "Boatswain Skill Level 50",
@@ -4338,7 +4314,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@BoatswainAttributes:9| or (|Boatswain Focus:1| and |@BoatswainAttributes:3|) or |Boatswain Focus:2|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} or {YamlCompare(skillsanity_cap == medium)}) and (|@BoatswainAttributes:12| or (|Boatswain Focus:1| and |@BoatswainAttributes:6|) or |Boatswain Focus:2|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@BoatswainAttributes:9| or (|Boatswain Focus:1| and |@BoatswainAttributes:3|) or |Boatswain Focus:2|))"
     },
     {
       "name": "Boatswain Skill Level 75",
@@ -4347,7 +4323,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@BoatswainAttributes:13| or (|Boatswain Focus:1| and |@BoatswainAttributes:7|) or (|Boatswain Focus:2| and |@BoatswainAttributes:1|) or |Boatswain Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and (|@BoatswainAttributes:17| or (|Boatswain Focus:1| and |@BoatswainAttributes:11|) or (|Boatswain Focus:2| and |@BoatswainAttributes:5|) or |Boatswain Focus:3|)) or ({YamlCompare(skillsanity_cap == medium)} and (|@BoatswainAttributes:16| or (|Boatswain Focus:1| and |@BoatswainAttributes:10|) or (|Boatswain Focus:2| and |@BoatswainAttributes:5|) or |Boatswain Focus:3|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@BoatswainAttributes:13| or (|Boatswain Focus:1| and |@BoatswainAttributes:7|) or (|Boatswain Focus:2| and |@BoatswainAttributes:1|) or |Boatswain Focus:3|))"
     },
     {
       "name": "Boatswain Skill Level 100",
@@ -4356,7 +4332,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@BoatswainAttributes:16| or (|Boatswain Focus:1| and |@BoatswainAttributes:10|) or (|Boatswain Focus:2| and |@BoatswainAttributes:5|) or |Boatswain Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Boatswain Focus:1| and |@BoatswainAttributes:16|) or (|Boatswain Focus:2| and |@BoatswainAttributes:10|) or (|Boatswain Focus:3| and |@BoatswainAttributes:4|) or |Boatswain Focus:4|)) or ({YamlCompare(skillsanity_cap == medium)} and (|@BoatswainAttributes:20| or (|Boatswain Focus:1| and |@BoatswainAttributes:14|) or (|Boatswain Focus:2| and |@BoatswainAttributes:8|) or (|Boatswain Focus:3| and |@BoatswainAttributes:3|) or |Boatswain Focus:4|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@BoatswainAttributes:16| or (|Boatswain Focus:1| and |@BoatswainAttributes:10|) or (|Boatswain Focus:2| and |@BoatswainAttributes:5|) or |Boatswain Focus:3|))"
     },
     {
       "name": "Boatswain Skill Level 125",
@@ -4365,7 +4341,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@BoatswainAttributes:20| or (|Boatswain Focus:1| and |@BoatswainAttributes:14|) or (|Boatswain Focus:2| and |@BoatswainAttributes:8|) or (|Boatswain Focus:3| and |@BoatswainAttributes:3|) or |Boatswain Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Boatswain Focus:2| and |@BoatswainAttributes:15|) or (|Boatswain Focus:3| and |@BoatswainAttributes:9|) or (|Boatswain Focus:4| and |@BoatswainAttributes:3|) or |Boatswain Focus:5|)) or ({YamlCompare(skillsanity_cap == medium)} and ((|Boatswain Focus:1| and |@BoatswainAttributes:18|) or (|Boatswain Focus:2| and |@BoatswainAttributes:12|) or (|Boatswain Focus:3| and |@BoatswainAttributes:6|) or |Boatswain Focus:4|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@BoatswainAttributes:20| or (|Boatswain Focus:1| and |@BoatswainAttributes:14|) or (|Boatswain Focus:2| and |@BoatswainAttributes:8|) or (|Boatswain Focus:3| and |@BoatswainAttributes:3|) or |Boatswain Focus:4|))"
     },
     {
       "name": "Boatswain Skill Level 150",
@@ -4374,7 +4350,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Boatswain Focus:1| and |@BoatswainAttributes:18|) or (|Boatswain Focus:2| and |@BoatswainAttributes:12|) or (|Boatswain Focus:3| and |@BoatswainAttributes:6|) or |Boatswain Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Boatswain Focus:2| and |@BoatswainAttributes:20|) or (|Boatswain Focus:3| and |@BoatswainAttributes:14|) or (|Boatswain Focus:4| and |@BoatswainAttributes:8|) or |Boatswain Focus:5|)) or ({YamlCompare(skillsanity_cap == medium)} and ((|Boatswain Focus:2| and |@BoatswainAttributes:15|) or (|Boatswain Focus:3| and |@BoatswainAttributes:10|) or (|Boatswain Focus:4| and |@BoatswainAttributes:4|) or |Boatswain Focus:5|)) or ({YamlCompare(skillsanity_cap == hard)} and ((|Boatswain Focus:1| and |@BoatswainAttributes:18|) or (|Boatswain Focus:2| and |@BoatswainAttributes:12|) or (|Boatswain Focus:3| and |@BoatswainAttributes:6|) or |Boatswain Focus:4|))"
     },
     {
       "name": "Boatswain Skill Level 175",
@@ -4383,7 +4359,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Boatswain Focus:2| and |@BoatswainAttributes:15|) or (|Boatswain Focus:3| and |@BoatswainAttributes:10|) or (|Boatswain Focus:4| and |@BoatswainAttributes:4|) or |Boatswain Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Boatswain Focus:3| and |@BoatswainAttributes:19|) or (|Boatswain Focus:4| and |@BoatswainAttributes:13|) or (|Boatswain Focus:5| and |@BoatswainAttributes:7|))) or ({YamlCompare(skillsanity_cap == medium)} and ((|Boatswain Focus:2| and |@BoatswainAttributes:20|) or (|Boatswain Focus:3| and |@BoatswainAttributes:14|) or (|Boatswain Focus:4| and |@BoatswainAttributes:8|) or (|Boatswain Focus:5| and |@BoatswainAttributes:2|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Boatswain Focus:2| and |@BoatswainAttributes:15|) or (|Boatswain Focus:3| and |@BoatswainAttributes:10|) or (|Boatswain Focus:4| and |@BoatswainAttributes:4|) or |Boatswain Focus:5|))"
     },
     {
       "name": "Boatswain Skill Level 200",
@@ -4392,7 +4368,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Boatswain Focus:2| and |@BoatswainAttributes:19|) or (|Boatswain Focus:3| and |@BoatswainAttributes:13|) or (|Boatswain Focus:4| and |@BoatswainAttributes:8|) or (|Boatswain Focus:5| and |@BoatswainAttributes:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Boatswain Focus:4| and |@BoatswainAttributes:18|) or (|Boatswain Focus:5| and |@BoatswainAttributes:12|))) or ({YamlCompare(skillsanity_cap == medium)} and ((|Boatswain Focus:3| and |@BoatswainAttributes:19|) or (|Boatswain Focus:4| and |@BoatswainAttributes:13|) or (|Boatswain Focus:5| and |@BoatswainAttributes:7|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Boatswain Focus:2| and |@BoatswainAttributes:19|) or (|Boatswain Focus:3| and |@BoatswainAttributes:13|) or (|Boatswain Focus:4| and |@BoatswainAttributes:8|) or (|Boatswain Focus:5| and |@BoatswainAttributes:2|)))"
     },
     {
       "name": "Boatswain Skill Level 225",
@@ -4401,7 +4377,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Boatswain Focus:3| and |@BoatswainAttributes:17|) or (|Boatswain Focus:4| and |@BoatswainAttributes:11|) or (|Boatswain Focus:5| and |@BoatswainAttributes:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Boatswain Focus:5| and |@BoatswainAttributes:17|))) or ({YamlCompare(skillsanity_cap == medium)} and ((|Boatswain Focus:4| and |@BoatswainAttributes:18|) or (|Boatswain Focus:5| and |@BoatswainAttributes:12|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Boatswain Focus:3| and |@BoatswainAttributes:17|) or (|Boatswain Focus:4| and |@BoatswainAttributes:11|) or (|Boatswain Focus:5| and |@BoatswainAttributes:5|)))"
     },
     {
       "name": "Boatswain Skill Level 250",
@@ -4410,7 +4386,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Boatswain Focus:3| and |@BoatswainAttributes:20|) or (|Boatswain Focus:4| and |@BoatswainAttributes:15|) or (|Boatswain Focus:5| and |@BoatswainAttributes:9|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} and ((|Boatswain Focus:5| and |@BoatswainAttributes:16|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Boatswain Focus:3| and |@BoatswainAttributes:20|) or (|Boatswain Focus:4| and |@BoatswainAttributes:15|) or (|Boatswain Focus:5| and |@BoatswainAttributes:9|)))"
     },
     {
       "name": "Boatswain Skill Level 275",
@@ -4419,7 +4395,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Boatswain Focus:4| and |@BoatswainAttributes:18|) or (|Boatswain Focus:5| and |@BoatswainAttributes:13|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} and ((|Boatswain Focus:5| and |@BoatswainAttributes:20|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Boatswain Focus:4| and |@BoatswainAttributes:18|) or (|Boatswain Focus:5| and |@BoatswainAttributes:13|)))"
     },
     {
       "name": "Boatswain Skill Level 300",
@@ -4428,7 +4404,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Boatswain Focus:5| and |@BoatswainAttributes:16|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} and ((|Boatswain Focus:5| and |@BoatswainAttributes:16|)))"
     },
     {
       "name": "Boatswain Skill Level 325",
@@ -4437,7 +4413,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Boatswain Focus:5| and |@BoatswainAttributes:20|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} and ((|Boatswain Focus:5| and |@BoatswainAttributes:20|)))"
     },
     {
       "name": "Shipmaster Skill Level 25",
@@ -4446,7 +4422,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@ShipmasterAttributes:5| or |Shipmaster Focus:1|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} or {YamlCompare(skillsanity_cap == medium)}) and (|@ShipmasterAttributes:7| or |Shipmaster Focus:1|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@ShipmasterAttributes:5| or |Shipmaster Focus:1|))"
     },
     {
       "name": "Shipmaster Skill Level 50",
@@ -4455,7 +4431,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@ShipmasterAttributes:9| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:3|) or |Shipmaster Focus:2|"
+      "requires": "(({YamlCompare(skillsanity_cap == soft)} or {YamlCompare(skillsanity_cap == medium)}) and (|@ShipmasterAttributes:12| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:6|) or |Shipmaster Focus:2|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@ShipmasterAttributes:9| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:3|) or |Shipmaster Focus:2|))"
     },
     {
       "name": "Shipmaster Skill Level 75",
@@ -4464,7 +4440,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@ShipmasterAttributes:13| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:7|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:1|) or |Shipmaster Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and (|@ShipmasterAttributes:17| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:11|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:5|) or |Shipmaster Focus:3|)) or ({YamlCompare(skillsanity_cap == medium)} and (|@ShipmasterAttributes:16| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:10|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:5|) or |Shipmaster Focus:3|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@ShipmasterAttributes:13| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:7|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:1|) or |Shipmaster Focus:3|))"
     },
     {
       "name": "Shipmaster Skill Level 100",
@@ -4473,7 +4449,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@ShipmasterAttributes:16| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:10|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:5|) or |Shipmaster Focus:3|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Shipmaster Focus:1| and |@ShipmasterAttributes:16|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:10|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:4|) or |Shipmaster Focus:4|)) or ({YamlCompare(skillsanity_cap == medium)} and (|@ShipmasterAttributes:20| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:14|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:8|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:3|) or |Shipmaster Focus:4|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@ShipmasterAttributes:16| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:10|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:5|) or |Shipmaster Focus:3|))"
     },
     {
       "name": "Shipmaster Skill Level 125",
@@ -4482,7 +4458,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "|@ShipmasterAttributes:20| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:14|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:8|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:3|) or |Shipmaster Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Shipmaster Focus:2| and |@ShipmasterAttributes:15|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:9|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:3|) or |Shipmaster Focus:5|)) or ({YamlCompare(skillsanity_cap == medium)} and ((|Shipmaster Focus:1| and |@ShipmasterAttributes:18|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:12|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:6|) or |Shipmaster Focus:4|)) or ({YamlCompare(skillsanity_cap == hard)} and (|@ShipmasterAttributes:20| or (|Shipmaster Focus:1| and |@ShipmasterAttributes:14|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:8|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:3|) or |Shipmaster Focus:4|))"
     },
     {
       "name": "Shipmaster Skill Level 150",
@@ -4491,7 +4467,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Shipmaster Focus:1| and |@ShipmasterAttributes:18|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:12|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:6|) or |Shipmaster Focus:4|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Shipmaster Focus:2| and |@ShipmasterAttributes:20|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:14|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:8|) or |Shipmaster Focus:5|)) or ({YamlCompare(skillsanity_cap == medium)} and ((|Shipmaster Focus:2| and |@ShipmasterAttributes:15|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:10|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:4|) or |Shipmaster Focus:5|)) or ({YamlCompare(skillsanity_cap == hard)} and ((|Shipmaster Focus:1| and |@ShipmasterAttributes:18|) or (|Shipmaster Focus:2| and |@ShipmasterAttributes:12|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:6|) or |Shipmaster Focus:4|))"
     },
     {
       "name": "Shipmaster Skill Level 175",
@@ -4500,7 +4476,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Shipmaster Focus:2| and |@ShipmasterAttributes:15|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:10|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:4|) or |Shipmaster Focus:5|"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Shipmaster Focus:3| and |@ShipmasterAttributes:19|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:13|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:7|))) or ({YamlCompare(skillsanity_cap == medium)} and ((|Shipmaster Focus:2| and |@ShipmasterAttributes:20|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:14|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:8|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:2|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Shipmaster Focus:2| and |@ShipmasterAttributes:15|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:10|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:4|) or |Shipmaster Focus:5|))"
     },
     {
       "name": "Shipmaster Skill Level 200",
@@ -4509,7 +4485,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Shipmaster Focus:2| and |@ShipmasterAttributes:19|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:13|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:8|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:2|)"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Shipmaster Focus:4| and |@ShipmasterAttributes:18|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:12|))) or ({YamlCompare(skillsanity_cap == medium)} and ((|Shipmaster Focus:3| and |@ShipmasterAttributes:19|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:13|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:7|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Shipmaster Focus:2| and |@ShipmasterAttributes:19|) or (|Shipmaster Focus:3| and |@ShipmasterAttributes:13|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:8|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:2|)))"
     },
     {
       "name": "Shipmaster Skill Level 225",
@@ -4518,7 +4494,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Shipmaster Focus:3| and |@ShipmasterAttributes:17|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:11|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:5|)"
+      "requires": "({YamlCompare(skillsanity_cap == soft)} and ((|Shipmaster Focus:5| and |@ShipmasterAttributes:17|))) or ({YamlCompare(skillsanity_cap == medium)} and ((|Shipmaster Focus:4| and |@ShipmasterAttributes:18|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:12|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Shipmaster Focus:3| and |@ShipmasterAttributes:17|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:11|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:5|)))"
     },
     {
       "name": "Shipmaster Skill Level 250",
@@ -4527,7 +4503,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Shipmaster Focus:3| and |@ShipmasterAttributes:20|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:15|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:9|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} and ((|Shipmaster Focus:5| and |@ShipmasterAttributes:16|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Shipmaster Focus:3| and |@ShipmasterAttributes:20|) or (|Shipmaster Focus:4| and |@ShipmasterAttributes:15|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:9|)))"
     },
     {
       "name": "Shipmaster Skill Level 275",
@@ -4536,7 +4512,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Shipmaster Focus:4| and |@ShipmasterAttributes:18|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:13|)"
+      "requires": "({YamlCompare(skillsanity_cap == medium)} and ((|Shipmaster Focus:5| and |@ShipmasterAttributes:20|))) or ({YamlCompare(skillsanity_cap == hard)} and ((|Shipmaster Focus:4| and |@ShipmasterAttributes:18|) or (|Shipmaster Focus:5| and |@ShipmasterAttributes:13|)))"
     },
     {
       "name": "Shipmaster Skill Level 300",
@@ -4545,7 +4521,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Shipmaster Focus:5| and |@ShipmasterAttributes:16|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} and ((|Shipmaster Focus:5| and |@ShipmasterAttributes:16|)))"
     },
     {
       "name": "Shipmaster Skill Level 325",
@@ -4554,7 +4530,7 @@
         "WarSails"
       ],
       "region": "menu",
-      "requires": "(|Shipmaster Focus:5| and |@ShipmasterAttributes:20|)"
+      "requires": "({YamlCompare(skillsanity_cap == hard)} and ((|Shipmaster Focus:5| and |@ShipmasterAttributes:20|)))"
     },
     {
       "name": "Create the Dragon Banner",

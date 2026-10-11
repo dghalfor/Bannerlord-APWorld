@@ -1,6 +1,6 @@
 {
-    "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.options.schema.json",
-    "_comment": "Add a _ before an option name to comment it out and it wont be added to the apworld",
+  "$schema": "https://raw.githubusercontent.com/ManualForArchipelago/Manual/main/schemas/Manual.options.schema.json",
+  "_comment": "Add a _ before an option name to comment it out and it wont be added to the apworld",
   "core": {
     "goal": {
       "_comment": [
@@ -47,6 +47,23 @@
         "very_hard": 50
       },
       "group": "Main Quest"
+    },
+    "skillsanity_cap": {
+      "display_name": "Skill Sanity Cap",
+      "description": [
+        "Controls how many focus points and attribute points the logic requires for each skill level location.",
+        "Soft: based on the game's Learning Limit. Past the learning limit you will start to receive negative modifiers to xp, but those locations past this are reachable",
+        "Medium: the middle ground between soft and hard. Slight experience penalties will occur on this option",
+        "Hard: based on the point at which skills can no longer be gained. Experience penalties for skills close to the cap are ~30x slower than experience gain below the learning limit"
+      ],
+      "type": "Choice",
+      "values": {
+        "soft": 0,
+        "medium": 1,
+        "hard": 2
+      },
+      "default": 1,
+      "group": "Skill Sanity"
     },
     "onehanded_skill_max": {
       "display_name": "One-Handed Skill Max Level",
@@ -363,11 +380,49 @@
       "default": true,
       "group": "Quest Sanity"
     },
+    "merchant_quest_use_total": {
+      "display_name": "Merchant Quests: Use Total Count",
+      "description": [
+        "When enabled, merchant quests are checked by number completed instead of by specific quest.",
+        "Any merchant quest you complete counts toward the next 'Merchant Quest Completed N' location."
+      ],
+      "type": "Toggle",
+      "default": false,
+      "group": "Quest Sanity"
+    },
+    "merchant_quest_total": {
+      "display_name": "Merchant Quests: Total Count",
+      "description": [ "How many merchant quests must be completed when Use Total Count is enabled." ],
+      "type": "Range",
+      "range_start": 1,
+      "range_end": 25,
+      "default": 4,
+      "group": "Quest Sanity"
+    },
     "village_quest_sanity": {
       "display_name": "Village Quest Sanity",
       "description": [ "When enabled, completing village quests will be Archipelago locations." ],
       "type": "Toggle",
       "default": true,
+      "group": "Quest Sanity"
+    },
+    "village_quest_use_total": {
+      "display_name": "Village Quests: Use Total Count",
+      "description": [
+        "When enabled, village quests are checked by number completed instead of by specific quest.",
+        "Any village quest you complete counts toward the next 'Village Quest Completed N' location."
+      ],
+      "type": "Toggle",
+      "default": false,
+      "group": "Quest Sanity"
+    },
+    "village_quest_total": {
+      "display_name": "Village Quests: Total Count",
+      "description": [ "How many village quests must be completed when Use Total Count is enabled." ],
+      "type": "Range",
+      "range_start": 1,
+      "range_end": 25,
+      "default": 4,
       "group": "Quest Sanity"
     },
     "lord_quest_sanity": {
@@ -377,11 +432,49 @@
       "default": true,
       "group": "Quest Sanity"
     },
+    "lord_quest_use_total": {
+      "display_name": "Lord Quests: Use Total Count",
+      "description": [
+        "When enabled, lord quests are checked by number completed instead of by specific quest.",
+        "Any lord quest you complete counts toward the next 'Lord Quest Completed N' location."
+      ],
+      "type": "Toggle",
+      "default": true,
+      "group": "Quest Sanity"
+    },
+    "lord_quest_total": {
+      "display_name": "Lord Quests: Total Count",
+      "description": [ "How many lord quests must be completed when Use Total Count is enabled." ],
+      "type": "Range",
+      "range_start": 1,
+      "range_end": 25,
+      "default": 4,
+      "group": "Quest Sanity"
+    },
     "gang_quest_sanity": {
       "display_name": "Gang Quest Sanity",
       "description": [ "When enabled, completing gang quests will be Archipelago locations." ],
       "type": "Toggle",
       "default": true,
+      "group": "Quest Sanity"
+    },
+    "gang_quest_use_total": {
+      "display_name": "Gang Quests: Use Total Count",
+      "description": [
+        "When enabled, gang quests are checked by number completed instead of by specific quest.",
+        "Any gang quest you complete counts toward the next 'Gang Quest Completed N' location."
+      ],
+      "type": "Toggle",
+      "default": false,
+      "group": "Quest Sanity"
+    },
+    "gang_quest_total": {
+      "display_name": "Gang Quests: Total Count",
+      "description": [ "How many gang quests must be completed when Use Total Count is enabled." ],
+      "type": "Range",
+      "range_start": 1,
+      "range_end": 25,
+      "default": 4,
       "group": "Quest Sanity"
     }
   }

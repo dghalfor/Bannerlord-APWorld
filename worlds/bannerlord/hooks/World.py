@@ -68,7 +68,7 @@ def before_create_regions(world: World, multiworld: MultiWorld, player: int):
 # Called after regions and locations are created, in case you want to see or modify that information. Victory location is included.
 def after_create_regions(world: World, multiworld: MultiWorld, player: int):
     locationNamesToRemove: list[str] = []
-
+ 
     # Skill sanity filtering
     skill_option_map = {
         "OneHanded":   world.options.onehanded_skill_max.value,
@@ -92,18 +92,23 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
         "Mariner":     world.options.mariner_skill_max.value,
         "Boatswain":   world.options.boatswain_skill_max.value,
         "Shipmaster":  world.options.shipmaster_skill_max.value,
-
+ 
     }
-
+ 
+    # Highest skill level reachable under each skillsanity_cap mode (0 soft, 1 medium, 2 hard).
+    # Levels above this have no valid requirement in that mode, so they must not exist.
+    skill_cap_limits = {0: 225, 1: 275, 2: 325}
+    cap_limit = skill_cap_limits[world.options.skillsanity_cap.value]
+ 
     for skill, max_level in skill_option_map.items():
-        effective_max = (max_level // 25) * 25
+        effective_max = min((max_level // 25) * 25, cap_limit)
         for threshold in range(25, 326, 25):
             if threshold > effective_max:
                 locationNamesToRemove.append(f"{skill} Skill Level {threshold}")
-
+ 
     # Crafting sanity tier filtering
     crafting_max_tier = world.options.crafting_sanity_max_tier.value
-
+ 
     for region in multiworld.regions:
         if region.player == player:
             for location in list(region.locations):
@@ -111,7 +116,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                     tier = int(location.name.rsplit(" Tier ", 1)[1])
                     if tier > crafting_max_tier:
                         locationNamesToRemove.append(location.name)
-
+ 
     # Tournament sanity filtering
     if not world.options.tournament_sanity.value:
         for region in multiworld.regions:
@@ -119,7 +124,7 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                 for location in list(region.locations):
                     if location.name.startswith("Tournament Win"):
                         locationNamesToRemove.append(location.name)
-
+ 
      # Quest sanity filtering
     if not world.options.quest_sanity.value:
         for region in multiworld.regions:
@@ -146,11 +151,11 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                         if location.name.endswith(" Quest") and region.name in disabled_regions:
                             locationNamesToRemove.append(location.name)
     MINOR_FACTION_CULTURES = {"darshi", "vakken"}
-
+ 
     troop_tier_pattern = re.compile(
         r"^(?P<culture>[A-Za-z]+?)(?P<branch>MinorFaction)?Tier(?P<tier>\d+)$"
     )
-
+ 
     for region in multiworld.regions:
         if region.player != player:
             continue
@@ -158,10 +163,10 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             match = troop_tier_pattern.match(region.name)
             if not match:
                 continue
-
+ 
             culture = match.group("culture")
             is_minor_branch = match.group("branch") == "MinorFaction"
-
+ 
             if culture == "bandit":
                 if not world.options.bandit_troop_sanity.value:
                     locationNamesToRemove.append(location.name)
@@ -177,8 +182,8 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                 # because minor_faction_troop_sanity is on
                 if not world.options.minor_faction_troop_sanity.value:
                     locationNamesToRemove.append(location.name)
-
-# War Sails category filtering — removes every location tagged "WarSails"
+ 
+    # War Sails category filtering — removes every location tagged "WarSails"
     if not world.options.war_sails.value:
         for region in multiworld.regions:
             if region.player != player:
@@ -187,6 +192,36 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
                 location_data = DataValidation.location_name_to_location.get(location.name)
                 if location_data and "WarSails" in location_data.get("category", []):
                     locationNamesToRemove.append(location.name)
+ 
+    # Quest totals: keep either the specific quests or the numbered totals, per type
+    quest_total_groups = {
+        # region name: (sanity option, use_total option, total option, label)
+        "MerchantQuest": ("merchant_quest_sanity", "merchant_quest_use_total", "merchant_quest_total", "Merchant"),
+        "VillageQuest":  ("village_quest_sanity",  "village_quest_use_total",  "village_quest_total",  "Village"),
+        "LordQuest":     ("lord_quest_sanity",     "lord_quest_use_total",     "lord_quest_total",     "Lord"),
+        "GangQuest":     ("gang_quest_sanity",     "gang_quest_use_total",     "gang_quest_total",     "Gang"),
+    }
+ 
+    for region in multiworld.regions:
+        if region.player != player:
+            continue
+        group = quest_total_groups.get(region.name)
+        if not group:
+            continue
+        sanity_opt, use_total_opt, total_opt, label = group
+        enabled = world.options.quest_sanity.value and getattr(world.options, sanity_opt).value
+        use_total = getattr(world.options, use_total_opt).value
+        total = getattr(world.options, total_opt).value
+        prefix = f"{label} Quest Completed "
+ 
+        for location in list(region.locations):
+            if location.name.startswith(prefix):
+                n = int(location.name[len(prefix):])
+                if not enabled or not use_total or n > total:
+                    locationNamesToRemove.append(location.name)
+            elif location.name.endswith(" Quest") and use_total:
+                locationNamesToRemove.append(location.name)
+ 
     # Apply removals
     remove_set = set(locationNamesToRemove)
     for region in multiworld.regions:
@@ -194,7 +229,6 @@ def after_create_regions(world: World, multiworld: MultiWorld, player: int):
             for location in list(region.locations):
                 if location.name in remove_set:
                     region.locations.remove(location)
-
 # This hook allows you to access the item names & counts before the items are created. Use this to increase/decrease the amount of a specific item in the pool
 # Valid item_config key/values:
 # {"Item Name": 5} <- This will create qty 5 items using all the default settings
@@ -302,6 +336,9 @@ def before_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld,
 # This is called after slot data is set and provides the slot data at the time, in case you want to check and modify it after Manual is done with it
 def after_fill_slot_data(slot_data: dict, world: World, multiworld: MultiWorld, player: int) -> dict:
     slot_data["dragon_banner_pieces_required"] = world.options.dragon_banner_pieces_required.value
+    for label in ("merchant", "village", "lord", "gang"):
+        slot_data[f"{label}_quest_use_total"] = world.options.__dict__[f"{label}_quest_use_total"].value
+        slot_data[f"{label}_quest_total"] = world.options.__dict__[f"{label}_quest_total"].value
     return slot_data
 
 # This is called right at the end, in case you want to write stuff to the spoiler log

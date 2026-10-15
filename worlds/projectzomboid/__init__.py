@@ -3,6 +3,7 @@ from BaseClasses import MultiWorld, Item, Tutorial, Region, Location
 from worlds.AutoWorld import World, CollectionState, WebWorld
 from typing import Dict
 
+from . import components 
 from .Locations import get_location_names, get_location_table 
 from .Items import create_item, create_itempool, item_table
 from .Options import ProjectZomboidOptions
